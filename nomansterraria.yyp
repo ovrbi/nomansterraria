@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "6551bf49-bf09-42ea-8898-8f89b832cafb",
+            "Value": {
+                "id": "a0d8b8f5-c68e-4f23-ada4-c12b96fbf313",
+                "resourcePath": "sprites\\sp_grass\\sp_grass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b42ea09-46b4-48df-a8ac-bc72d6eaa34d",
             "Value": {
                 "id": "b08107f1-f749-4fea-ab16-1c84f037ef66",
@@ -204,9 +212,9 @@
                 "id": "da9d762f-22aa-4c65-a9e3-96be78fb6896",
                 "resourcePath": "scripts\\scr_randomSeed\\scr_randomSeed.yy",
                 "resourceType": "GMScript"
-			}
-		},
-		{
+            }
+        },
+        {
             "Key": "b8a379d5-507f-454c-b0a4-2873c1085854",
             "Value": {
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
