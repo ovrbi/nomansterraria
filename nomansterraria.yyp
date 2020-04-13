@@ -199,19 +199,19 @@
             }
         },
         {
-<<<<<<< HEAD
             "Key": "aea67f49-1efe-4d30-8c31-c2897072e2ef",
             "Value": {
                 "id": "da9d762f-22aa-4c65-a9e3-96be78fb6896",
                 "resourcePath": "scripts\\scr_randomSeed\\scr_randomSeed.yy",
                 "resourceType": "GMScript"
-=======
+			}
+		},
+		{
             "Key": "b8a379d5-507f-454c-b0a4-2873c1085854",
             "Value": {
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
->>>>>>> 3029c650c1b24b8b8e1452d743bfd0be5a9d86d9
             }
         },
         {
