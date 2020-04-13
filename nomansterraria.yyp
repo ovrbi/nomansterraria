@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "8425cfc6-16d5-4f26-8e3a-3876f1563025",
+            "Value": {
+                "id": "8c163df8-1bc1-4060-a76e-fb1cb44b9476",
+                "resourcePath": "objects\\obj_tree\\obj_tree.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
             "Value": {
                 "id": "e5dfd375-8372-4a50-95c3-e3312fe347b0",
@@ -204,9 +212,9 @@
                 "id": "da9d762f-22aa-4c65-a9e3-96be78fb6896",
                 "resourcePath": "scripts\\scr_randomSeed\\scr_randomSeed.yy",
                 "resourceType": "GMScript"
-			}
-		},
-		{
+            }
+        },
+        {
             "Key": "b8a379d5-507f-454c-b0a4-2873c1085854",
             "Value": {
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
