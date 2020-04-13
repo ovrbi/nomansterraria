@@ -182,22 +182,6 @@
                 "resourceType": "GMAmazonFireOptions"
             }
         },
-		{
-            "Key": "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
-            "Value": {
-                "id": "a6e10c29-a29b-4c11-b737-10f2266fe448",
-                "resourcePath": "scripts\\scr_perlin\\scr_perlin.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "aea67f49-1efe-4d30-8c31-c2897072e2ef",
-            "Value": {
-                "id": "da9d762f-22aa-4c65-a9e3-96be78fb6896",
-                "resourcePath": "scripts\\scr_randomSeed\\scr_randomSeed.yy",
-                "resourceType": "GMScript"
-            }
-        },
         {
             "Key": "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
             "Value": {
