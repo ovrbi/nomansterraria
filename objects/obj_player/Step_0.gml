@@ -90,6 +90,8 @@ else
 xsp = spd * xkey;
 if (ysp < 7) ysp += grav;
 
+//fall
+
 if (xkey != 0) dir = xkey;
 
 //Horizontal Collision

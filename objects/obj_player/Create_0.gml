@@ -9,6 +9,7 @@ xsp = 0;
 ysp = 0;
 grav = 0.2;
 jumpspeed = 3.2;
+falldamage = 0;
 
 swipe_time = -1;
 swipe_maxtime = 15;

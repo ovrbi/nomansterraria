@@ -14,6 +14,3 @@ else
 	draw_sprite_ext(sp_player2,-1,x,y,dir,1,0,col,1);
 	image_speed = .2;
 //}
-
-/*draw_set_font(font0);
-if (place_meeting(x,y,obj_npchb)) && (obj_camera.mode = 0) draw_text(x,y+8,"Press SPACE to talk to NPC");
