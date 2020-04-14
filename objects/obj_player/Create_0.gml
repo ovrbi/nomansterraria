@@ -18,8 +18,9 @@ col = c_white;
 hit = 0;
 stun = 0;
 
-instance_create_depth(x,y,-100000,obj_camera);
-instance_create_depth(x,y,-100000,obj_select);
+instance_create_layer(x,y,"UI",obj_camera);
+instance_create_layer(x,y,"OverUI",obj_select);
+instance_create_layer(x,y,"OverUI",obj_mouse);
 
 //stats
 maxhp = 10;

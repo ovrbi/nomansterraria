@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "15ae23a4-e24f-4455-9dea-ff8c6d9fcc7b",
+            "Value": {
+                "id": "1bc36795-306d-488b-8e0b-6c92584dc8be",
+                "resourcePath": "objects\\obj_inventory_back\\obj_inventory_back.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "172c14c7-7581-4b6d-8999-634dfa0f1cba",
+            "Value": {
+                "id": "3c9fccb4-a0a9-4865-a815-f6f228226085",
+                "resourcePath": "views\\172c14c7-7581-4b6d-8999-634dfa0f1cba.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "20ea71f6-e6d6-42a1-bcb0-d02aea7d750b",
             "Value": {
                 "id": "09c704d5-8dee-451f-8e52-0c9b7a3161a0",
@@ -116,6 +132,14 @@
                 "id": "3a33821f-181f-4cf2-8261-c885ca77963a",
                 "resourcePath": "rooms\\rm_initiate\\rm_initiate.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4b7ff662-3b89-4c69-a49e-571655b8e412",
+            "Value": {
+                "id": "413d6390-5c21-4cf8-9bac-c17c10d9ea47",
+                "resourcePath": "sprites\\sp_inventory_back\\sp_inventory_back.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -287,6 +311,14 @@
             }
         },
         {
+            "Key": "b190d6a0-6ab8-4382-8e06-acdf4992a104",
+            "Value": {
+                "id": "f088c031-3b7b-44ec-85d9-5e2151a3caea",
+                "resourcePath": "sprites\\sp_mousepixel\\sp_mousepixel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8a379d5-507f-454c-b0a4-2873c1085854",
             "Value": {
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
@@ -340,6 +372,14 @@
                 "id": "4ebe044d-a9b5-4613-8865-c34bd2a9fc06",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cce2cc13-4e1f-43fb-85c0-ac7145d2233c",
+            "Value": {
+                "id": "a3d84931-d14e-4eaf-8f7b-45c4dcbebee9",
+                "resourcePath": "objects\\obj_mouse\\obj_mouse.yy",
+                "resourceType": "GMObject"
             }
         },
         {

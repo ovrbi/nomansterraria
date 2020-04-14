@@ -11,3 +11,8 @@ if (instance_exists(obj_player))
 }
 
 camera_set_view_pos(view_camera[0],x-160,y-90);
+if (instance_exists(inv_back))
+{
+	inv_back.x = x;
+	inv_back.y = y-49;
+}
