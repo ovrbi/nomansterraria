@@ -11,8 +11,8 @@ for (var i=0; i<room_width/blockSize; i++)
 	var h = scr_perlin(i,maxHeight);
 	for (var j = 0;j<h;j++)
 	{
-		var xx = blockSize/2 + i;// * blockSize;
+		var xx = blockSize/2 + i * blockSize;
 		var yy = blockSize/2 + room_height - blockSize - (j*blockSize);
-		instance_create_layer(xx*blockSize, yy, "Instances", obj_dirt);
+		scr_placeBlock(xx,yy,1);
 	}
 }
