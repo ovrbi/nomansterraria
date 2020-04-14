@@ -18,7 +18,7 @@ hit = 0;
 stun = 0;
 
 instance_create_depth(x,y,-100000,obj_camera);
-//instance_create_depth(x,y,-100000,obj_playerhb);
+instance_create_depth(x,y,-100000,obj_select);
 
 //stats
 maxhp = 10;
