@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "490c29ed-51d1-4eeb-b919-fc1242664ff9",
+            "Value": {
+                "id": "fb7982d9-9e6d-4f97-b8fc-356f6e54346a",
+                "resourcePath": "scripts\\scr_unloadChunk\\scr_unloadChunk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4915f472-79d9-45a8-b58b-050b1421a12f",
             "Value": {
                 "id": "3a33821f-181f-4cf2-8261-c885ca77963a",
@@ -159,11 +167,27 @@
             }
         },
         {
+            "Key": "6d71af37-c4ba-4c65-85eb-7a667933e91a",
+            "Value": {
+                "id": "4aa018eb-1a9f-468b-8cae-8a048fc6f89c",
+                "resourcePath": "views\\6d71af37-c4ba-4c65-85eb-7a667933e91a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "716e9803-8bf7-4c30-b9ba-08642d6bafce",
             "Value": {
                 "id": "0dd9ab9e-e478-4c17-88b8-10a51051b3e7",
                 "resourcePath": "sprites\\sp_player\\sp_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78803f67-0899-41dc-bb02-6143b7ae9f2f",
+            "Value": {
+                "id": "c7358589-c148-4c2f-8a00-6e45a66fa3c5",
+                "resourcePath": "scripts\\scr_loadchunk\\scr_loadchunk.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -188,6 +212,14 @@
                 "id": "e5dfd375-8372-4a50-95c3-e3312fe347b0",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "90d76091-ada7-4a7d-bc20-ee4c03e93700",
+            "Value": {
+                "id": "46d7b7db-24cf-4cee-bfc3-07f090369a9f",
+                "resourcePath": "scripts\\scr_placeBlockG\\scr_placeBlockG.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -260,6 +292,14 @@
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c1f28a68-bab1-45fe-b57a-630b14abbd36",
+            "Value": {
+                "id": "2c51885d-5cc4-44ef-bc38-23c35fc6d6d5",
+                "resourcePath": "scripts\\scr_genchunk\\scr_genchunk.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -384,9 +424,13 @@
         }
     ],
     "script_order": [
+        "a989d340-3773-499a-afe9-5f26a2a7f4d9",
+        "90d76091-ada7-4a7d-bc20-ee4c03e93700",
+        "78803f67-0899-41dc-bb02-6143b7ae9f2f",
+        "490c29ed-51d1-4eeb-b919-fc1242664ff9",
         "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
         "aea67f49-1efe-4d30-8c31-c2897072e2ef",
-        "a989d340-3773-499a-afe9-5f26a2a7f4d9"
+        "c1f28a68-bab1-45fe-b57a-630b14abbd36"
     ],
     "tutorial": ""
 }
