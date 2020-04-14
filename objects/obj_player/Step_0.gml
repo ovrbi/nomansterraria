@@ -93,10 +93,10 @@ if (ysp < 7) ysp += grav;
 if (xkey != 0) dir = xkey;
 
 //Horizontal Collision
-if (place_meeting(x+xsp,y,obj_block))
+if (place_meeting(x+xsp,y,obj_collisionparent))
 {
     x = round(x);
-    while(!place_meeting(x+sign(xsp),y,obj_block))
+    while(!place_meeting(x+sign(xsp),y,obj_collisionparent))
     {
         x += sign(xsp);
     }
@@ -106,10 +106,10 @@ x += xsp;
 if (xsp = 0) x = round(x);
 
 //Vertical Collision
-if (place_meeting(x,y+ysp,obj_block))
+if (place_meeting(x,y+ysp,obj_collisionparent))
 {
     y = round(y);
-    while(!place_meeting(x,y+sign(ysp),obj_block))
+    while(!place_meeting(x,y+sign(ysp),obj_collisionparent))
     {
         y += sign(ysp);
     }

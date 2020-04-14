@@ -1,14 +1,14 @@
 {
-    "id": "ed5b6069-d0de-44f7-92ad-687cd2bff6eb",
+    "id": "cc8c0f62-775d-4654-bbe5-42ca586e46db",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_block",
+    "name": "obj_collisionparent",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "cc8c0f62-775d-4654-bbe5-42ca586e46db",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
