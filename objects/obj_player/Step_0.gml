@@ -97,12 +97,19 @@ if (xkey != 0) dir = xkey;
 //Horizontal Collision
 if (place_meeting(x+xsp,y,obj_collisionparent))
 {
-    x = round(x);
-    while(!place_meeting(x+sign(xsp),y,obj_collisionparent))
-    {
-        x += sign(xsp);
-    }
-    xsp = 0;
+	if (!place_meeting(x+xsp,y-8,obj_collisionparent))
+	{
+		y -= 8;
+	}
+	else
+	{
+	    x = round(x);
+	    while(!place_meeting(x+sign(xsp),y,obj_collisionparent))
+	    {
+	        x += sign(xsp);
+	    }
+	    xsp = 0;
+	}
 }
 x += xsp;
 if (xsp = 0) x = round(x);
