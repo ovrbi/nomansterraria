@@ -186,7 +186,7 @@
             "Key": "78803f67-0899-41dc-bb02-6143b7ae9f2f",
             "Value": {
                 "id": "c7358589-c148-4c2f-8a00-6e45a66fa3c5",
-                "resourcePath": "scripts\\scr_loadchunk\\scr_loadchunk.yy",
+                "resourcePath": "scripts\\scr_loadChunk\\scr_loadChunk.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -298,7 +298,7 @@
             "Key": "c1f28a68-bab1-45fe-b57a-630b14abbd36",
             "Value": {
                 "id": "2c51885d-5cc4-44ef-bc38-23c35fc6d6d5",
-                "resourcePath": "scripts\\scr_genchunk\\scr_genchunk.yy",
+                "resourcePath": "scripts\\scr_genChunk\\scr_genChunk.yy",
                 "resourceType": "GMScript"
             }
         },

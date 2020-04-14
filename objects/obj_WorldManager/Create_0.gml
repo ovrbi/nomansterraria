@@ -12,7 +12,7 @@ stx = obj_player.x div blockSize div chunkSize;
 enx = obj_player.x div blockSize div chunkSize;
 sty = obj_player.y div blockSize div chunkSize;
 eny = obj_player.y div blockSize div chunkSize;
-scr_loadchunk(stx,sty);
+scr_loadChunk(stx,sty);
  
 
 /*for (var i=0; i<worldWidth; i++)
