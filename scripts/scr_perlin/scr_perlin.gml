@@ -1,7 +1,7 @@
 var xx = argument0;
-var range = argument1 div 2;
+var range = argument1 div 4;
 
-var noise = 0;
+var noise = argument1 div 2;
 
 var chunkSize = 16;
 
@@ -15,6 +15,6 @@ while (chunkSize > 0)
  
 	noise += (1-prog)*left_random+prog*right_random;
 	chunkSize = chunkSize div 2;
-	range = range div 2;
+	range = range / 2;
 }
 return noise;
