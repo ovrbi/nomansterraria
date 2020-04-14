@@ -6,21 +6,21 @@ worldWidth = 512;
 chunkSize = 16;
 
 blockSize = sprite_get_width(sp_dirt2);
-var maxHeight = (worldHeight * 3) div 4;
+maxHeight = (worldHeight * 3) div 4;
 
-stx = obj_player.x div blockSize;
-enx = obj_player.x div blockSize;
-sty = obj_player.y div blockSize;
-eny = obj_player.y div blockSize;
+stx = obj_player.x div blockSize div chunkSize;
+enx = obj_player.x div blockSize div chunkSize;
+sty = obj_player.y div blockSize div chunkSize;
+eny = obj_player.y div blockSize div chunkSize;
+scr_loadchunk(stx,sty);
  
 
-for (var i=0; i<worldWidth; i++)
+/*for (var i=0; i<worldWidth; i++)
 {
 	var h = scr_perlin(i,maxHeight);
 	for (var j = 0;j<h;j++)
 	{
-		var xx = blockSize/2 + i * blockSize;
-		var yy = blockSize/2 + room_height - blockSize - (j*blockSize);
+		
 		scr_placeBlockG(i,worldHeight - j,1);
 	}
-}
+}*/
