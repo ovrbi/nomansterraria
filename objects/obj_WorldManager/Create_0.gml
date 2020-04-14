@@ -3,9 +3,15 @@
 seed = irandom_range(10000000,100000000);
 worldHeight = 256;
 worldWidth = 512;
+chunkSize = 16;
 
-var blockSize = sprite_get_width(sp_dirt2);
+blockSize = sprite_get_width(sp_dirt2);
 var maxHeight = (worldHeight * 3) div 4;
+
+stx = obj_player.x div blockSize;
+enx = obj_player.x div blockSize;
+sty = obj_player.y div blockSize;
+eny = obj_player.y div blockSize;
  
 
 for (var i=0; i<worldWidth; i++)
@@ -15,6 +21,6 @@ for (var i=0; i<worldWidth; i++)
 	{
 		var xx = blockSize/2 + i * blockSize;
 		var yy = blockSize/2 + room_height - blockSize - (j*blockSize);
-		scr_placeBlock(xx,yy,1);
+		scr_placeBlockG(i,worldHeight - j,1);
 	}
 }
