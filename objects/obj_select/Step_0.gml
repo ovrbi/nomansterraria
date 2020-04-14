@@ -1,6 +1,14 @@
 //coords
 x = 4 + floor(mouse_x / 8) * 8;
 y = 4 + floor(mouse_y / 8) * 8;
+if (obj_camera.mouse_mode = 1)
+{
+	image_alpha = 1;
+}
+else
+{
+	image_alpha = 0;
+}
 
 //break blocks
 if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_block))

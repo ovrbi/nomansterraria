@@ -263,11 +263,35 @@
             }
         },
         {
+            "Key": "949325ec-bb16-497b-9985-4eaa5839ed84",
+            "Value": {
+                "id": "45e0ae5c-a8bf-4a30-ab48-acf6c87f4b39",
+                "resourcePath": "objects\\object11\\object11.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "98da9a14-00b8-4c43-9439-0832c1a352df",
+            "Value": {
+                "id": "b51b1076-87a8-4b48-9f76-67a6ecfbe6f2",
+                "resourcePath": "sprites\\sp_mouse\\sp_mouse.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "99181648-c797-414a-b9ea-d5446415d636",
             "Value": {
                 "id": "20dc44a5-24fe-44b8-84a4-9c1a2a2daa7c",
                 "resourcePath": "views\\99181648-c797-414a-b9ea-d5446415d636.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9ffabac8-0a27-4f57-84da-d316964c35b2",
+            "Value": {
+                "id": "8df13685-63f3-49ff-8123-d355872621b2",
+                "resourcePath": "sprites\\sp_inventory_MM\\sp_inventory_MM.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -315,6 +339,14 @@
             "Value": {
                 "id": "f088c031-3b7b-44ec-85d9-5e2151a3caea",
                 "resourcePath": "sprites\\sp_mousepixel\\sp_mousepixel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b27b7a2d-1655-4a40-a649-c612e0ae0ae5",
+            "Value": {
+                "id": "de39925d-8d2e-4c39-8d71-f6e9f06f5a45",
+                "resourcePath": "sprites\\sp_inventory_slot\\sp_inventory_slot.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -452,6 +484,14 @@
                 "id": "84a80dbc-de6d-40e7-93ac-ebd6f0f1e71a",
                 "resourcePath": "fonts\\font0\\font0.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "feaf3123-4a18-4882-8554-3dda637576ba",
+            "Value": {
+                "id": "dabd60cb-52eb-4ca1-b105-b5d262881e90",
+                "resourcePath": "objects\\obj_inventory_slot\\obj_inventory_slot.yy",
+                "resourceType": "GMObject"
             }
         },
         {
