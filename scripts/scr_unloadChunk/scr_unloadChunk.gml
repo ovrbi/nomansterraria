@@ -12,15 +12,20 @@ var _num = collision_rectangle_list(cx*chunkSize*blockSize, cy*chunkSize*blockSi
 if _num > 0
     {
 		var array;
+		array[chunkSize*chunkSize - 1] = 0;
     for (var i = 0; i < _num; ++i)
         {
 			var object = _list[| i];
 			//show_debug_message(string(object.x)+";"+string(object.y)+":"+string(((object.x div blockSize % chunkSize)+chunkSize%chunkSize)*chunkSize+((object.y div blockSize % chunkSize)+chunkSize%chunkSize)));
-			array[(((object.x div blockSize % chunkSize)+chunkSize)%chunkSize)*chunkSize+(((object.y div blockSize % chunkSize)+chunkSize)%chunkSize)] = 1;
+			array[m0d(d1v(object.x,blockSize),chunkSize)*chunkSize+m0d(d1v(object.y,blockSize),chunkSize)] = object.index;
 			//save it here
 			instance_destroy(object);
         }
-		ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
+		//show_debug_message("-----------------------------------");
+		//show_debug_message(array);
+		//show_debug_message(scr_genChunk(tx,cy));
+		if (!array_equals(array,scr_genChunk(tx,cy))) ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
+		//else show_debug_message("Degenerate scum");
     }
 ds_list_destroy(_list)
 

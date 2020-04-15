@@ -2,10 +2,10 @@
 // You can write your code in this editor
 var xx = obj_player.x;
 var yy = obj_player.y;
-var begx = (xx - camera_get_view_width(view_camera[0]))div blockSize div chunkSize;
-var endx = (xx + camera_get_view_width(view_camera[0]))div blockSize div chunkSize;
-var begy = (yy - camera_get_view_height(view_camera[0]))div blockSize div chunkSize;
-var endy = (yy + camera_get_view_height(view_camera[0]))div blockSize div chunkSize;
+var begx = d1v((xx - camera_get_view_width(view_camera[0])), blockSize * chunkSize);
+var endx = d1v((xx + camera_get_view_width(view_camera[0])), blockSize * chunkSize);
+var begy = d1v((yy - camera_get_view_height(view_camera[0])), blockSize * chunkSize);
+var endy = d1v((yy + camera_get_view_height(view_camera[0])), blockSize * chunkSize);
 
 if (stx+1>begx){
 	for (;begx<stx+1; --stx)

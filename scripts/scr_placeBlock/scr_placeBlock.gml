@@ -22,4 +22,5 @@ if (sprite != -1) && (breaktime != -1)
 	var block = instance_create_layer(argument0,argument1,"Instances",obj_block);
 	block.sprite_index = sprite;
 	block.breaktime = breaktime;
+	block.index = argument2;
 }
