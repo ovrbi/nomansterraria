@@ -1,8 +1,8 @@
 {
-    "id": "78803f67-0899-41dc-bb02-6143b7ae9f2f",
+    "id": "56b607f8-0eb1-4617-84f5-aa81fdd8dda4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_loadChunk",
+    "name": "d1v",
     "IsCompatibility": false,
     "IsDnD": false
 }

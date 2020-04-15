@@ -100,6 +100,15 @@
                 "id": "a6af9f6b-5b30-42f2-884c-9d0ef9975796",
                 "resourcePath": "sprites\\sp_inventory_button\\sp_inventory_button.yy",
                 "resourceType": "GMSprite"
+			}
+		},
+		{
+            "Key": "31765199-39cb-4690-a464-8adebf170e7c",
+            "Value": {
+                "id": "b7ee11bf-b756-4970-bb5a-ba5421cce1e6",
+                "resourcePath": "scripts\\m0d\\m0d.yy",
+                "resourceType": "GMScript"
+
             }
         },
         {
@@ -167,6 +176,14 @@
             }
         },
         {
+            "Key": "56b607f8-0eb1-4617-84f5-aa81fdd8dda4",
+            "Value": {
+                "id": "6b048cd2-52b1-4234-a2e9-c8275d7cea4c",
+                "resourcePath": "scripts\\d1v\\d1v.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5cbb845c-4db4-4df9-a100-24891efadc12",
             "Value": {
                 "id": "e7a6d259-5c1c-41f0-93ad-885c34bb20a9",
@@ -223,6 +240,14 @@
             }
         },
         {
+            "Key": "6cb69a78-2113-4ce8-931a-d61b6a1b4b5e",
+            "Value": {
+                "id": "f87f97f6-690c-4bf7-933c-c558b99e5ed0",
+                "resourcePath": "views\\6cb69a78-2113-4ce8-931a-d61b6a1b4b5e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "6d71af37-c4ba-4c65-85eb-7a667933e91a",
             "Value": {
                 "id": "4aa018eb-1a9f-468b-8cae-8a048fc6f89c",
@@ -242,7 +267,7 @@
             "Key": "78803f67-0899-41dc-bb02-6143b7ae9f2f",
             "Value": {
                 "id": "c7358589-c148-4c2f-8a00-6e45a66fa3c5",
-                "resourcePath": "scripts\\scr_loadchunk\\scr_loadchunk.yy",
+                "resourcePath": "scripts\\scr_loadChunk\\scr_loadChunk.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -394,7 +419,7 @@
             "Key": "c1f28a68-bab1-45fe-b57a-630b14abbd36",
             "Value": {
                 "id": "2c51885d-5cc4-44ef-bc38-23c35fc6d6d5",
-                "resourcePath": "scripts\\scr_genchunk\\scr_genchunk.yy",
+                "resourcePath": "scripts\\scr_genChunk\\scr_genChunk.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -575,7 +600,9 @@
         "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
         "aea67f49-1efe-4d30-8c31-c2897072e2ef",
         "c1f28a68-bab1-45fe-b57a-630b14abbd36",
-        "df014cde-5d45-41e9-ac6d-0eb911c52e8f"
+        "df014cde-5d45-41e9-ac6d-0eb911c52e8f",
+        "56b607f8-0eb1-4617-84f5-aa81fdd8dda4",
+        "31765199-39cb-4690-a464-8adebf170e7c",
     ],
     "tutorial": ""
 }
