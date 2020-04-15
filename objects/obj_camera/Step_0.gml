@@ -30,6 +30,11 @@ for (var i = 0; i <= 10; i++)
 		inv[i].y = y-79;
 	}
 }
+if (instance_exists(inv_button))
+{
+	inv_button.x = x;
+	inv_button.y = y-48;
+}
 
 //hotbar shenanigans
 if (mouse_wheel_up()) hotbar--;

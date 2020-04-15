@@ -26,5 +26,6 @@ for (var i = 0; i <= 10; i++)
 	inv[i] = instance_create_layer(x,y,"UI",obj_inventory_slot);
 	inv[i].idee = i;
 }
+inv_button = instance_create_layer(x,y,"UI",obj_inventory_button);
 inv[0].image_index = 1;
 inv[5].sprite_index = sp_inventory_MM;
