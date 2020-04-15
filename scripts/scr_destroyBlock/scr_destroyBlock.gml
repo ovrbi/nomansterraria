@@ -1,13 +1,10 @@
-//argument0 = x
-//argument1 = y
+//argument0 = id
 
-if (place_meeting(x,y,obj_block))
-{
-	var block = instance_place(argument0,argument1,obj_block);
-	var drop = instance_create_layer(argument0,argument1,"Instances",obj_drop);
+
+//var block = instance_place(argument0,argument1,obj_block);
+var drop = instance_create_layer(argument0.x,argument0.y,"Instances",obj_drop);
 	
-	drop.sprite_index = obj_idb.sprite[obj_idb.drop[block.idee]];
-	drop.idee = obj_idb.drop[block.idee];
+drop.sprite_index = obj_idb.sprite[obj_idb.drop[argument0.idee]];
+drop.idee = obj_idb.drop[argument0.idee];
 	
-	instance_destroy(block);
-}
+instance_destroy(argument0);

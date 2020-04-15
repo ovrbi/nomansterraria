@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "676b0f40-13a9-476f-b895-cd8998876521",
+            "Value": {
+                "id": "69e6e0a7-4d6f-4c13-b381-a587bda10748",
+                "resourcePath": "sprites\\sp_stone\\sp_stone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68e8757b-b89c-46ce-95dd-7b86dc232015",
             "Value": {
                 "id": "66cbb42e-6725-46a5-ac1b-cc02657702ca",

@@ -13,13 +13,22 @@ i++;
 
 //1 = dirt
 name[i] = "Dirt";
-type[i] = "block";
+type[i] = 1;
 sprite[i] = sp_dirt2;
 bt[i] = 20;
 drop[i] = 1;
 desc[i] = "It's dirty.";
 stack[i] = 99;
 i++;
+
+//2 = stone
+name[i] = "Stone";
+type[i] = 1;
+sprite[i] = sp_stone;
+bt[i] = 120;
+drop[i] = 2;
+desc[i] = "It's stoney.";
+stack[i] = 99;
 i++;
 i++;
 
