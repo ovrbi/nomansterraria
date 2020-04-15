@@ -12,9 +12,10 @@ for (var i = 0; i <= 10; i++)
 	inv_id[i] = 0;
 	inv_amount[i] = 0;
 }
-inv_id[0] = 1;
-inv_amount[0] = 69;
+inv_id[3] = 1;
+inv_amount[3] = 89;
 inv_id[5] = 4;
+inv_amount[5] = 1;
 
 //inventory UI objects
 inv_back = instance_create_layer(x,y,"UI_back",obj_inventory_back);

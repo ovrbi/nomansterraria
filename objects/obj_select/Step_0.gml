@@ -21,12 +21,14 @@ if (mouse_check_button(mb_left))
 {
 	if (place_meeting(x,y,obj_block)) && (obj_camera.mouse_mode == 3)
 	{
-		var obj = instance_place(x,y,obj_block)
-		instance_destroy(obj);
+		scr_destroyBlock(x,y);
+		//var obj = instance_place(x,y,obj_block)
+		//instance_destroy(obj);
 	}
-	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_block)) && (!place_meeting(x,y,obj_player))
+	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_block)) && (!place_meeting(x,y,obj_player)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0)
 	{
 		scr_placeBlock(x,y,1);
+		obj_camera.inv_amount[obj_camera.hotbar]--;
 	}
 }
 /*if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_playerrange))

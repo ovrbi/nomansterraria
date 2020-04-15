@@ -37,7 +37,14 @@ else if (mouse_wheel_down()) hotbar++;
 if (hotbar < 0) hotbar = 10;
 if (hotbar > 10) hotbar = 0;
 
-
+for (var i = 0; i <= 10; i++)
+{
+	if (inv_id[i] != 0) && (inv_amount[i] < 1)
+	{
+		inv_id[i] = 0;
+		inv_amount[i] = 0;
+	}	
+}
 
 
 
