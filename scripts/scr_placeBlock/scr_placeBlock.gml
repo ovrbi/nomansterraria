@@ -2,24 +2,9 @@
 //argument1 = y
 //argument2 = id
 
-var sprite = -1;
-var breaktime = -1;
-switch (argument2)
-{
-	case 1:
-		sprite = sp_dirt2;
-		breaktime = 40;
-	break;
-	
-	case 2:
-		sprite = sp_dirt2;
-		breaktime = 80;
-	break;
-	
-}
-if (sprite != -1) && (breaktime != -1) 
+if (obj_idb.sprite[argument2] != -1) && (obj_idb.bt[argument2] != -1) 
 {
 	var block = instance_create_layer(argument0,argument1,"Instances",obj_block);
-	block.sprite_index = sprite;
-	block.breaktime = breaktime;
+	block.sprite_index = obj_idb.sprite[argument2];
+	block.breaktime = obj_idb.bt[argument2];
 }

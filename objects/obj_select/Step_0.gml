@@ -4,6 +4,12 @@ y = 4 + floor(mouse_y / 8) * 8;
 if (obj_camera.mouse_mode = 1)
 {
 	image_alpha = 1;
+	sprite_index = sp_select;
+}
+else if (obj_camera.mouse_mode = 3)
+{
+	image_alpha = 1;
+	sprite_index = sp_select5;
 }
 else
 {
@@ -11,10 +17,17 @@ else
 }
 
 //break blocks
-if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_block))
+if (mouse_check_button(mb_left))
 {
-	var obj = instance_place(x,y,obj_block)
-	instance_destroy(obj);
+	if (place_meeting(x,y,obj_block)) && (obj_camera.mouse_mode == 3)
+	{
+		var obj = instance_place(x,y,obj_block)
+		instance_destroy(obj);
+	}
+	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_block)) && (!place_meeting(x,y,obj_player))
+	{
+		scr_placeBlock(x,y,1);
+	}
 }
 /*if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_playerrange))
 {
@@ -53,7 +66,3 @@ if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_block))
 }*/
 
 //create blocks
-if (mouse_check_button(mb_right)) && (!place_meeting(x,y,obj_block))
-{
-	scr_placeBlock(x,y,1);
-}

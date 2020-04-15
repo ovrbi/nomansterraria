@@ -3,13 +3,21 @@
 mode = 0; //0 = overworld; 1 = battle;
 image_alpha = 0;
 
-mouse_mode = 0; //0 = obj_mouse; 1 = obj_select
+mouse_mode = 0; //0 = obj_mouse; 1 = obj_select place; 3 == obj_select destroy
 
 //inventory
 hotbar = 0;
+for (var i = 0; i <= 10; i++)
+{
+	inv_id[i] = 0;
+	inv_amount[i] = 0;
+}
+inv_id[0] = 1;
+inv_amount[0] = 69;
+inv_id[5] = 4;
 
+//inventory UI objects
 inv_back = instance_create_layer(x,y,"UI_back",obj_inventory_back);
-
 for (var i = 0; i <= 10; i++)
 {
 	inv[i] = instance_create_layer(x,y,"UI",obj_inventory_slot);
