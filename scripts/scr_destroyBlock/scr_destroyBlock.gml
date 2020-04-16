@@ -11,6 +11,7 @@ var drop = instance_create_layer(xx,yy,"Instances",obj_drop);
 	
 drop.sprite_index = obj_idb.sprite[obj_idb.drop[block.idee]];
 drop.idee = obj_idb.drop[block.idee];
+
 }
 
 //var arr = ds_map_find_value(obj_WorldManager.chunk_map, string(d1v(xx,convrate))+";"+string(d1v(yy,convrate)),);

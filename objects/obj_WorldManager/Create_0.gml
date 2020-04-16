@@ -13,12 +13,16 @@ debugChunk = false;
 maxHeight = (worldHeight * 3) div 4;
 
 save_map = ds_map_create();
+save_emap = ds_map_create();
 //chunk_map = ds_map_create();
-load_queue = ds_queue_create();
+//load_queue = ds_queue_create();
 gen_cache = ds_map_create();
 block_pool = ds_queue_create();
-perlin_cache = array_create(chunkSize*worldWidth,"null");
-
+//perlin_cache = array_create(chunkSize*worldWidth,"null");
+for (var i = 0; i < chunkSize*worldWidth;i++){
+	perlin_cache[i,1] = "null";
+	perlin_cache[i,0] = "null";
+}
 
 stx = d1v(obj_player.x, convrate);
 enx = d1v(obj_player.x, convrate);
