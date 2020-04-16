@@ -3,7 +3,12 @@ var cy = argument1;
 chunkSize = obj_WorldManager.chunkSize;
 var tx = (cx%obj_WorldManager.worldWidth) + obj_WorldManager.worldWidth;
 tx = tx %obj_WorldManager.worldWidth;
-//show_debug_message("Loading: "+string(cx)+";"+string(cy));
+
+//Debug
+show_debug_message("Loading: "+string(tx)+";"+string(cy));
+//draw_rectangle(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize, (cy+1)*chunkSize*blockSize, true);
+
+//End of debug
 
 if (ds_map_exists(obj_WorldManager.save_map, string(tx)+";"+string(cy))){
 	var arr = ds_map_find_value(obj_WorldManager.save_map,string(tx)+";"+string(cy));

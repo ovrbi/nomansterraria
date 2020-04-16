@@ -5,6 +5,8 @@ worldHeight = 256;
 worldWidth = 16; //in chunks
 chunkSize = 16;
 
+debugChunk = false;
+
 blockSize = sprite_get_width(sp_dirt2);
 maxHeight = (worldHeight * 3) div 4;
 
