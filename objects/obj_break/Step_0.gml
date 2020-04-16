@@ -10,7 +10,7 @@ else
 	if (!place_meeting(x,y,parent)) || (bt < 0) instance_destroy();
 	if (bt > maxbt) 
 	{
-		scr_destroyBlock(parent);
+		scr_destroyBlock(parent,true);
 		instance_destroy();
 	}
 }

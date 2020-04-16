@@ -1,14 +1,20 @@
 var cx = argument0;
 var cy = argument1;
-chunkSize = obj_WorldManager.chunkSize;
-var tx = (cx%obj_WorldManager.worldWidth) + obj_WorldManager.worldWidth;
-tx = tx %obj_WorldManager.worldWidth;
+var tx = m0d(cx,worldWidth);
+
 
 //Debug
-show_debug_message("Loading: "+string(tx)+";"+string(cy));
+//show_debug_message("Loading: "+string(tx)+";"+string(cy));
 //draw_rectangle(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize, (cy+1)*chunkSize*blockSize, true);
 
 //End of debug
+var arr0; 
+arr0[chunkSize*chunkSize-1] = 0;
+//if (ds_map_exists(obj_WorldManager.chunk_map,string(tx)+";"+string(cy))){
+//	instance_activate_region(cx*convrate, cy*convrate, convrate-1,convrate-1,true);
+//}
+//else{
+//ds_map_add(chunk_map,string(cx)+";"+string(cy), arr0);
 
 if (ds_map_exists(obj_WorldManager.save_map, string(tx)+";"+string(cy))){
 	var arr = ds_map_find_value(obj_WorldManager.save_map,string(tx)+";"+string(cy));
@@ -23,3 +29,4 @@ for (var i = 0; i < chunkSize; i++){
 			scr_placeBlockG(cx*chunkSize + i, cy*chunkSize + j, arr[i*chunkSize+j]);
 		}
 	}
+//}

@@ -1,22 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
 seed = irandom_range(10000000,100000000);
-worldHeight = 256;
-worldWidth = 16; //in chunks
-chunkSize = 16;
+//#macro seed seedo
+#macro worldHeight 256
+#macro worldWidth 16
+#macro chunkSize 16
+#macro convrate (chunkSize*blockSize)
 
 debugChunk = false;
 
-blockSize = sprite_get_width(sp_dirt2);
+#macro blockSize sprite_get_width(sp_dirt2)
 maxHeight = (worldHeight * 3) div 4;
 
 save_map = ds_map_create();
+//chunk_map = ds_map_create();
+load_queue = ds_queue_create();
+gen_cache = ds_map_create();
+block_pool = ds_queue_create();
+perlin_cache = array_create(chunkSize*worldWidth,"null");
 
-stx = d1v(d1v(obj_player.x, blockSize), chunkSize);
-enx = d1v(d1v(obj_player.x, blockSize), chunkSize);
-sty = d1v(d1v(obj_player.y, blockSize), chunkSize);
-eny = d1v(d1v(obj_player.y, blockSize), chunkSize);
+
+stx = d1v(obj_player.x, convrate);
+enx = d1v(obj_player.x, convrate);
+sty = d1v(obj_player.y, convrate);
+eny = d1v(obj_player.y, convrate);
 scr_loadChunk(stx,sty);
+
+//aro[9] = 0;
+//show_debug_message("Output: "+string(aro[7]));
 
 /*for (var i = 20;i>-20;i--){
 	show_debug_message(string(d1v(i,3))+"/"+string(m0d(i,3)));

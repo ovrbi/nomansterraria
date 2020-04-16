@@ -41,3 +41,4 @@ drop[i] = -1;
 desc[i] = "A handy tool capable of destroying most substances.";
 stack[i] = 1;
 i++;
+

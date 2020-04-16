@@ -1,6 +1,5 @@
-var xx = argument0;
-var yy = argument1;
-var ar2 = argument2;
-var blockSize = obj_WorldManager.blockSize;
-
-scr_placeBlock(blockSize/2+xx*blockSize,blockSize/2+yy*blockSize,ar2);
+//var xx = argument0;
+//var yy = argument1;
+//var ar2 = argument2;
+var bs = blockSize;
+scr_placeBlock(bs/2+argument0*bs,bs/2+argument1*bs,argument2);

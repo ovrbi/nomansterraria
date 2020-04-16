@@ -1,10 +1,9 @@
 var xx = argument0;
 var range = argument1 div 8;
+var perlin_cache = obj_WorldManager.perlin_cache;
 //show_debug_message(xx);
-worldWidth = obj_WorldManager.worldWidth;
-chunkSize = obj_WorldManager.chunkSize;
-xx = m0d(xx,(worldWidth*chunkSize));
-
+xx = m0d(xx,(chunkSize*worldWidth));
+if (perlin_cache[xx] == "null"){
 var noise = d1v(argument1, 2);
 
 var chunkLength = 32;
@@ -13,7 +12,7 @@ var chunkLength = 32;
 while (chunkLength > 0)
 {
 	var chunkIndex = d1v(xx, chunkLength);
-	var chunkIndex1 = d1v(m0d((xx+chunkLength),(worldWidth*chunkSize)),chunkLength);
+	var chunkIndex1 = d1v(m0d((xx+chunkLength),(chunkSize*worldWidth)),chunkLength);
 	var prog = (xx % chunkLength)/chunkLength;
  
 	//show_debug_message(chunkIndex%worldWidth);
@@ -24,4 +23,10 @@ while (chunkLength > 0)
 	chunkLength = chunkLength div 2;
 	range = range / 1.75;
 }
+perlin_cache[xx] = noise;
+}
+else {
+	noise = perlin_cache[xx];
+}
+//show_debug_message(noise);
 return noise;
