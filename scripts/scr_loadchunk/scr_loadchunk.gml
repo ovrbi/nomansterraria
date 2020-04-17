@@ -1,7 +1,8 @@
 var cx = argument0;
 var cy = argument1;
-var tx = m0d(cx,worldWidth);
+var tx = m0d(cx,worldWidthc);
 
+if (cy<0||cy>worldHeightc) return;
 
 //Debug
 //show_debug_message("Loading: "+string(tx)+";"+string(cy));
