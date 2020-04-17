@@ -12,6 +12,11 @@ if (instance_exists(obj_player))
 
 camera_set_view_pos(view_camera[0],x-160,y-90);
 
+if (keyboard_check_pressed(ord("E")))
+{
+	obj_camera.inv_expand = -obj_camera.inv_expand;
+}
+
 //inventry positioning
 if (instance_exists(inv_back))
 {
