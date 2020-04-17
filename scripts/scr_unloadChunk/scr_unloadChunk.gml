@@ -1,6 +1,6 @@
 var cx = argument0;
 var cy = argument1;
-var tx = m0d(cx,worldWidth);
+var tx = m0d(cx,worldWidthc);
 
 //show_debug_message("Unloading: "+string(tx)+";"+string(cy));
 #region blocks

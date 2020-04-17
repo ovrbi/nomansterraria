@@ -2,9 +2,11 @@
 // You can write your code in this editor
 seed = irandom_range(10000000,100000000);
 //#macro seed seedo
-#macro worldHeight 256
-#macro worldWidth 16
 #macro chunkSize 16
+#macro worldHeightc 16
+#macro worldHeight worldHeightc*chunkSize
+#macro worldWidthc 16
+#macro worldWidth worldWidthc*chunkSize
 #macro convrate (chunkSize*blockSize)
 
 debugChunk = false;
@@ -18,8 +20,9 @@ save_emap = ds_map_create();
 //load_queue = ds_queue_create();
 //gen_cache = ds_map_create();
 block_pool = ds_queue_create();
-//perlin_cache = array_create(chunkSize*worldWidth,"null");
-for (var i = 0; i < chunkSize*worldWidth;i++){
+
+//perlin_cache = array_create(chunkSize*worldWidthc,"null");
+for (var i = 0; i < chunkSize*worldWidthc;i++){
 	perlin_cache[i,1] = "null";
 	perlin_cache[i,0] = "null";
 }
@@ -38,7 +41,7 @@ scr_loadChunk(stx,sty);
 }*/
  
 
-/*for (var i=0; i<worldWidth; i++)
+/*for (var i=0; i<worldWidthc; i++)
 {
 	var h = scr_perlin(i,maxHeight);
 	for (var j = 0;j<h;j++)
