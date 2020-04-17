@@ -51,3 +51,22 @@ desc[i] = "A handy tool capable of destroying most substances.";
 stack[i] = 1;
 i++;
 
+//5 = coal ore
+name[i] = "Coal Ore";
+type[i] = 1;
+sprite[i] = sp_coal_ore;
+bt[i] = 80;
+drop[i] = 5;
+desc[i] = "Block of stone containing lumps of coal.";
+stack[i] = 99;
+i++;
+
+//6 = Iron Ore
+name[i] = "Iron Ore";
+type[i] = 1;
+sprite[i] = sp_iron_ore;
+bt[i] = 100;
+drop[i] = 6;
+desc[i] = "Block of stone containing iron veins.";
+stack[i] = 99;
+i++;
