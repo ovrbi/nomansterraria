@@ -35,7 +35,8 @@ if _num > 0
 	
 	
 	//instance_deactivate_region(cx*convrate, cy*convrate, convrate-1,convrate-1,true,true);
-	if (!array_equals(array,scr_genChunk(tx,cy))) ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
+	//if (!array_equals(array,scr_genChunk(tx,cy))) 
+	ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
 }
 		//else show_debug_message("Degenerate scum");
 //    }

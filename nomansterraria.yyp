@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "3d8742e6-e2ab-479d-a365-0e302c408c51",
+            "Value": {
+                "id": "8a3e1f2e-0adb-48d7-b561-a73a7a8a8c80",
+                "resourcePath": "sprites\\sp_coal_ore\\sp_coal_ore.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "46afb662-c482-41e1-84dd-4da7315c5230",
             "Value": {
                 "id": "9a3d5c48-d1df-40dc-808c-f4fae2c53af0",
@@ -596,6 +604,14 @@
                 "id": "91ff24f6-4259-42f5-8c78-e3fe0ba24370",
                 "resourcePath": "views\\ff348276-c3b1-4028-8ca0-685fd0cfbd92.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff45f5d1-b7e3-4638-ae84-acb22c031db6",
+            "Value": {
+                "id": "fb06003b-5966-4757-9dff-d7fd9fb876f5",
+                "resourcePath": "sprites\\sp_iron_ore\\sp_iron_ore.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
