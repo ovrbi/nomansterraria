@@ -97,7 +97,7 @@ if (xkey != 0) dir = xkey;
 //Horizontal Collision
 if (place_meeting(x+xsp,y,obj_collisionparent))
 {
-	if (!place_meeting(x+xsp,y-8,obj_collisionparent))
+	if (!place_meeting(x+xsp,y-8,obj_collisionparent)) && (place_meeting(x,y+1,obj_collisionparent))
 	{
 		y -= 8;
 	}

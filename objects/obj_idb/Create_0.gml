@@ -25,7 +25,7 @@ i++;
 name[i] = "Stone";
 type[i] = 1;
 sprite[i] = sp_stone;
-bt[i] = 120;
+bt[i] = 60;
 drop[i] = 2;
 desc[i] = "It's stoney.";
 stack[i] = 99;
