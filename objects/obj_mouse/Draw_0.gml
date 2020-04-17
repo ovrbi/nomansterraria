@@ -24,5 +24,27 @@ if (stored_id != 0)
 	}
 	draw_set_alpha(1)
 }
+else
+{
+	if (place_meeting(x,y,obj_inventory_slot))
+	{
+		
+	}
+}
 
 draw_sprite(sp_mouse,-1,x,y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
