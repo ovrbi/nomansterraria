@@ -45,7 +45,7 @@ if (place_meeting(x,y,obj_player))
 	//create a new stack on first available slot
 	if (destroy = 0)
 	{
-		for (i = 0; i < 10; i++)
+		for (i = 0; i <= 40; i++)
 		{
 			if (obj_camera.inv_id[i] = 0)
 			{

@@ -25,11 +25,20 @@ i++;
 name[i] = "Stone";
 type[i] = 1;
 sprite[i] = sp_stone;
-bt[i] = 120;
+bt[i] = 60;
 drop[i] = 2;
 desc[i] = "It's stoney.";
 stack[i] = 99;
 i++;
+
+//2 = testblock
+name[i] = "testblock";
+type[i] = 1;
+sprite[i] = sp_testblock;
+bt[i] = 1;
+drop[i] = 3;
+desc[i] = "trans rights";
+stack[i] = 1;
 i++;
 
 //4 = multitool

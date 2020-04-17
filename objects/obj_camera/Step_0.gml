@@ -16,8 +16,10 @@ camera_set_view_pos(view_camera[0],x-160,y-90);
 if (instance_exists(inv_back))
 {
 	inv_back.x = x;
-	inv_back.y = y-48;
+	inv_back.y = y-30;
 }
+
+//hotbar
 var xx = 0;
 for (var i = 0; i <= 10; i++)
 {
@@ -30,10 +32,66 @@ for (var i = 0; i <= 10; i++)
 		inv[i].y = y-79;
 	}
 }
+
+//incentory slots
+for (var i = 1; i <= 3; i++)
+{
+	for (var j = 1; j <= 5; j++)
+	{
+		if (instance_exists(inv[i*10 + j]))
+		{
+			inv[i*10 + j].x = x - 122 + 20*j;
+			inv[i*10 + j].y = y - 78 + 24*i;
+		}
+	}
+	for (var j = 6; j <= 10; j++)
+	{
+		if (instance_exists(inv[i*10 + j]))
+		{
+			inv[i*10 + j].x = x - 102 + 20*j + 4;
+			inv[i*10 + j].y = y - 78 + 24*i;
+		}
+	}
+}
+
+//MM upgrade slots
+for (var i = 0; i <= 3; i++)
+{
+	if (instance_exists(inv[i+41]))
+	{
+		inv[i+41].x = x;
+		inv[i+41].y = y - 57 + 20*i;
+	}
+}
+for (var i = 0; i <= 2; i++)
+{
+	if (instance_exists(inv[i+45]))
+	{
+		inv[i+45].x = x - 82 + i * 20;
+		inv[i+45].y = y + 18;
+	}
+}
+for (var i = 0; i <= 2; i++)
+{
+	if (instance_exists(inv[i+48]))
+	{
+		inv[i+48].x = x + 42 + i * 20;
+		inv[i+48].y = y + 18;
+	}
+}
+	
 if (instance_exists(inv_button))
 {
-	inv_button.x = x;
-	inv_button.y = y-48;
+	if (inv_expand == -1)
+	{
+		inv_button.x = x;
+		inv_button.y = y-64;
+	}
+	else
+	{
+		inv_button.x = x;
+		inv_button.y = y+21;
+	}
 }
 
 //hotbar shenanigans
