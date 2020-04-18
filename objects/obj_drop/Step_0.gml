@@ -58,3 +58,11 @@ if (place_meeting(x,y,obj_player))
 	}
 	if (destroy == 1) instance_destroy();
 }
+
+if (place_meeting(x,y,obj_block))
+{
+	if (!place_meeting(x,y-8,obj_block)) y -= 8;
+	else if (!place_meeting(x,y+8,obj_block)) y += 8;
+	else if (!place_meeting(x-8,y,obj_block)) x -= 8;
+	else if (!place_meeting(x+8,y,obj_block)) x += 8;
+}

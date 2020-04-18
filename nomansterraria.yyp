@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0706f632-03d6-41f1-8533-13c8d86c7acc",
+            "Value": {
+                "id": "53a96843-db52-4664-b773-6962965ddaeb",
+                "resourcePath": "scripts\\scr_placeBlockBack\\scr_placeBlockBack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0d503183-111e-4658-8f11-6505efaa701a",
             "Value": {
                 "id": "39cc8315-9334-445d-afdb-4a98bb2e277e",
@@ -271,6 +279,14 @@
             }
         },
         {
+            "Key": "6444f12d-fd18-41b9-9d3a-313755a4e714",
+            "Value": {
+                "id": "f152c9f0-64ef-4dfd-a4b6-72a1972a55e0",
+                "resourcePath": "objects\\obj_backblock\\obj_backblock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6551bf49-bf09-42ea-8898-8f89b832cafb",
             "Value": {
                 "id": "a0d8b8f5-c68e-4f23-ada4-c12b96fbf313",
@@ -388,6 +404,14 @@
                 "id": "e5dfd375-8372-4a50-95c3-e3312fe347b0",
                 "resourcePath": "options\\ios\\options_ios.yy",
                 "resourceType": "GMiOSOptions"
+            }
+        },
+        {
+            "Key": "854bf7de-d2bc-4b26-86f7-7108c93af20b",
+            "Value": {
+                "id": "b17e49e0-0d61-46d7-bf26-a18a5a9c90f0",
+                "resourcePath": "sprites\\sp_darken\\sp_darken.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -524,6 +548,14 @@
                 "id": "29f4cb16-82db-4b90-9a7d-5f7a3e40af2c",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "bcae0158-b958-415f-8030-4de45c3da787",
+            "Value": {
+                "id": "e14652ff-080f-417b-989e-2bc319a48c31",
+                "resourcePath": "sprites\\sp_platform\\sp_platform.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -730,6 +762,7 @@
     "script_order": [
         "90d76091-ada7-4a7d-bc20-ee4c03e93700",
         "a989d340-3773-499a-afe9-5f26a2a7f4d9",
+        "0706f632-03d6-41f1-8533-13c8d86c7acc",
         "df014cde-5d45-41e9-ac6d-0eb911c52e8f",
         "490c29ed-51d1-4eeb-b919-fc1242664ff9",
         "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",

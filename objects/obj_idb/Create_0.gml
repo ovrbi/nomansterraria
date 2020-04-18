@@ -70,3 +70,13 @@ drop[i] = 6;
 desc[i] = "A chuck of stone\ncontaining iron\nveins.";
 stack[i] = 99;
 i++;
+
+//7 = Platform
+name[i] = "Platform";
+type[i] = 1;
+sprite[i] = sp_platform;
+bt[i] = 10;
+drop[i] = 7;
+desc[i] = "Needed to begin\nshipbuilding.";
+stack[i] = 99;
+i++;

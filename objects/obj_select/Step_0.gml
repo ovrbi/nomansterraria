@@ -43,6 +43,32 @@ if (mouse_check_button(mb_left))
 		obj_camera.inv_amount[obj_camera.hotbar]--;
 	}
 }
+else if (mouse_check_button(mb_right)) //create and destroy back blocks
+{
+	if (place_meeting(x,y,obj_backblock)) && (obj_camera.mouse_mode == 3)
+	{
+		var obj2 = instance_place(x,y,obj_backblock);
+		if (!place_meeting(x,y,obj_break))
+		{
+			var obj = instance_create_layer(x,y,"Break",obj_break);
+			obj.maxbt = obj2.breaktime;
+			obj.parent = obj2;
+		}
+		if (place_meeting(x,y,obj_break))
+		{
+			var obj = instance_place(x,y,obj_break);
+			obj.bt++;
+		}
+		//scr_destroyBlock(x,y);
+		//var obj = instance_place(x,y,obj_block)
+		//instance_destroy(obj);
+	}
+	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_backblock)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0)
+	{
+		scr_placeBlockBack(x,y,obj_camera.inv_id[obj_camera.hotbar]);
+		obj_camera.inv_amount[obj_camera.hotbar]--;
+	}
+}
 /*if (mouse_check_button(mb_left)) && (place_meeting(x,y,obj_playerrange))
 {
     if (place_meeting(x,y,obj_overlayparent))
