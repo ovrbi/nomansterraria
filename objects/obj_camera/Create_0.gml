@@ -13,16 +13,16 @@ for (var i = 0; i <= 50; i++)
 	inv_id[i] = 0;
 	inv_amount[i] = 0;
 }
-inv_id[0] = 5;
-inv_amount[0] = 3;
-inv_id[1] = 6;
-inv_amount[1] = 6;
-inv_id[2] = 7;
-inv_amount[2] = 89;
-inv_id[3] = 2;
-inv_amount[3] = 9;
-inv_id[7] = 1;
-inv_amount[7] = 9;
+inv_id[0] = 20;
+inv_amount[0] = 1;
+inv_id[1] = 21;
+inv_amount[1] = 1;
+inv_id[2] = 22;
+inv_amount[2] = 1;
+inv_id[3] = 23;
+inv_amount[3] = 1;
+inv_id[7] = 24;
+inv_amount[7] = 1;
 inv_id[8] = 2;
 inv_amount[8] = 90;
 inv_id[14] = 8;

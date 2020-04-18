@@ -14,7 +14,11 @@ camera_set_view_pos(view_camera[0],x-160,y-90);
 
 if (keyboard_check_pressed(ord("E")))
 {
-	obj_camera.inv_expand = -obj_camera.inv_expand;
+	if (obj_mouse.table != 0) && (obj_camera.inv_expand == -1)
+	{
+		
+	}
+	else obj_camera.inv_expand = -obj_camera.inv_expand;
 }
 
 //inventry positioning

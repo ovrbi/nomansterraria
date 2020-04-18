@@ -3,7 +3,18 @@
 x = mouse_x;
 y = mouse_y;
 
-if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1)
+//see if meeting a crafting table
+table = 0;
+if (place_meeting(x,y,obj_block))
+{
+	var obj = instance_place(x,y,obj_block);
+	if (obj.idee >= 20) && (obj.idee <= 24)
+	{
+		table = obj.idee;
+	}
+}
+
+if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) //|| (table == 1)
 {
 	obj_camera.mouse_mode = 0;
 }

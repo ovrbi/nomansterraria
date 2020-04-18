@@ -28,7 +28,17 @@ else
 {
 	var name = "";
 	var desc = "";
-	if (place_meeting(x,y,obj_inventory_slot))
+	if (place_meeting(x,y,obj_inventory_button))
+	{
+		if (obj_camera.inv_expand == -1) name = "Expand Inventory (E)";
+		else name = "Collapse Inventory (E)";
+	}
+	else if (table != 0) && (obj_camera.inv_expand == -1)
+	{
+		name = obj_idb.name[table];
+		desc = "(E) to open."
+	}
+	else if (place_meeting(x,y,obj_inventory_slot))
 	{
 		var obj = instance_place(x,y,obj_inventory_slot);
 		if (obj.idee < 11) || (obj_camera.inv_expand == 1)
@@ -65,11 +75,7 @@ else
 			}
 		}
 	}
-	else if (place_meeting(x,y,obj_inventory_button))
-	{
-		if (obj_camera.inv_expand == -1) name = "Expand Inventory (E)";
-		else name = "Collapse Inventory (E)";
-	}
+	
 	if (name != "")
 	{
 		if (desc != "")

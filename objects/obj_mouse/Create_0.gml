@@ -6,3 +6,5 @@ stored_spot = -1;
 
 mem_id = 0;
 mem_amount = 0;
+
+table = 0;
