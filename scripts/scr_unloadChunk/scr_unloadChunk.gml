@@ -39,10 +39,35 @@ if _num > 0
 	//if (!array_equals(array,scr_genChunk(tx,cy))) 
 	
 }
-ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
+ds_map_replace(obj_WorldManager.save_bmap,string(tx)+";"+string(cy), array);
 		//else show_debug_message("Degenerate scum");
 //    }
-ds_list_destroy(_list)
+ds_list_destroy(_list);
+#endregion
+
+#region backblocks
+
+var _list = ds_list_create();
+var _num = collision_rectangle_list(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize-1, (cy+1)*chunkSize*blockSize-1,obj_backblock ,false, false, _list, false);
+var array;
+		array[chunkSize*chunkSize - 1] = 0;
+if _num > 0
+    {
+    for (var i = 0; i < _num; ++i)
+        {
+			var object = _list[| i];
+			
+			if (object!=0){
+			array[m0d(d1v(object.x,blockSize),chunkSize)*chunkSize+m0d(d1v(object.y,blockSize),chunkSize)] = object.idee;
+			//save it here
+			scr_destroyBlock(object,false);
+			}
+        }
+	
+}
+ds_map_replace(obj_WorldManager.save_bmap,string(tx)+";"+string(cy), array);
+ds_list_destroy(_list);
+
 #endregion
 
 #region entites

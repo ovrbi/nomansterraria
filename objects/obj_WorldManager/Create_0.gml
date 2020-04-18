@@ -17,11 +17,13 @@ debugChunk = false;
 maxHeight = (worldHeight * 3) div 4;
 
 save_map = ds_map_create();
+save_bmap = ds_map_create();
 save_emap = ds_map_create();
 //chunk_map = ds_map_create();
 //load_queue = ds_queue_create();
 //gen_cache = ds_map_create();
 block_pool = ds_queue_create();
+backblock_pool = ds_queue_create();
 
 
 
@@ -45,7 +47,7 @@ for (var i = 0;i<worldWidthc;i++){
 	}
 }
 */
-show_debug_message("done: " + string(current_time - time)+"ms");
+//show_debug_message("done: " + string(current_time - time)+"ms");
 
 scr_loadChunk(stx,sty);
 

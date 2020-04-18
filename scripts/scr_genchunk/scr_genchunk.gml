@@ -4,6 +4,7 @@ var cy = argument1;
 //show_debug_message("generating " + string(cx)+";"+string(cy));
 
 var arr;
+var arr1;
 /*if (ds_map_exists(obj_WorldManager.gen_cache,string(cx)+";"+string(cy))){
 	return ds_map_find_value(obj_WorldManager.gen_cache,string(cx)+";"+string(cy));
 }
@@ -12,9 +13,18 @@ for (var i = 0; i < chunkSize; i++){
 	var h = obj_WorldManager.maxHeight-scr_perlin(cx*chunkSize + i, obj_WorldManager.maxHeight,0);
 	var h2 = obj_WorldManager.maxHeight-scr_perlin(cx*chunkSize + i, obj_WorldManager.maxHeight,1);
 	for (var j = 0; j<chunkSize;j++){
-		if (j+chunkSize*cy>h2) arr[i*chunkSize + j] = 2;
-		else if  (j+chunkSize*cy>h) arr[i*chunkSize + j] = 1;
-		else arr[i*chunkSize + j] = 0;
+		if (j+chunkSize*cy>h2) {
+			arr[i*chunkSize + j] = 2;
+			arr1[i*chunkSize + j] = 2;
+		}
+		else if  (j+chunkSize*cy>h) {
+			arr[i*chunkSize + j] = 1;
+			arr1[i*chunkSize + j] = 1;
+		}
+		else {
+			arr[i*chunkSize + j] = 0;
+			arr1[i*chunkSize + j] = 0;
+		}
 		
 		
 		//oregen
@@ -61,5 +71,6 @@ for (var i = 0; i < chunkSize; i++){
 
 
 
-return arr;
+ds_map_add(obj_WorldManager.save_map,string(cx)+";"+string(cy),arr);
+ds_map_add(obj_WorldManager.save_bmap,string(cx)+";"+string(cy),arr1);
 //}

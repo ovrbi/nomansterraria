@@ -19,8 +19,12 @@ drop.idee = obj_idb.drop[block.idee];
 //ds_map_replace(obj_WorldManager.chunk_map, string(d1v(xx,convrate))+";"+string(d1v(yy,convrate)),arr);
 
 //if (ds_stack_size(obj_WorldManager.block_pool)<1024){
-	ds_queue_enqueue( obj_WorldManager.block_pool,block);
-	block.y=-10000;
+//show_debug_message(block.);
+
+if (block.layer == 6) ds_queue_enqueue( obj_WorldManager.block_pool,block);
+else if (block.layer == 7) ds_queue_enqueue( obj_WorldManager.backblock_pool,block);
+block.y=-10000;
+
 	//instance_deactivate_object(block);
 //}
 //else instance_destroy(argument0);
