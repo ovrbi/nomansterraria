@@ -39,7 +39,7 @@ if _num > 0
 	//if (!array_equals(array,scr_genChunk(tx,cy))) 
 	
 }
-ds_map_replace(obj_WorldManager.save_bmap,string(tx)+";"+string(cy), array);
+ds_map_replace(obj_WorldManager.save_map,string(tx)+";"+string(cy), array);
 		//else show_debug_message("Degenerate scum");
 //    }
 ds_list_destroy(_list);
