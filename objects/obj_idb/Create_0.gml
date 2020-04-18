@@ -244,7 +244,7 @@ i++;
 //24 = Combat machine
 name[i] = "Combat Machine";
 type[i] = 1;
-//sprite[i] = sp_furnace;
+sprite[i] = sp_combat_machine;
 bt[i] = 20;
 drop[i] = i;
 desc[i] = "It's dangerous to go\nalone. Make this.";
