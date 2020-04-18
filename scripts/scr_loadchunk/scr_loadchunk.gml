@@ -16,6 +16,7 @@ arr0[chunkSize*chunkSize-1] = 0;
 //}
 //else{
 //ds_map_add(chunk_map,string(cx)+";"+string(cy), arr0);
+//show_debug_message(ds_map_exists(obj_WorldManager.save_map, string(tx)+";"+string(cy)));
 
 if (ds_map_exists(obj_WorldManager.save_map, string(tx)+";"+string(cy))){
 	var arr = ds_map_find_value(obj_WorldManager.save_map,string(tx)+";"+string(cy));

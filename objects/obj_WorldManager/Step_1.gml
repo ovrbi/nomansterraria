@@ -79,5 +79,5 @@ if (!ds_queue_empty(load_queue)){
 }
 */
 
-
+//for (; loadstep<worldHeightc*worldWidthc)
 

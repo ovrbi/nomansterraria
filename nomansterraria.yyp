@@ -71,14 +71,6 @@
             }
         },
         {
-            "Key": "19599519-bb3b-4304-aa68-7975bd5c9c88",
-            "Value": {
-                "id": "91e56fd5-9d75-4f5a-8bb8-b3f54a28d21f",
-                "resourcePath": "scripts\\scr_dotGridGradient\\scr_dotGridGradient.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "20ea71f6-e6d6-42a1-bcb0-d02aea7d750b",
             "Value": {
                 "id": "09c704d5-8dee-451f-8e52-0c9b7a3161a0",
@@ -100,6 +92,14 @@
                 "id": "3d81458e-c8fc-4d88-b65e-c9d9954b9181",
                 "resourcePath": "views\\262b37be-d1e9-4022-9201-cacc8ebb60d9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "26a5a9a5-3b7a-4f39-a2cc-1b51337cf7b7",
+            "Value": {
+                "id": "3ce85333-51ac-4507-9e48-49ec14e1e557",
+                "resourcePath": "scripts\\scr_randvector\\scr_randvector.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -737,7 +737,7 @@
         "c1f28a68-bab1-45fe-b57a-630b14abbd36",
         "78803f67-0899-41dc-bb02-6143b7ae9f2f",
         "a500265e-b1e5-4d80-90a6-2df6d7f1534e",
-        "19599519-bb3b-4304-aa68-7975bd5c9c88",
+        "26a5a9a5-3b7a-4f39-a2cc-1b51337cf7b7",
         "31765199-39cb-4690-a464-8adebf170e7c",
         "56b607f8-0eb1-4617-84f5-aa81fdd8dda4"
     ],

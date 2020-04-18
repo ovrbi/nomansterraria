@@ -1,6 +1,8 @@
 var cx = argument0;
 var cy = argument1;
 
+//show_debug_message("generating " + string(cx)+";"+string(cy));
+
 var arr;
 /*if (ds_map_exists(obj_WorldManager.gen_cache,string(cx)+";"+string(cy))){
 	return ds_map_find_value(obj_WorldManager.gen_cache,string(cx)+";"+string(cy));
@@ -37,12 +39,19 @@ for (var i = 0; i < chunkSize; i++){
 			if (cy*chunkSize+i<minHeight) isore = isore/ (minHeight-cy*chunkSize+i);
 			isore = isore / size*10;
 			
-			show_debug_message(string(obj_idb.name[oreid])+": "+string(isore));
+			//show_debug_message(string(obj_idb.name[oreid])+": "+string(isore));
 			if (isore>scarcity) arr[i*chunkSize + j] = oreid;
 		}
 		
 		
-		
+		//cavegen
+		if (j+chunkSize*cy>h){
+			var chance = abs(scr_perlin2d(cx*chunkSize+i,cy*chunkSize+j,-1,32) /log2(cy));
+			if (arr[i*chunkSize+j]=1) chance += 0.2;
+			if (chance<0.4){
+				arr[i*chunkSize+j] = 0;
+			}
+		}
 		
 	}
 }
