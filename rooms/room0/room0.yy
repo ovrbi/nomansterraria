@@ -214,7 +214,7 @@
         "PhysicsWorld": false,
         "PhysicsWorldGravityX": 0,
         "PhysicsWorldGravityY": 10,
-        "PhysicsWorldPixToMeters": 0.1,
+        "PhysicsWorldPixToMeters": 0.125,
         "mvc": "1.0"
     },
     "roomSettings":     {
@@ -241,7 +241,7 @@
         "id": "f9ec27b7-6afb-4eb6-b5bc-0260ba828c8d",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": false,
+        "enableViews": true,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0"

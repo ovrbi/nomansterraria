@@ -34,7 +34,15 @@
         "6f94a1a3-645f-49fd-b032-1eed1c0159ea",
         "8ef623c1-8d0c-4cce-8047-12c6b22f7497",
         "97d6eaac-63ff-45e3-ad76-a03e9af48f99",
-        "cc452966-a531-4074-9f1a-70a7743390d7"
+        "cc452966-a531-4074-9f1a-70a7743390d7",
+        "e8917a4e-1e21-49d8-abb0-e7fdaa6f7a5f",
+        "3c0e5216-4116-4443-bd0a-4579cc293679",
+        "817f6105-1f4b-4b64-a0dc-9555bde0a341",
+        "6e82142e-986e-4bcc-907f-93898f3a5d44",
+        "da2d50c0-286d-434f-8a99-6f3907930fa1",
+        "7300f7c7-c63b-432a-9cc8-955a0d0b5a8f",
+        "01901e82-10f9-4b71-ab11-125baf83c83e",
+        "f1b0262a-b046-465c-adec-a32f84953e44"
     ],
     "filterType": "GMSprite",
     "folderName": "blocks and items",

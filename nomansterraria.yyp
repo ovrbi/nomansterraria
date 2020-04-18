@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01901e82-10f9-4b71-ab11-125baf83c83e",
+            "Value": {
+                "id": "66ba452a-810b-4062-813b-2c8d691b1bd8",
+                "resourcePath": "sprites\\sp_size_chip_1\\sp_size_chip_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0398f4da-0a64-4ff1-9fc6-c1109f186d73",
             "Value": {
                 "id": "83c7ef1b-0b8a-41d3-b509-eaf79361d51e",
@@ -212,6 +220,14 @@
                 "id": "25454713-62a1-43be-b455-d1b4f2576d85",
                 "resourcePath": "views\\3605743d-17af-4f47-b57d-0c6a74bb1215.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3c0e5216-4116-4443-bd0a-4579cc293679",
+            "Value": {
+                "id": "792b1b1b-f05c-403b-9b2f-916f5f934465",
+                "resourcePath": "sprites\\sp_speed_module\\sp_speed_module.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "6e82142e-986e-4bcc-907f-93898f3a5d44",
+            "Value": {
+                "id": "13c4cf40-09ca-4e14-92ad-4bc746297a8e",
+                "resourcePath": "sprites\\sp_jump_module\\sp_jump_module.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6f94a1a3-645f-49fd-b032-1eed1c0159ea",
             "Value": {
                 "id": "54dbaef5-6e25-4f36-9eb3-02e1363cfa8f",
@@ -459,6 +483,14 @@
             "Value": {
                 "id": "cdeee876-6488-4179-b055-51fac7abab66",
                 "resourcePath": "sprites\\sp_blockmask\\sp_blockmask.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7300f7c7-c63b-432a-9cc8-955a0d0b5a8f",
+            "Value": {
+                "id": "ba62f614-e33c-4d52-99d1-f53ad77222bf",
+                "resourcePath": "sprites\\sp_regen_module\\sp_regen_module.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -500,6 +532,14 @@
                 "id": "af7debdc-d2f4-43b7-a132-09a8fad1b5d3",
                 "resourcePath": "objects\\obj_egdb\\obj_egdb.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "817f6105-1f4b-4b64-a0dc-9555bde0a341",
+            "Value": {
+                "id": "3258be50-bbd9-43ef-a803-a0a3ce0ef0d2",
+                "resourcePath": "sprites\\sp_extraction_chip_1\\sp_extraction_chip_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -815,6 +855,14 @@
             }
         },
         {
+            "Key": "da2d50c0-286d-434f-8a99-6f3907930fa1",
+            "Value": {
+                "id": "9cf29bce-7ac1-45cf-91c3-8e9ad73d05a1",
+                "resourcePath": "sprites\\sp_range_chip_1\\sp_range_chip_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "db927c7c-80b6-435d-b8a8-b9f8a5dac4f9",
             "Value": {
                 "id": "4bd1dd8c-9443-4b1b-bb43-4a7042e198b5",
@@ -895,11 +943,27 @@
             }
         },
         {
+            "Key": "e8917a4e-1e21-49d8-abb0-e7fdaa6f7a5f",
+            "Value": {
+                "id": "768836f1-288d-4df2-b142-27856ea70d6c",
+                "resourcePath": "sprites\\sp_speed_chip_2\\sp_speed_chip_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ed5b6069-d0de-44f7-92ad-687cd2bff6eb",
             "Value": {
                 "id": "7154e3a1-9b2c-45b1-a5a4-623ed8eddd00",
                 "resourcePath": "objects\\obj_block\\obj_block.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f1b0262a-b046-465c-adec-a32f84953e44",
+            "Value": {
+                "id": "adeca4a1-da9c-4f2b-9fd0-b27a0e9cfd11",
+                "resourcePath": "sprites\\sp_speed_chip_1\\sp_speed_chip_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

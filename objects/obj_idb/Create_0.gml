@@ -200,3 +200,133 @@ drop[i] = i;
 desc[i] = "A highly durable metal.";
 stack[i] = 99;
 i++;
+
+//20 = Workbench
+name[i] = "Workbench";
+type[i] = 7;
+sprite[i] = sp_workbench;
+bt[i] = 20;
+drop[i] = i;
+desc[i] = "Makes other stations.";
+stack[i] = 99;
+i++;
+
+//21 = Furnace
+name[i] = "Furnace";
+type[i] = 7;
+sprite[i] = sp_furnace;
+bt[i] = 20;
+drop[i] = i;
+desc[i] = "Refines ores.";
+stack[i] = 99;
+i++;
+
+//22 = Shipbuild
+name[i] = "Ship Component constructor";
+type[i] = 7;
+sprite[i] = sp_shipbuild;
+bt[i] = 20;
+drop[i] = i;
+desc[i] = "Place next to a row/nof platform blocks.";
+stack[i] = 99;
+i++;
+
+//23 = Enhancer
+name[i] = "Enhancer";
+type[i] = 7;
+sprite[i] = sp_enhancer;
+bt[i] = 20;
+drop[i] = i;
+desc[i] = "Upgrade yourself.";
+stack[i] = 99;
+i++;
+
+//24 = Combat machine
+name[i] = "Combat Machine";
+type[i] = 7;
+//sprite[i] = sp_furnace;
+bt[i] = 20;
+drop[i] = i;
+desc[i] = "It's dangerous to go/nalone. Make this.";
+stack[i] = 99;
+i++;
+
+//25 = Speed Chip Mk. I
+name[i] = "Speed Chip Mk. I";
+type[i] = 2;
+sprite[i] = sp_speed_chip_1;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases mining speed.";
+stack[i] = 99;
+i++;
+
+//26 = Speed Chip Mk. I
+name[i] = "Speed Chip Mk. II";
+type[i] = 2;
+sprite[i] = sp_speed_chip_2;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases mining speed.";
+stack[i] = 99;
+i++;
+
+//27 = Size Chip Mk. I
+name[i] = "Size Chip Mk. I";
+type[i] = 2;
+sprite[i] = sp_size_chip_1;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases dig size.";
+stack[i] = 99;
+i++;
+
+//28 = Extraction Chip Mk. I
+name[i] = "Extraction Chip Mk. I";
+type[i] = 2;
+sprite[i] = sp_extraction_chip_1;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases drop chance.";
+stack[i] = 99;
+i++;
+
+//29 = Range Chip Mk. I
+name[i] = "Extraction Chip Mk. I";
+type[i] = 2;
+sprite[i] = sp_range_chip_1;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases multitool range.";
+stack[i] = 99;
+i++;
+
+//30 = Jump module
+name[i] = "Jump Module";
+type[i] = 3;
+sprite[i] = sp_jump_module;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases jump height.";
+stack[i] = 99;
+i++;
+
+//30 = Speed module
+name[i] = "Speed Module";
+type[i] = 3;
+sprite[i] = sp_speed_module;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases movement speed.";
+stack[i] = 99;
+i++;
+
+//30 = Regen module
+name[i] = "Regen Module";
+type[i] = 3;
+sprite[i] = sp_regen_module;
+bt[i] = 0;
+drop[i] = i;
+desc[i] = "Increases health regeneration.";
+stack[i] = 99;
+i++;
