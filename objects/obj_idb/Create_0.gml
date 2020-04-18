@@ -67,7 +67,7 @@ type[i] = 0;
 sprite[i] = sp_coal;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "A lump of carbon.";
+desc[i] = "A lump of\ncarbon.";
 stack[i] = 99;
 i++;
 
@@ -87,7 +87,7 @@ type[i] = 0;
 sprite[i] = sp_iron;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "A tough metal ingot.";
+desc[i] = "A tough metal\ningot.";
 stack[i] = 99;
 i++;
 
@@ -167,7 +167,7 @@ type[i] = 1;
 sprite[i] = sp_copper_ore;
 bt[i] = 65;
 drop[i] = i;
-desc[i] = "A chunk of stone containing/norange veins.";
+desc[i] = "A chunk of stone containing\norange veins.";
 stack[i] = 99;
 i++;
 
@@ -177,7 +177,7 @@ type[i] = 0;
 sprite[i] = sp_copper;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "A metal with excellent/n conductive properties.";
+desc[i] = "A metal with excellent\nconductive properties.";
 stack[i] = 99;
 i++;
 
@@ -187,7 +187,7 @@ type[i] = 1;
 sprite[i] = sp_titanium_ore;
 bt[i] = 100;
 drop[i] = i;
-desc[i] = "A chunk of stone conatining/n gray veins.";
+desc[i] = "A chunk of stone conatining\n gray veins.";
 stack[i] = 99;
 i++;
 
@@ -197,7 +197,7 @@ type[i] = 0;
 sprite[i] = sp_titanium;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "A highly durable metal.";
+desc[i] = "A highly durable\nmetal.";
 stack[i] = 99;
 i++;
 
@@ -222,12 +222,12 @@ stack[i] = 99;
 i++;
 
 //22 = Shipbuild
-name[i] = "Ship Component constructor";
+name[i] = "Ship Constructor";
 type[i] = 7;
 sprite[i] = sp_shipbuild;
 bt[i] = 20;
 drop[i] = i;
-desc[i] = "Place next to a row/nof platform blocks.";
+desc[i] = "Place next to a row\nof platform blocks.";
 stack[i] = 99;
 i++;
 
@@ -247,7 +247,7 @@ type[i] = 7;
 //sprite[i] = sp_furnace;
 bt[i] = 20;
 drop[i] = i;
-desc[i] = "It's dangerous to go/nalone. Make this.";
+desc[i] = "It's dangerous to go\nalone. Make this.";
 stack[i] = 99;
 i++;
 
@@ -257,7 +257,7 @@ type[i] = 2;
 sprite[i] = sp_speed_chip_1;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "Increases mining speed.";
+desc[i] = "Slightly increases\nmining speed.";
 stack[i] = 99;
 i++;
 
@@ -292,7 +292,7 @@ stack[i] = 99;
 i++;
 
 //29 = Range Chip Mk. I
-name[i] = "Extraction Chip Mk. I";
+name[i] = "Range Chip Mk. I";
 type[i] = 2;
 sprite[i] = sp_range_chip_1;
 bt[i] = 0;
@@ -307,7 +307,7 @@ type[i] = 3;
 sprite[i] = sp_jump_module;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "Increases jump height.";
+desc[i] = "Gives you additional\njumps.";
 stack[i] = 99;
 i++;
 
@@ -317,7 +317,7 @@ type[i] = 3;
 sprite[i] = sp_speed_module;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "Increases movement speed.";
+desc[i] = "Increases movement\nspeed.";
 stack[i] = 99;
 i++;
 
@@ -327,6 +327,6 @@ type[i] = 3;
 sprite[i] = sp_regen_module;
 bt[i] = 0;
 drop[i] = i;
-desc[i] = "Increases health regeneration.";
+desc[i] = "Gives you health\nregeneration.";
 stack[i] = 99;
 i++;
