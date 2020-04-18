@@ -26,9 +26,90 @@ if (stored_id != 0)
 }
 else
 {
+	var name = "";
+	var desc = "";
 	if (place_meeting(x,y,obj_inventory_slot))
 	{
-		
+		var obj = instance_place(x,y,obj_inventory_slot);
+		if (obj.idee < 11) || (obj_camera.inv_expand == 1)
+		{
+			if (obj_camera.inv_id[obj.idee] > 0)
+			{
+				name = obj_idb.name[obj_camera.inv_id[obj.idee]];
+				desc = obj_idb.desc[obj_camera.inv_id[obj.idee]];
+			}
+			else if (obj.idee >= 41) && (obj.idee <= 44)
+			{
+				name = "Multitool Upgrade Slot";
+				desc = "It's empty."
+			}
+			else if (obj.idee == 45)
+			{
+				name = "Helmet Slot";
+				desc = "It's empty."
+			}
+			else if (obj.idee == 46)
+			{
+				name = "Chestpiece Slot";
+				desc = "It's empty."
+			}
+			else if (obj.idee == 47)
+			{
+				name = "Legwear Slot";
+				desc = "It's empty."
+			}
+			else if (obj.idee >= 48) && (obj.idee <= 50)
+			{
+				name = "Player Enhancement Slot";
+				desc = "It's empty."
+			}
+		}
+	}
+	else if (place_meeting(x,y,obj_inventory_button))
+	{
+		if (obj_camera.inv_expand == -1) name = "Expand Inventory (E)";
+		else name = "Collapse Inventory (E)";
+	}
+	if (name != "")
+	{
+		if (desc != "")
+		{
+			if (string_width(name) > string_width(desc))
+			{
+				draw_set_color(c_black);
+				draw_rectangle(x+3, y+6, x+5 + string_width(name), y+14, false);
+						
+				draw_set_alpha(.5);
+				draw_rectangle(x+4, y+15, x+4 + string_width(name), y+16 + string_height(desc), false);
+				draw_set_alpha(1);
+						
+				draw_set_color($bd9956);
+				draw_rectangle(x+4, y+7, x+4 + string_width(name), y+13, false);
+			}
+			else
+			{
+				draw_set_color(c_black);
+				draw_rectangle(x+3, y+6, x+5 + string_width(desc), y+14, false);
+						
+				draw_set_alpha(.5);
+				draw_rectangle(x+4, y+15, x+4 + string_width(desc), y+16 + string_height(desc), false);
+				draw_set_alpha(1);
+						
+				draw_set_color($bd9956);
+				draw_rectangle(x+4, y+7, x+4 + string_width(desc), y+13, false);
+			}
+		}
+		else
+		{
+			draw_set_color(c_black);
+			draw_rectangle(x+3, y+6, x+5 + string_width(name), y+14, false);
+			draw_set_color($bd9956);
+			draw_rectangle(x+4, y+7, x+4 + string_width(name), y+13, false);
+		}
+			
+		draw_set_color(c_white);
+		draw_text(x+5,y+7,name);
+		draw_text(x+5,y+16,desc);
 	}
 }
 

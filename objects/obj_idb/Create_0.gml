@@ -47,7 +47,7 @@ type[i] = -1;
 sprite[i] = -1;
 bt[i] = -1;
 drop[i] = -1;
-desc[i] = "A handy tool capable of destroying most substances.";
+desc[i] = "A handy tool\ncapable of destroying\nmost substances.";
 stack[i] = 1;
 i++;
 
@@ -57,7 +57,7 @@ type[i] = 1;
 sprite[i] = sp_coal_ore;
 bt[i] = 80;
 drop[i] = 5;
-desc[i] = "Block of stone containing lumps of coal.";
+desc[i] = "A chunk of stone\ncontaining lumps\nof coal.";
 stack[i] = 99;
 i++;
 
@@ -67,6 +67,6 @@ type[i] = 1;
 sprite[i] = sp_iron_ore;
 bt[i] = 100;
 drop[i] = 6;
-desc[i] = "Block of stone containing iron veins.";
+desc[i] = "A chuck of stone\ncontaining iron\nveins.";
 stack[i] = 99;
 i++;

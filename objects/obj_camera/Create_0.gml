@@ -13,6 +13,10 @@ for (var i = 0; i <= 50; i++)
 	inv_id[i] = 0;
 	inv_amount[i] = 0;
 }
+inv_id[0] = 5;
+inv_amount[0] = 3;
+inv_id[1] = 6;
+inv_amount[1] = 6;
 inv_id[2] = 3;
 inv_amount[2] = 89;
 inv_id[3] = 2;
