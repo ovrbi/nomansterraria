@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "055ed508-d10a-4167-8b5b-fb74739e6b71",
+            "Value": {
+                "id": "cddcb523-3333-4ad4-a84a-7b0cbb30a3be",
+                "resourcePath": "sprites\\sp_coal\\sp_coal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0706f632-03d6-41f1-8533-13c8d86c7acc",
             "Value": {
                 "id": "53a96843-db52-4664-b773-6962965ddaeb",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "2b2f81aa-7032-4d77-8a6d-f316c0bf93ae",
+            "Value": {
+                "id": "d1836e70-09e4-4441-a56b-1a3424f0de91",
+                "resourcePath": "objects\\obj_sdb\\obj_sdb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2df4564a-8985-445e-9825-1a9804f39fbc",
             "Value": {
                 "id": "510c06da-9355-4436-8852-0bf41acff16e",
@@ -179,6 +195,14 @@
             "Value": {
                 "id": "8a3e1f2e-0adb-48d7-b561-a73a7a8a8c80",
                 "resourcePath": "sprites\\sp_coal_ore\\sp_coal_ore.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3e3cb91d-a154-4ff2-bc5d-b7de61b62da5",
+            "Value": {
+                "id": "d7e964ad-5cdf-440c-be98-c3f088c8ca0e",
+                "resourcePath": "sprites\\sp_copper_ore\\sp_copper_ore.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -535,6 +559,14 @@
             }
         },
         {
+            "Key": "a64fe3af-e306-43fd-9cd2-d8e8fb750fa8",
+            "Value": {
+                "id": "80c2c8e9-2c57-445d-a40b-7a589389c951",
+                "resourcePath": "objects\\obj_cdb\\obj_cdb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
             "Value": {
                 "id": "a6e10c29-a29b-4c11-b737-10f2266fe448",
@@ -731,6 +763,14 @@
             "Value": {
                 "id": "214034e4-a3f1-4427-9259-f3df73a2676f",
                 "resourcePath": "sprites\\sp_dirt2\\sp_dirt2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e36540ca-93c5-4160-88c2-f93d36a4be23",
+            "Value": {
+                "id": "48e0f26a-e845-4a6a-b73d-2eee94819dd7",
+                "resourcePath": "sprites\\sp_titanium_ore\\sp_titanium_ore.yy",
                 "resourceType": "GMSprite"
             }
         },
