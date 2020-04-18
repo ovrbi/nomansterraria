@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "d03867bf-33a1-4e5e-8db2-c188b4a99985",
+            "Value": {
+                "id": "8516aa89-fa86-4a56-a806-37d7d3f81a67",
+                "resourcePath": "sprites\\sp_combat_machine\\sp_combat_machine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d3568340-f7ba-4689-b0c0-e66d61a8fd47",
             "Value": {
                 "id": "390e8725-ce29-4ea6-acd3-0c9b05c9d1cc",

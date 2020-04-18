@@ -42,7 +42,8 @@
         "da2d50c0-286d-434f-8a99-6f3907930fa1",
         "7300f7c7-c63b-432a-9cc8-955a0d0b5a8f",
         "01901e82-10f9-4b71-ab11-125baf83c83e",
-        "f1b0262a-b046-465c-adec-a32f84953e44"
+        "f1b0262a-b046-465c-adec-a32f84953e44",
+        "d03867bf-33a1-4e5e-8db2-c188b4a99985"
     ],
     "filterType": "GMSprite",
     "folderName": "blocks and items",
