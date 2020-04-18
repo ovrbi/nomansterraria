@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "603c82d0-1112-4ce7-8b74-74d34c7fcb57",
+            "Value": {
+                "id": "61a5ea7d-f44a-4d5d-b289-0452af4a1e80",
+                "resourcePath": "objects\\obj_messenger\\obj_messenger.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "62af4482-614f-4171-ab0c-32ef520442cf",
             "Value": {
                 "id": "170010ec-c451-4398-ade7-e218c4037ea1",

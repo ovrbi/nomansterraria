@@ -37,6 +37,10 @@ inv_id[28] = 2;
 inv_amount[28] = 21;
 inv_id[40] = 2;
 inv_amount[40] = 21;
+inv_id[31] = 22;
+inv_amount[31] = 1;
+inv_id[32] = 9;
+inv_amount[32] = 99;
 
 inv_id[5] = 4;
 inv_amount[5] = 1;
