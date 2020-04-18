@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "259415fb-299c-411b-a401-d57c4d76d3c7",
+            "Value": {
+                "id": "c0a4191d-c01c-494f-a5c7-83cd58cb9a2e",
+                "resourcePath": "sprites\\sp_infernum_ore\\sp_infernum_ore.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "262b37be-d1e9-4022-9201-cacc8ebb60d9",
             "Value": {
                 "id": "3d81458e-c8fc-4d88-b65e-c9d9954b9181",
@@ -367,6 +375,22 @@
             }
         },
         {
+            "Key": "74d0011d-0228-4217-8fc4-a4da25ee484d",
+            "Value": {
+                "id": "87ff282d-503c-46f5-93f0-05153e0db78d",
+                "resourcePath": "sprites\\sp_luxus_ore\\sp_luxus_ore.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76a11699-2a10-42b3-9dbd-205a549323d3",
+            "Value": {
+                "id": "d380ae71-f089-4d63-9b9b-6fb191871baf",
+                "resourcePath": "sprites\\sp_lilium\\sp_lilium.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "78803f67-0899-41dc-bb02-6143b7ae9f2f",
             "Value": {
                 "id": "c7358589-c148-4c2f-8a00-6e45a66fa3c5",
@@ -411,6 +435,14 @@
             "Value": {
                 "id": "b17e49e0-0d61-46d7-bf26-a18a5a9c90f0",
                 "resourcePath": "sprites\\sp_darken\\sp_darken.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "890a4d6d-99bf-476b-89c9-5719a1a5615d",
+            "Value": {
+                "id": "1ddf8977-3520-46ad-91ae-4d9e949744a2",
+                "resourcePath": "sprites\\sp_luxus\\sp_luxus.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -484,6 +516,14 @@
                 "id": "bb8e1544-b4bb-4f68-9370-c07dc9d3cd2e",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a384dd69-03cf-4063-bd13-5875fb7878e9",
+            "Value": {
+                "id": "7d94d2a3-8c41-4d9e-8155-e435b2b7f038",
+                "resourcePath": "sprites\\sp_infernum\\sp_infernum.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -572,6 +612,14 @@
                 "id": "408f6002-76c2-4925-bfe6-28c43fa3318f",
                 "resourcePath": "views\\c4460e39-ee68-44dd-8382-7f3f542ddbfb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c82e2f3b-8a89-46aa-885b-3ac5174de05e",
+            "Value": {
+                "id": "e059844c-cfaf-4a6d-85e5-b738da031844",
+                "resourcePath": "sprites\\sp_lilium_ore\\sp_lilium_ore.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -37,7 +37,7 @@ if (mouse_check_button(mb_left))
 		//var obj = instance_place(x,y,obj_block)
 		//instance_destroy(obj);
 	}
-	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_block)) && (!place_meeting(x,y,obj_player)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0)
+	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_block)) && (!place_meeting(x,y,obj_player)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0) && (obj_idb.type[obj_camera.inv_id[obj_camera.hotbar]] == 1)
 	{
 		scr_placeBlock(x,y,obj_camera.inv_id[obj_camera.hotbar]);
 		obj_camera.inv_amount[obj_camera.hotbar]--;
@@ -63,7 +63,7 @@ else if (mouse_check_button(mb_right)) //create and destroy back blocks
 		//var obj = instance_place(x,y,obj_block)
 		//instance_destroy(obj);
 	}
-	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_backblock)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0)
+	else if (obj_camera.mouse_mode == 1) && (!place_meeting(x,y,obj_backblock)) && (obj_camera.inv_amount[obj_camera.hotbar] > 0) && (obj_idb.type[obj_camera.inv_id[obj_camera.hotbar]] == 1)
 	{
 		scr_placeBlockBack(x,y,obj_camera.inv_id[obj_camera.hotbar]);
 		obj_camera.inv_amount[obj_camera.hotbar]--;
