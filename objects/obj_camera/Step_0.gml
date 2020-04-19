@@ -51,7 +51,9 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1)
 		obj_messenger.buildWidth = size+size0;
 		obj_messenger.stx = (d1v(mouse_x,blockSize) - size0)*blockSize;
 		obj_messenger.sty = (d1v(mouse_y,blockSize) - size0-size)*blockSize;
-		room_goto(2);
+		show_debug_message("Going");
+		obj_messenger.builder = instance_create_layer(0,0,"Instances",obj_buildManager);
+		//room_goto(2);
 		//alarm[0] = 1;
 		#endregion
 	}

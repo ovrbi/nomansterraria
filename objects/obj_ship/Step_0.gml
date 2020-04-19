@@ -2,17 +2,21 @@
 // You can write your code in this editor
 
 
-if (room == 1){
+if (room!=rm_space){
 	
 	//show_debug_message(phy_mass);
-if (phy_com_y < 0){
+if (y < 0){
 	persistent = true;
 	for (var i = 0; i < width;i++){
 		for (var j = 0; j<height;j++){
 			shipmatrix[i,j].persistent = true;
 		}
 	}
-	room_goto(3);
+	
+	obj_messenger.escapex = m0d(x,blockSize*worldWidth);
+	obj_messenger.planetfrom = obj_WorldManager.planetid;
+		
+	room_goto(rm_space);
 }
 
 

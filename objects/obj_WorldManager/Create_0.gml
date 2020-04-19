@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-seed = irandom_range(10000000,100000000);
+seed = obj_planet.seed;
 //#macro seed seedo
 /*#macro chunkSize 4
 #macro worldHeightc 64
@@ -13,15 +13,18 @@ seed = irandom_range(10000000,100000000);
 //show_debug_message(room);
 
 //loadstep = 0;
+planetid = obj_planet.type;
+
+show_debug_message("I'm here");
 
 debugChunk = false;
 
 //#macro blockSize sprite_get_width(sp_dirt2)
 maxHeight = (worldHeight * 3) div 4;
 
-save_map = ds_map_create();
-save_bmap = ds_map_create();
-save_emap = ds_map_create();
+save_map = obj_planet.save_map;
+save_bmap = obj_planet.save_bmap;
+save_emap = obj_planet.save_emap;
 //chunk_map = ds_map_create();
 //load_queue = ds_queue_create();
 //gen_cache = ds_map_create();

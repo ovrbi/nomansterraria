@@ -91,4 +91,4 @@ obj_messenger.maxHeight = maxHeight;
 obj_messenger.maxWidth = maxWidth;
 obj_messenger.buildmatrix = buildmatrix;
 obj_camera.alarm[0] = 1;
-room_goto(1);
+//room_goto(1);

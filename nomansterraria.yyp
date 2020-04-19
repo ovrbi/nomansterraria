@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "978d6cf3-a410-47ca-bb14-55852d6f545a",
+            "Value": {
+                "id": "5e71db72-9652-45ab-96b9-8d0025f934d7",
+                "resourcePath": "objects\\obj_planet\\obj_planet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "97d6eaac-63ff-45e3-ad76-a03e9af48f99",
             "Value": {
                 "id": "255b83f7-e892-41b0-8743-2b2db6f511f6",
@@ -1092,6 +1100,14 @@
                 "id": "390e8725-ce29-4ea6-acd3-0c9b05c9d1cc",
                 "resourcePath": "sprites\\sp_inventory_backlines\\sp_inventory_backlines.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d398e33d-0b98-447d-b0e9-30965306451c",
+            "Value": {
+                "id": "8555c8f8-e8b7-4111-a979-10130e9f585e",
+                "resourcePath": "objects\\obj_spaceManager\\obj_spaceManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
