@@ -3,13 +3,13 @@
 if (active){
 	//if (room == 1)
 	//show_debug_message(string(x)+";"+string(y));
-	if (trigger != 0) {
+	if (trigger != 0 && obj_player.onship == ship) {
 	
 	#region thruster
 	
 	//show_debug_message(string(obj_player.onship)+";"+string(ship));
 	
-	if (obj_player.onship == ship)
+	
 	if (idee == 2||idee == 3||idee == 4){
 		
 		var on = false;
