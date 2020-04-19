@@ -146,9 +146,16 @@ if (obj_camera.mouse_mode = 0)
 		}
 		else if (place_meeting(x,y,obj_craft_button))
 		{
-			if (parent.mat_amount[15] <= parent.mat_total[15]) && (parent.mat_amount[16] <= parent.mat_total[16]) && (parent.mat_amount[17] <= parent.mat_total[17])
+			var obj = instance_place(x,y,obj_craft_button);
+			if (obj.parent.mat_amount[15] <= obj.parent.mat_total[15]) && (obj.parent.mat_amount[16] <= obj.parent.mat_total[16]) && (obj.parent.mat_amount[17] <= obj.parent.mat_total[17])
 			{
+				scr_removeItem(obj.parent.slot_id[15], obj.parent.mat_amount[15]);
+				scr_removeItem(obj.parent.slot_id[16], obj.parent.mat_amount[16]);
+				scr_removeItem(obj.parent.slot_id[17], obj.parent.mat_amount[17]);
 				
+				scr_dropItem(obj_player.x, obj_player.y, obj.parent.slot_id[obj.parent.chosen], 1);
+				
+				scr_countMaterials(obj.parent);
 			}
 		}
 	}
