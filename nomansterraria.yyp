@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "2ea03e02-608a-44bb-9714-a53c88cbd552",
+            "Value": {
+                "id": "eba149ac-3463-46d1-bc41-389b0e318d23",
+                "resourcePath": "objects\\obj_shipbuild_rotate\\obj_shipbuild_rotate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31732c15-2412-4fda-a6c2-fc062a9c774c",
             "Value": {
                 "id": "085ccad9-2ce6-4fdf-9d5a-e0fc08d9a462",
@@ -847,6 +855,14 @@
             }
         },
         {
+            "Key": "a28f4e39-71b5-435b-a2d1-091020c18589",
+            "Value": {
+                "id": "2fa10fd0-aea7-4ab9-83ad-bfeceffe5283",
+                "resourcePath": "objects\\obj_shipbuild_slot\\obj_shipbuild_slot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a384dd69-03cf-4063-bd13-5875fb7878e9",
             "Value": {
                 "id": "7d94d2a3-8c41-4d9e-8155-e435b2b7f038",
@@ -892,6 +908,14 @@
                 "id": "d7d463ee-ee61-447b-922e-150616640e1f",
                 "resourcePath": "scripts\\scr_placeBlock\\scr_placeBlock.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "acecd980-fda4-47b5-8a17-d5983ce34d49",
+            "Value": {
+                "id": "22c57ff3-8e50-45f2-a65f-40756df57410",
+                "resourcePath": "objects\\obj_shipbuild_back\\obj_shipbuild_back.yy",
+                "resourceType": "GMObject"
             }
         },
         {
