@@ -13,7 +13,9 @@ seed = obj_planet.seed;
 //show_debug_message(room);
 
 //loadstep = 0;
-planetid = obj_planet.type;
+planettype = obj_planet.type;
+planetid = obj_planet.pid;
+
 
 show_debug_message("I'm here");
 

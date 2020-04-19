@@ -186,6 +186,7 @@ if (obj_camera.mouse_mode = 0)
 				if (obj.idee == 8)
 				{
 					//place ship
+					
 				}
 				obj_camera.shipbuild = -1;
 				instance_destroy(obj_shipbuild_back);

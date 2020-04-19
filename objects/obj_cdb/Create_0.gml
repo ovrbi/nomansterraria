@@ -42,6 +42,7 @@ productcount[num] = 1;
 num++;
 
 //Enhancer
+/*
 tool[num] = 0;
 ingredientid[num,0] = 17;
 ingredientcount[num,0] = 40;
@@ -51,9 +52,11 @@ ingredientid[num,2] = 0;
 ingredientcount[num,2] = 0;
 productid[num] = 23;
 productcount[num] = 1;
+*/
 num++;
 
 //Combat Machine
+/*
 tool[num] = 0;
 ingredientid[num,0] = 8;
 ingredientcount[num,0] = 35
@@ -63,8 +66,10 @@ ingredientid[num,2] = 0;
 ingredientcount[num,2] = 0;
 productid[num] = 24;
 productcount[num] = 1;
+*/
 num++;
 #endregion
+
 
 cum[1] = num;
 
