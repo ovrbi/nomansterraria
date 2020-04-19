@@ -11,6 +11,7 @@ if (argument2>0){
 			//instance_activate_object(block);
 			block.x=argument0;
 			block.y=argument1;
+			block.visible = true;
 		}
 		else{
 			block = instance_create_layer(argument0,argument1,"Instances",obj_block);
@@ -18,6 +19,7 @@ if (argument2>0){
 		block.sprite_index = obj_idb.sprite[argument2];
 		block.breaktime = obj_idb.bt[argument2];
 		block.idee = argument2;
+		
 		//block.parent = ds_map_find_value(obj_WorldManager.chunk_map,string(d1v(argument0,obj_WorldManager.chunkSize*obj_WorldManager.blockSize))+";"+string(d1v(argument1,obj_WorldManager.chunkSize*obj_WorldManager.blockSize)))
 		//var arr = ds_map_find_value(obj_WorldManager.chunk_map, string(d1v(argument0,convrate))+";"+string(d1v(argument1,convrate)),);
 		//arr[chunkSize*m0d(d1v(block.x,blockSize),chunkSize)+m0d(d1v(block.y,blockSize),chunkSize)] = block;

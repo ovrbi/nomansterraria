@@ -8,6 +8,9 @@ seed = irandom_range(10000000,100000000);
 #macro worldWidthc 64
 #macro worldWidth worldWidthc*chunkSize
 #macro convrate (chunkSize*blockSize)
+#macro maxShipLength 16
+
+//show_debug_message(room);
 
 //loadstep = 0;
 

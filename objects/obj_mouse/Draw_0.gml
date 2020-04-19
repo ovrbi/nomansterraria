@@ -30,8 +30,8 @@ else
 	var desc = "";
 	if (place_meeting(x,y,obj_inventory_button))
 	{
-		if (obj_camera.inv_expand == -1) name = "Expand Inventory (E)";
-		else name = "Collapse Inventory (E)";
+		if (obj_camera.inv_expand == -1) name = "Expand Inventory (Tab)";
+		else name = "Collapse Inventory (Tab)";
 	}
 	else if (table != 0) && (obj_camera.inv_expand == -1)
 	{

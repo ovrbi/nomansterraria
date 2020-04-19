@@ -14,6 +14,7 @@ if (argument2>0)
 			//instance_activate_object(block);
 			block.x=argument0;
 			block.y=argument1;
+			block.visible = true;
 		}
 		else
 		{

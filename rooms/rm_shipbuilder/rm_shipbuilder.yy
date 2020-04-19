@@ -2,12 +2,12 @@
 {
     "name": "rm_shipbuilder",
     "id": "7e352e5e-3a60-455a-98bb-aeb7a89ba4c8",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-
+        "006a4873-a4b9-4d6f-87d6-d2640f8411cd"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_145BAFCA","id": "006a4873-a4b9-4d6f-87d6-d2640f8411cd","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_145BAFCA","objId": "6771a14d-60c9-4095-95b5-d28d21bda58f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 64,"y": -1024}
             ],
             "layers": [
 

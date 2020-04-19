@@ -14,11 +14,49 @@ camera_set_view_pos(view_camera[0],x-160,y-90);
 
 if (keyboard_check_pressed(ord("E")))
 {
-	if (obj_mouse.table != 0) && (obj_camera.inv_expand == -1)
-	{
+	if (obj_mouse.table == 22){
+		#region shipbuild
+		var size = 1;
+		var size0 = 0;
+		var obj;
+		for (var i = 1; i<=maxShipLength;i++){
+			if (position_meeting(mouse_x + i * blockSize,mouse_y,obj_block)){
+				obj = collision_point(mouse_x + i * blockSize,mouse_y,obj_block, false, true);
+				if (obj.idee == 9) size++;
+				else i = maxShipLength + 1;
+			}
+			else i = maxShipLength + 1;
+		}
+		for (var i = 1; i<=maxShipLength;i++){
+			if (position_meeting(mouse_x - i * blockSize,mouse_y,obj_block)){
+				obj = collision_point(mouse_x - i * blockSize,mouse_y,obj_block, false, true);
+				if (obj.idee == 9) size0++;
+				else i = maxShipLength + 1;
+			}
+			else i = maxShipLength + 1;
+		}
 		
+		/*
+		var object = collision_rectangle((d1v(mouse_x,blockSize)- size0)*blockSize,d1v(mouse_y,blockSize)*blockSize,(d1v(mouse_x,blockSize)+ size+1)*blockSize,(d1v(mouse_y,blockSize) - size-size0)*blockSize, obj_ship, false, true);
+		if (object!=noone) {
+			object.persistent = true;
+		}
+		obj_messenger.ship = object;
+		*/
+		obj_messenger.ship = noone;
+		
+		obj_messenger.buildWidth = size+size0;
+		obj_messenger.stx = (d1v(mouse_x,blockSize) - size0)*blockSize;
+		obj_messenger.sty = (d1v(mouse_y,blockSize) - size0-size)*blockSize;
+		room_goto(2);
+		alarm[0] = 1;
+		#endregion
 	}
-	else obj_camera.inv_expand = -obj_camera.inv_expand;
+	
+	
+}
+if (keyboard_check_pressed(vk_tab)){
+	obj_camera.inv_expand = -obj_camera.inv_expand;
 }
 
 //inventry positioning

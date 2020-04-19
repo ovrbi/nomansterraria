@@ -24,6 +24,7 @@ drop.idee = obj_idb.drop[block.idee];
 if (block.layer == 6) ds_queue_enqueue( obj_WorldManager.block_pool,block);
 else if (block.layer == 7) ds_queue_enqueue( obj_WorldManager.backblock_pool,block);
 block.y=-10000;
+block.visible= false;
 
 	//instance_deactivate_object(block);
 //}
