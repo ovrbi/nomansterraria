@@ -27,6 +27,7 @@ save_emap = ds_map_create();
 //gen_cache = ds_map_create();
 block_pool = ds_queue_create();
 backblock_pool = ds_queue_create();
+force_pool = ds_queue_create();
 
 
 

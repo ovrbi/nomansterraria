@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (active){
-	if (room == 1)
-	show_debug_message(string(x)+";"+string(y));
+	//if (room == 1)
+	//show_debug_message(string(x)+";"+string(y));
 	
 	#region thruster
 	if (idee == 2||idee == 3||idee == 4){
@@ -23,10 +23,18 @@ if (active){
 		
 		}
 		
-		if (idee = 4 && room != 3) on = false;
 		
+		
+		if (idee = 4 && room != 3) on = false;
+		var tdir = dir;
+		var tlx = lx;
+		var tly = ly;
+		if (on)
 		with (ship){
-			//physics_apply_force();
+			show_debug_message("aaaaaa");
+			physics_apply_local_impulse(tlx,tly,((tdir-1)mod 2),((tdir-2)mod 2));
+			//physics_apply_local_impulse(tlx,tly,0,-10);
+			
 		}
 		
 	}

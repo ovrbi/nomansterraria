@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message(obj_messenger.buildWidth);
+//show_debug_message(obj_messenger.buildWidth);
 maxWidth = obj_messenger.buildWidth;
 maxHeight = maxWidth;
 
@@ -35,4 +35,11 @@ if (maxWidth = 5){
 	scr_placepart(blockSize*1, blockSize*4, 1, 2, ship);
 	
 	scr_placepart(blockSize*3, blockSize*4, 1, 2, ship);
+}
+
+if (maxWidth == 4){
+	scr_placepart(0,0,0,0,ship);
+	scr_placepart(0,blockSize,0,0,ship);
+	scr_placepart(0,blockSize*2,0,0,ship);
+	scr_placepart(0,blockSize*3,0,0,ship);
 }
