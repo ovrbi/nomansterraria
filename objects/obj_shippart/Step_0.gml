@@ -3,6 +3,7 @@
 if (active){
 	//if (room == 1)
 	//show_debug_message(string(x)+";"+string(y));
+	if (trigger != 0) {
 	
 	#region thruster
 	
@@ -33,6 +34,25 @@ if (active){
 	}
 	#endregion
 	
+	#region stablizer
+	if (idee == 5){
+	if (keyboard_check_pressed(trigger)) {
+		stabactive = !stabactive;
+		
+	}
+	
+	if (stabactive) {
+	
+	var targetangle = image_angle - angle;
+	with (ship){
+		show_debug_message((targetangle - phy_rotation)*100);
+		physics_apply_torque((targetangle - phy_rotation)*100);
+	}
+		
+	}
+	}
+	#endregion
+	
 	#region drill
 	
 	if (idee == 6){
@@ -54,4 +74,6 @@ if (active){
 	}
 	
 	#endregion
+	
+	}
 }

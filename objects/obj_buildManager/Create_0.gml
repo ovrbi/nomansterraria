@@ -82,4 +82,7 @@ if (maxWidth == 6){
 	
 	scr_placepart(blockSize*0, blockSize*3, 0, 2,ord("D"));
 	scr_placepart(blockSize*5, blockSize*3, 2, 2,ord("A"));
+	
+	scr_placepart(blockSize*2, blockSize*3, 0, 5,ord("Q"));
+	scr_placepart(blockSize*3, blockSize*3, 2, 5,ord("Q"));
 }

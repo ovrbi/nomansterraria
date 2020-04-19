@@ -108,5 +108,6 @@ while (!ds_stack_empty(ministack)){
 	part0.lx = part0.x-x;
 	part0.ly = part0.y-y;
 	part0.active = true;
+	
 	//show_debug_message(dangle);
 }
