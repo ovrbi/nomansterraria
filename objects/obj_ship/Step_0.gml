@@ -5,7 +5,13 @@
 if (room == 1){
 	
 	//show_debug_message(phy_mass);
+if (phy_com_y < 0){
 	
+}
+
+
+
+
 var _list = ds_list_create();
 var _num = collision_circle_list(phy_com_x, phy_com_y, radius*2, obj_block, false, false, _list, false);
 
@@ -22,7 +28,7 @@ if _num > 0
 				//show_debug_message("aaaaa");
 				if (ds_queue_empty(obj_WorldManager.force_pool)){
 					forcefield = instance_create_layer(d1v(object.x,blockSize)*blockSize,d1v(object.y,blockSize)*blockSize,"Break",obj_force);
-					show_debug_message("new");
+					//show_debug_message("new");
 				}
 				else {
 					forcefield = ds_queue_dequeue(obj_WorldManager.force_pool);

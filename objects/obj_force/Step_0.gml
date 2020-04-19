@@ -4,7 +4,7 @@
 if (enabled > 0)
 if (!place_meeting(x,y,obj_block)||distance_to_object(ship)>ship.radius*4){
 ds_queue_enqueue(obj_WorldManager.force_pool,id);
-	show_debug_message(string(place_meeting(x,y,obj_block))+"aaaa"+string(distance_to_object(ship)>ship.radius*4));
+	//show_debug_message(string(place_meeting(x,y,obj_block))+"aaaa"+string(distance_to_object(ship)>ship.radius*4));
 	enabled --;
 }
 	
