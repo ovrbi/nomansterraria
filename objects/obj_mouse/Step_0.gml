@@ -15,10 +15,10 @@ if (place_meeting(x,y,obj_block))
 }
 
 //check if mouse on ship
-if (keyboard_check_pressed(ord("E"))){
-	
-obj_player.onship = 0;
-if (place_meeting(x,y,obj_shippart)) obj_player.onship = collision_point(x,y,obj_shippart,false, false).ship;
+if (keyboard_check_pressed(ord("E")))
+{	
+	obj_player.onship = 0;
+	if (place_meeting(x,y,obj_shippart)) obj_player.onship = collision_point(x,y,obj_shippart,false, false).ship;
 }
 
 if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
@@ -105,7 +105,7 @@ if (obj_camera.mouse_mode = 0)
 		else if (place_meeting(x,y,obj_craft_slot))
 		{
 			var obj = instance_place(x,y,obj_craft_slot);
-			if (obj.idee <= 14)
+			if (obj.idee <= 14) && (obj.parent.slot_id[obj.idee] != 0)
 			{
 				obj.parent.chosen = obj.idee;
 				
@@ -116,16 +116,26 @@ if (obj_camera.mouse_mode = 0)
 					obj.parent.slot_id[i] = 0;
 					obj.parent.mat_amount[i] = 0;
 	
-					if (obj_cdb.cum[obj.parent.idee-20]+obj.idee < obj_cdb.cum[obj.parent.idee-19]){
-					obj.parent.slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
-					if (obj.parent.slot_id[i]!= 0) obj.parent.mat_count++;
-					obj.parent.mat_amount[i] = obj_cdb.ingredientcount[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
+					if (obj_cdb.cum[obj.parent.idee-20]+obj.idee < obj_cdb.cum[obj.parent.idee-19])
+					{
+						obj.parent.slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
+						if (obj.parent.slot_id[i]!= 0) obj.parent.mat_count++;
+						obj.parent.mat_amount[i] = obj_cdb.ingredientcount[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
 					}
 					
-					
+					/*obj.parent.mat_total[i] = 0;
+					for (var j = 0; j <= 50; j++)
+					{
+						if (obj_camera.inv_id[j] == obj.parent.slot_id[i])
+						{
+							obj.parent.mat_total[i] += obj_camera.inv_amount[j];
+						}
+					}*/
 					
 				}
 				if (obj.parent.mat_count == 0) obj.parent.mat_count = 1;
+				
+				scr_countMaterials(obj.parent);
 				
 			}
 		}
@@ -133,6 +143,13 @@ if (obj_camera.mouse_mode = 0)
 		{
 			var obj = instance_place(x,y,obj_craft_close);
 			obj.parent.destroy = 1;
+		}
+		else if (place_meeting(x,y,obj_craft_button))
+		{
+			if (parent.mat_amount[15] <= parent.mat_total[15]) && (parent.mat_amount[16] <= parent.mat_total[16]) && (parent.mat_amount[17] <= parent.mat_total[17])
+			{
+				
+			}
 		}
 	}
 }

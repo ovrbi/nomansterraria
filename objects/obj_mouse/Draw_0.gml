@@ -33,10 +33,19 @@ else
 		if (obj_camera.inv_expand == -1) name = "Expand Inventory (Tab)";
 		else name = "Collapse Inventory (Tab)";
 	}
-	else if (table != 0) && (obj_camera.inv_expand == -1)
+	else if (table != 0) && (obj_camera.inv_expand == -1) && (obj_camera.crafting == -1)
 	{
 		name = obj_idb.name[table];
 		desc = "(E) to open."
+	}
+	else if (place_meeting(x,y,obj_craft_slot))
+	{
+		var obj = instance_place(x,y,obj_craft_slot);
+		if (obj.parent.slot_id[obj.idee] > 0)
+		{
+			name = obj_idb.name[obj.parent.slot_id[obj.idee]];
+			desc = obj_idb.desc[obj.parent.slot_id[obj.idee]];
+		}
 	}
 	else if (place_meeting(x,y,obj_inventory_slot))
 	{
@@ -73,15 +82,6 @@ else
 				name = "Player Enhancement Slot";
 				desc = "It's empty."
 			}
-		}
-	}
-	else if (place_meeting(x,y,obj_craft_slot))
-	{
-		var obj = instance_place(x,y,obj_craft_slot);
-		if (obj.parent.slot_id[obj.idee] > 0)
-		{
-			name = obj_idb.name[obj.parent.slot_id[obj.idee]];
-			desc = obj_idb.desc[obj.parent.slot_id[obj.idee]];
 		}
 	}
 	

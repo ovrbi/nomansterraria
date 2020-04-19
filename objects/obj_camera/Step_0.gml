@@ -14,9 +14,10 @@ if (instance_exists(obj_player))
 camera_set_view_pos(view_camera[0],x-160,y-90);
 if (room == 3) camera_set_view_angle(view_camera[0],image_angle);
 
-if (keyboard_check_pressed(ord("E")))
+if (keyboard_check_pressed(ord("E"))) && (crafting == -1)
 {
-	if (obj_mouse.table == 22){
+	if (obj_mouse.table == 22)
+	{
 		#region shipbuild
 		var size = 1;
 		var size0 = 0;

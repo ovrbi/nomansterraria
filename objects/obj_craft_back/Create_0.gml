@@ -3,6 +3,7 @@
 image_speed = 0;
 
 
+chosen = 0;
 idee = obj_mouse.table;
 for (var i = 0; i <= 14; i++)
 {
@@ -28,10 +29,11 @@ for (var i = 15; i <= 17; i++)
 	slot_id[i] = 0;
 	mat_amount[i] = 0;
 	
-	if (obj_cdb.cum[idee-20]+4 < obj_cdb.cum[idee-19]){
-	slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[idee-20]+4,i-15];
-	if (slot_id[i]!= 0) mat_count++;
-	mat_amount[i] = obj_cdb.ingredientcount[obj_cdb.cum[idee-20]+4,i-15];
+	if (obj_cdb.cum[idee-20]+4 < obj_cdb.cum[idee-19])
+	{
+		slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[idee-20]+chosen,i-15];
+		if (slot_id[i]!= 0) mat_count++;
+		mat_amount[i] = obj_cdb.ingredientcount[obj_cdb.cum[idee-20]+chosen,i-15];
 	}
 	slot[i] = instance_create_layer(x,y,"UI",obj_craft_slot);
 	slot[i].idee = i;
@@ -40,7 +42,13 @@ for (var i = 15; i <= 17; i++)
 if (mat_count == 0) mat_count = 1;
 //mat_count = 3; //[1; 3]
 
-chosen = 4;
+/*for (var i = 15; i <= 17; i++) //total available material
+{
+	mat_total[i] = 0;
+}*/
+scr_countMaterials(id);
+
+
 
 
 destroy = 0;
