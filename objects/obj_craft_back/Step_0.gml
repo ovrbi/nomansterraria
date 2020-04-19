@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+//show_debug_message("aaaaa");
 
 if (destroy == 1)
 {
@@ -62,13 +63,14 @@ else if (mat_count == 2)
 			else slot[i].sprite_index = sp_inventory_slot2;
 		}
 	}
+	
 }
 else if (mat_count == 1)
 {
-	if (instance_exists(slot[i]))
+	if (instance_exists(slot[15]))
 	{
-		slot[i].x = x + 9 + (i-15)*30;
-		slot[i].y = y - 31;
-		slot[i].sprite_index = sp_inventory_slot3;
+		slot[15].x = x + 33;
+		slot[15].y = y - 31;
+		slot[15].sprite_index = sp_inventory_slot3;
 	}
 }

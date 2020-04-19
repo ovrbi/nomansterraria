@@ -57,7 +57,7 @@ if (keyboard_check_pressed(ord("E")))
 		if (instance_exists(obj_craft_back)) instance_destroy(craft_back);
 		crafting = 1;
 		craft_back = instance_create_layer(x,y,"UI_back",obj_craft_back);
-		craft_back.idee = obj_mouse.table;
+		//craft_back.idee = obj_mouse.table;
 	}
 	
 }

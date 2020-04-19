@@ -97,15 +97,34 @@ if (obj_camera.mouse_mode = 0)
 		}
 		else if (place_meeting(x,y,obj_craft_slot))
 		{
-			var obj = instance_place(x,y,obj_craft_slot)
+			var obj = instance_place(x,y,obj_craft_slot);
 			if (obj.idee <= 14)
 			{
 				obj.parent.chosen = obj.idee;
+				
+				
+				obj.parent.mat_count = 0;
+				for (var i = 15; i <= 17; i++)
+				{
+					obj.parent.slot_id[i] = 0;
+					obj.parent.mat_amount[i] = 0;
+	
+					if (obj_cdb.cum[obj.parent.idee-20]+obj.idee < obj_cdb.cum[obj.parent.idee-19]){
+					obj.parent.slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
+					if (obj.parent.slot_id[i]!= 0) obj.parent.mat_count++;
+					obj.parent.mat_amount[i] = obj_cdb.ingredientcount[obj_cdb.cum[obj.parent.idee-20]+obj.idee,i-15];
+					}
+					
+					
+					
+				}
+				if (obj.parent.mat_count == 0) obj.parent.mat_count = 1;
+				
 			}
 		}
 		else if (place_meeting(x,y,obj_craft_close))
 		{
-			var obj = instance_place(x,y,obj_craft_close)
+			var obj = instance_place(x,y,obj_craft_close);
 			obj.parent.destroy = 1;
 		}
 	}
