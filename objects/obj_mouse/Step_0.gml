@@ -103,6 +103,11 @@ if (obj_camera.mouse_mode = 0)
 				obj.parent.chosen = obj.idee;
 			}
 		}
+		else if (place_meeting(x,y,obj_craft_close))
+		{
+			var obj = instance_place(x,y,obj_craft_close)
+			obj.parent.destroy = 1;
+		}
 	}
 }
 

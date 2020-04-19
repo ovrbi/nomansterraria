@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "4ae13b58-6f8c-476b-be68-a0affa92392e",
+            "Value": {
+                "id": "0566fca8-d356-4b51-854d-8b1920d751bc",
+                "resourcePath": "objects\\obj_craft_close\\obj_craft_close.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b7ff662-3b89-4c69-a49e-571655b8e412",
             "Value": {
                 "id": "413d6390-5c21-4cf8-9bac-c17c10d9ea47",
@@ -476,6 +484,14 @@
                 "id": "8ed2bf16-9929-497d-8d30-baedffe1871e",
                 "resourcePath": "objects\\obj_entity\\obj_entity.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "65cfbd06-72e1-451c-b308-7f5c24b5f204",
+            "Value": {
+                "id": "c139cc62-d7a0-421c-a425-2096424efb77",
+                "resourcePath": "sprites\\sp_craft_close\\sp_craft_close.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

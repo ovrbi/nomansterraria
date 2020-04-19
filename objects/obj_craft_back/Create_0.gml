@@ -14,6 +14,9 @@ for (var i = 0; i <= 14; i++)
 slot_id[6] = 28;
 
 button = instance_create_layer(x,y,"UI",obj_craft_button);
+button.parent = id;
+close = instance_create_layer(x,y,"UI",obj_craft_close);
+close.parent = id;
 
 for (var i = 15; i <= 17; i++)
 {
@@ -27,3 +30,6 @@ for (var i = 15; i <= 17; i++)
 mat_count = 3; //[1; 3]
 
 chosen = 4;
+
+
+destroy = 0;

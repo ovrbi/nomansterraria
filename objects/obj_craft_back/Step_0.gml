@@ -1,6 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (destroy == 1)
+{
+	obj_camera.crafting = -1;
+	for (var i = 0; i <= 17; i++)
+	{
+		instance_destroy(slot[i]);
+	}
+	instance_destroy(button);
+	instance_destroy(close);
+	instance_destroy();
+}
+
 for (var j = 0; j <= 4; j++)
 {
 	for (var i = 0; i <= 2; i++)
@@ -17,6 +29,11 @@ if (instance_exists(button))
 {
 	button.x = x + 33;
 	button.y = y + 42;
+}
+if (instance_exists(close))
+{
+	close.x = x + 75;
+	close.y = y - 52;
 }
 
 if (mat_count == 3)
