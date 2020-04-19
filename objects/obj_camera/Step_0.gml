@@ -28,7 +28,7 @@ else
 camera_set_view_pos(view_camera[0],x-160,y-90);
 if (room == 3) camera_set_view_angle(view_camera[0],image_angle);
 
-if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1)
+if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) && (shipbuild == -1)
 {
 	if (obj_mouse.table == 22)
 	{

@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "8bb96851-379e-424c-9ed9-8b3e0c5814e0",
+            "Value": {
+                "id": "9962c5e6-3338-4ec0-a331-c8aa358203ec",
+                "resourcePath": "objects\\obj_shipbuildpart\\obj_shipbuildpart.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8ef623c1-8d0c-4cce-8047-12c6b22f7497",
             "Value": {
                 "id": "b01b44b0-361d-418f-90f0-dfc3c393abd7",
@@ -811,6 +819,14 @@
             "Value": {
                 "id": "45e0ae5c-a8bf-4a30-ab48-acf6c87f4b39",
                 "resourcePath": "objects\\obj_inventory_button\\obj_inventory_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "978d6cf3-a410-47ca-bb14-55852d6f545a",
+            "Value": {
+                "id": "5e71db72-9652-45ab-96b9-8d0025f934d7",
+                "resourcePath": "objects\\obj_planet\\obj_planet.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1100,6 +1116,14 @@
                 "id": "390e8725-ce29-4ea6-acd3-0c9b05c9d1cc",
                 "resourcePath": "sprites\\sp_inventory_backlines\\sp_inventory_backlines.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d398e33d-0b98-447d-b0e9-30965306451c",
+            "Value": {
+                "id": "8555c8f8-e8b7-4111-a979-10130e9f585e",
+                "resourcePath": "objects\\obj_spaceManager\\obj_spaceManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {

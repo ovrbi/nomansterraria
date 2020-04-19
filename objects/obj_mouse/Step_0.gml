@@ -177,6 +177,30 @@ if (obj_camera.mouse_mode = 0)
 				scr_countMaterials(obj.parent);
 			}
 		}
+		else if (place_meeting(x,y,obj_shipbuild_slot))
+		{
+			var obj = instance_place(x,y,obj_shipbuild_slot);
+			if (obj.idee < 8) obj_shipbuild_parent.select = obj.idee;
+			else
+			{
+				if (obj.idee == 8)
+				{
+					//place ship
+				}
+				obj_camera.shipbuild = -1;
+				instance_destroy(obj_shipbuild_back);
+				instance_destroy(obj_shipbuild_slot);
+				instance_destroy(obj_shipbuild_rotate);
+				instance_destroy(obj_shipbuild_parent);
+				instance_destroy(obj_shipbuildpart);
+			}
+		}
+		else if (place_meeting(x,y,obj_shipbuild_rotate))
+		{
+			var obj = instance_place(x,y,obj_shipbuild_rotate);
+			if (obj.idee = 0) obj_shipbuild_parent.rot -= 90;
+			else obj_shipbuild_parent.rot += 90;
+		}
 	}
 }
 
