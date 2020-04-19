@@ -14,9 +14,9 @@ if (obj_camera.mouse_mode == 1)
 	{
 		if (place_meeting(x,y,obj_block)) || (canshipbuild = 0)
 		{
-			draw_sprite_ext(obj_sdb.sprite[obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select]],obj_shipbuild_parent.rot,x,y,1,1,0,c_red,.5);
+			draw_sprite_ext(obj_sdb.sprite[obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select]],0,x,y,1,1,obj_shipbuild_parent.rot,c_red,.5);
 		}
-		else draw_sprite_ext(obj_sdb.sprite[obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select]],obj_shipbuild_parent.rot,x,y,1,1,0,c_white,.5);
+		else draw_sprite_ext(obj_sdb.sprite[obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select]],0,x,y,1,1,obj_shipbuild_parent.rot,c_white,.5);
 	}
 }
 draw_self();

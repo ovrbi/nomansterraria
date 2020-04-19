@@ -67,6 +67,8 @@ if (mouse_check_button(mb_left))
 			var obj = instance_create_layer(x,y,"Instances",obj_shipbuildpart);
 			obj.idee = obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select];
 			obj.sprite_index = obj_sdb.sprite[obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select]];
+			obj.rot = obj_shipbuild_parent.rot;
+			obj.image_angle = obj_shipbuild_parent.rot;
 		}
 	}
 }
