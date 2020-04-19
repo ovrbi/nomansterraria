@@ -351,10 +351,10 @@
             }
         },
         {
-            "Key": "49bb198c-38c7-4dcd-9c7c-3538f1024b54",
+            "Key": "4ae13b58-6f8c-476b-be68-a0affa92392e",
             "Value": {
-                "id": "db2a0166-ce33-4d15-aa4a-bb2fecf55cc2",
-                "resourcePath": "objects\\obj_dynamic\\obj_dynamic.yy",
+                "id": "0566fca8-d356-4b51-854d-8b1920d751bc",
+                "resourcePath": "objects\\obj_craft_close\\obj_craft_close.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -484,6 +484,14 @@
                 "id": "8ed2bf16-9929-497d-8d30-baedffe1871e",
                 "resourcePath": "objects\\obj_entity\\obj_entity.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "65cfbd06-72e1-451c-b308-7f5c24b5f204",
+            "Value": {
+                "id": "c139cc62-d7a0-421c-a425-2096424efb77",
+                "resourcePath": "sprites\\sp_craft_close\\sp_craft_close.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

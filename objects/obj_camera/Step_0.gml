@@ -52,7 +52,13 @@ if (keyboard_check_pressed(ord("E")))
 		alarm[0] = 1;
 		#endregion
 	}
-	
+	else if (obj_mouse.table != 0) //call actual crafting UI
+	{
+		if (instance_exists(obj_craft_back)) instance_destroy(craft_back);
+		crafting = 1;
+		craft_back = instance_create_layer(x,y,"UI_back",obj_craft_back);
+		craft_back.idee = obj_mouse.table;
+	}
 	
 }
 if (keyboard_check_pressed(vk_tab)){
@@ -146,6 +152,13 @@ if (instance_exists(inv_button))
 		inv_button.x = x;
 		inv_button.y = y+21;
 	}
+}
+
+//crafting positioning
+if (crafting = 1) && (instance_exists(craft_back))
+{
+	craft_back.x = x;
+	craft_back.y = y;
 }
 
 //hotbar shenanigans

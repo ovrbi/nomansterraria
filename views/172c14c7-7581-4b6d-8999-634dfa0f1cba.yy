@@ -9,7 +9,8 @@
         "949325ec-bb16-497b-9985-4eaa5839ed84",
         "063b4a91-bdd7-4720-ab3d-ec78bb1aad3e",
         "164462e0-68dc-4d5f-a3df-e0f3e2f4e6ec",
-        "09a04c83-b188-470a-8da1-066f2cb80b65"
+        "09a04c83-b188-470a-8da1-066f2cb80b65",
+        "4ae13b58-6f8c-476b-be68-a0affa92392e"
     ],
     "filterType": "GMObject",
     "folderName": "inventory UI",
