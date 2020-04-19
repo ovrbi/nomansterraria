@@ -78,3 +78,22 @@ for (var i = 1; i <= 3; i++)
 inv_button = instance_create_layer(x,y,"UI",obj_inventory_button);
 inv[0].image_index = 1;
 inv[5].sprite_index = sp_inventory_MM;
+
+
+//crafting
+crafting = -1; //-1 = closed; 1 = open
+craft_back = -1; //back object
+
+
+
+
+
+
+
+
+
+
+
+
+
+

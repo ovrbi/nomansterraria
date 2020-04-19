@@ -75,6 +75,15 @@ else
 			}
 		}
 	}
+	else if (place_meeting(x,y,obj_craft_slot))
+	{
+		var obj = instance_place(x,y,obj_craft_slot);
+		if (obj.parent.slot_id[obj.idee] > 0)
+		{
+			name = obj_idb.name[obj.parent.slot_id[obj.idee]];
+			desc = obj_idb.desc[obj.parent.slot_id[obj.idee]];
+		}
+	}
 	
 	if (name != "")
 	{

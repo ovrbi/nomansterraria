@@ -14,7 +14,7 @@ if (place_meeting(x,y,obj_block))
 	}
 }
 
-if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) //|| (table == 1)
+if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
 {
 	obj_camera.mouse_mode = 0;
 }
@@ -93,6 +93,14 @@ if (obj_camera.mouse_mode = 0)
 						stored_spot = obj.idee;
 					}
 				}
+			}
+		}
+		else if (place_meeting(x,y,obj_craft_slot))
+		{
+			var obj = instance_place(x,y,obj_craft_slot)
+			if (obj.idee <= 14)
+			{
+				obj.parent.chosen = obj.idee;
 			}
 		}
 	}
