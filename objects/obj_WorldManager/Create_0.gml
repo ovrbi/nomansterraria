@@ -2,13 +2,13 @@
 // You can write your code in this editor
 seed = irandom_range(10000000,100000000);
 //#macro seed seedo
-#macro chunkSize 4
+/*#macro chunkSize 4
 #macro worldHeightc 64
 #macro worldHeight worldHeightc*chunkSize
 #macro worldWidthc 64
 #macro worldWidth worldWidthc*chunkSize
 #macro convrate (chunkSize*blockSize)
-#macro maxShipLength 16
+#macro maxShipLength 16*/
 
 //show_debug_message(room);
 
@@ -16,7 +16,7 @@ seed = irandom_range(10000000,100000000);
 
 debugChunk = false;
 
-#macro blockSize sprite_get_width(sp_dirt2)
+//#macro blockSize sprite_get_width(sp_dirt2)
 maxHeight = (worldHeight * 3) div 4;
 
 save_map = ds_map_create();

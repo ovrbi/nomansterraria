@@ -4,6 +4,8 @@
 maxWidth = obj_messenger.buildWidth;
 maxHeight = maxWidth;
 
+
+
 for (var i = 0; i < maxWidth;i++)
 	for (var j = 0; j < maxHeight; j++)
 	buildmatrix[i,j] = 0;
@@ -23,14 +25,18 @@ else {
 
 //TEMPORARY
 show_debug_message("TEMPORARY FEATURE IN PROGRESS");
-if (maxWidth = 5){
-	scr_placepart(blockSize*2, 0, 0, 0);
+if (maxWidth == 5){
+	scr_placepart(blockSize*2, 0, 3, 6);
 	scr_placepart(blockSize*1, blockSize*1, 0, 0);
 	scr_placepart(blockSize*2, blockSize*1, 0, 0);
 	scr_placepart(blockSize*3, blockSize*1, 0, 0);
 	scr_placepart(blockSize*1, blockSize*2, 0, 0);
 	scr_placepart(blockSize*2, blockSize*2, 0, 0);
 	scr_placepart(blockSize*3, blockSize*2, 0, 0);
+	
+	scr_placepart(blockSize*0, blockSize*1, 0, 2);
+	scr_placepart(blockSize*4, blockSize*1, 2, 2);
+	
 	scr_placepart(blockSize*1, blockSize*3, 0, 0);
 	scr_placepart(blockSize*2, blockSize*3, 0, 0);
 	scr_placepart(blockSize*3, blockSize*3, 0, 0);

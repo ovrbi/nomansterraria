@@ -6,6 +6,16 @@ if (swipe_time > 0) swipe_time--;
 if (hit > 0) hit -= .05;
 if (stun > 0) stun -= .1;
 
+if (onship!= 0){
+	x = onship.phy_com_x;
+	y = onship.phy_com_y;
+	image_angle = -(onship.image_angle + 90);
+	visible = false;
+	//show_debug_message(image_angle);
+}
+else {
+	visible = true;
+	image_angle = 0;
 //movement
 if (obj_camera.mode = 0)
 {
@@ -126,6 +136,7 @@ if (place_meeting(x,y+ysp,obj_collisionparent))
 }
 y += ysp;
 if (ysp = 0) y = round(y);
+}
 
 //depth = -y;
 

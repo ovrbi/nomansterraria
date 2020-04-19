@@ -5,6 +5,10 @@ if (active){
 	//show_debug_message(string(x)+";"+string(y));
 	
 	#region thruster
+	
+	//show_debug_message(string(obj_player.onship)+";"+string(ship));
+	
+	if (obj_player.onship == ship)
 	if (idee == 2||idee == 3||idee == 4){
 		var on = false;
 		switch (dir){
@@ -31,8 +35,8 @@ if (active){
 		var tly = ly;
 		if (on)
 		with (ship){
-			show_debug_message("aaaaaa");
-			physics_apply_local_impulse(tlx,tly,((tdir-1)mod 2)/10,((tdir-2)mod 2)/10);
+			//show_debug_message("aaaaaa");
+			physics_apply_local_impulse(tlx,tly,-1*((tdir-1)mod 2)*50,((tdir-2)mod 2)*50);
 			//physics_apply_local_impulse(tlx,tly,0,-10);
 			
 		}

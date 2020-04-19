@@ -1,9 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 if (room == 1){
 	
+	//show_debug_message(phy_mass);
+	
 var _list = ds_list_create();
-var _num = collision_circle_list(x, y, radius, obj_block, false, false, _list, false);
+var _num = collision_circle_list(phy_com_x, phy_com_y, radius, obj_block, false, false, _list, false);
 
 if _num > 0
     {
@@ -24,6 +28,7 @@ if _num > 0
 				}
 				forcefield.phy_position_x = d1v(object.x,blockSize)*blockSize;
 				forcefield.phy_position_y = d1v(object.y,blockSize)*blockSize;
+				forcefield.phy_active = true;
 				forcefield.ship = id;
 				instance_activate_object(forcefield);
 			}

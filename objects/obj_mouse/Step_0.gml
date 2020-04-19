@@ -14,6 +14,13 @@ if (place_meeting(x,y,obj_block))
 	}
 }
 
+//check if mouse on ship
+if (keyboard_check_pressed(ord("E"))){
+	
+obj_player.onship = 0;
+if (place_meeting(x,y,obj_shippart)) obj_player.onship = collision_point(x,y,obj_shippart,false, false).ship;
+}
+
 if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
 {
 	obj_camera.mouse_mode = 0;

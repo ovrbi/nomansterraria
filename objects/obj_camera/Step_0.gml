@@ -8,9 +8,11 @@ if (instance_exists(obj_player))
     ymove = round((obj_player.y - y) / 10 * 4) / 4;
     x += xmove;
     y += ymove;
+	image_angle = obj_player.image_angle;
 }
 
 camera_set_view_pos(view_camera[0],x-160,y-90);
+if (room == 3) camera_set_view_angle(view_camera[0],image_angle);
 
 if (keyboard_check_pressed(ord("E")))
 {
@@ -59,6 +61,9 @@ if (keyboard_check_pressed(ord("E")))
 		craft_back = instance_create_layer(x,y,"UI_back",obj_craft_back);
 		//craft_back.idee = obj_mouse.table;
 	}
+	
+	
+	
 	
 }
 if (keyboard_check_pressed(vk_tab)){
