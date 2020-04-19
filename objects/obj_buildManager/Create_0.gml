@@ -26,7 +26,7 @@ else {
 //TEMPORARY
 show_debug_message("TEMPORARY FEATURE IN PROGRESS");
 if (maxWidth == 5){
-	scr_placepart(blockSize*2, 0, 3, 6);
+	scr_placepart(blockSize*2, 0, 3, 6,vk_space);
 	scr_placepart(blockSize*1, blockSize*1, 0, 0);
 	scr_placepart(blockSize*2, blockSize*1, 0, 0);
 	scr_placepart(blockSize*3, blockSize*1, 0, 0);
@@ -34,15 +34,15 @@ if (maxWidth == 5){
 	scr_placepart(blockSize*2, blockSize*2, 0, 0);
 	scr_placepart(blockSize*3, blockSize*2, 0, 0);
 	
-	scr_placepart(blockSize*0, blockSize*1, 0, 2);
-	scr_placepart(blockSize*4, blockSize*1, 2, 2);
+	scr_placepart(blockSize*0, blockSize*1, 0, 2,ord("D"));
+	scr_placepart(blockSize*4, blockSize*1, 2, 2,ord("A"));
 	
 	scr_placepart(blockSize*1, blockSize*3, 0, 0);
 	scr_placepart(blockSize*2, blockSize*3, 0, 0);
 	scr_placepart(blockSize*3, blockSize*3, 0, 0);
-	scr_placepart(blockSize*1, blockSize*4, 1, 2);
+	scr_placepart(blockSize*1, blockSize*4, 1, 2,ord("W"));
 	
-	scr_placepart(blockSize*3, blockSize*4, 1, 2);
+	scr_placepart(blockSize*3, blockSize*4, 1, 2,ord("W"));
 }
 
 if (maxWidth == 4){
@@ -50,4 +50,36 @@ if (maxWidth == 4){
 	scr_placepart(0,blockSize,0,0);
 	scr_placepart(0,blockSize*2,0,0);
 	scr_placepart(0,blockSize*3,0,0);
+}
+
+if (maxWidth == 6){
+	scr_placepart(blockSize*0, blockSize*5, 1, 6,vk_space);
+	scr_placepart(blockSize*1, blockSize*5, 1, 6,vk_space);
+	scr_placepart(blockSize*2, blockSize*5, 1, 6,vk_space);
+	scr_placepart(blockSize*3, blockSize*5, 1, 6,vk_space);
+	scr_placepart(blockSize*4, blockSize*5, 1, 6,vk_space);
+	scr_placepart(blockSize*5, blockSize*5, 1, 6,vk_space);
+	
+	scr_placepart(blockSize*0, blockSize*4, 0, 0);
+	scr_placepart(blockSize*1, blockSize*4, 0, 0);
+	scr_placepart(blockSize*2, blockSize*4, 0, 0);
+	scr_placepart(blockSize*3, blockSize*4, 0, 0);
+	scr_placepart(blockSize*4, blockSize*4, 0, 0);
+	scr_placepart(blockSize*5, blockSize*4, 0, 0);
+	
+	scr_placepart(blockSize*1, blockSize*3, 0, 0);
+	scr_placepart(blockSize*1, blockSize*2, 0, 0);
+	//scr_placepart(blockSize*1, blockSize*1, 0, 0);
+	//scr_placepart(blockSize*1, blockSize*0, 0, 0);
+	
+	scr_placepart(blockSize*4, blockSize*3, 0, 0);
+	scr_placepart(blockSize*4, blockSize*2, 0, 0);
+	//scr_placepart(blockSize*4, blockSize*1, 0, 0);
+	//scr_placepart(blockSize*4, blockSize*0, 0, 0);
+	
+	scr_placepart(blockSize*0, blockSize*2, 1, 2,ord("W"));
+	scr_placepart(blockSize*5, blockSize*2, 1, 2,ord("W"));
+	
+	scr_placepart(blockSize*0, blockSize*3, 0, 2,ord("D"));
+	scr_placepart(blockSize*5, blockSize*3, 2, 2,ord("A"));
 }
