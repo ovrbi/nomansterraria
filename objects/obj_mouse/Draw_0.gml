@@ -38,6 +38,11 @@ else
 		name = obj_idb.name[table];
 		desc = "(E) to open."
 	}
+	else if (place_meeting(x,y,obj_shippart)) && (obj_camera.inv_expand == -1) && (obj_camera.crafting == -1) && (obj_player.onship == 0)
+	{
+		name = "Ship";
+		desc = "(E) to enter."
+	}
 	else if (place_meeting(x,y,obj_craft_slot))
 	{
 		var obj = instance_place(x,y,obj_craft_slot);
