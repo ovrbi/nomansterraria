@@ -35,7 +35,7 @@ for (var xx = 0; xx<width;xx++){
 			//show_debug_message(string (gravx)+";"+string(gravy)+";"+string(totalmass));
 			totalhp += obj_sdb.hp[part.idee]
 			//part.active = true;
-			part.persistent = true;
+			part.persistent = false;
 			ds_stack_push(ministack,part);
 			
 			
