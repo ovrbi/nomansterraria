@@ -86,3 +86,9 @@ if (maxWidth == 6){
 	scr_placepart(blockSize*2, blockSize*3, 0, 5,ord("Q"));
 	scr_placepart(blockSize*3, blockSize*3, 2, 5,ord("Q"));
 }
+
+obj_messenger.maxHeight = maxHeight;
+obj_messenger.maxWidth = maxWidth;
+obj_messenger.buildmatrix = buildmatrix;
+obj_camera.alarm[0] = 1;
+room_goto(1);

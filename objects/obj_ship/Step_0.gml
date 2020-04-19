@@ -6,7 +6,13 @@ if (room == 1){
 	
 	//show_debug_message(phy_mass);
 if (phy_com_y < 0){
-	
+	persistent = true;
+	for (var i = 0; i < width;i++){
+		for (var j = 0; j<height;j++){
+			shipmatrix[i,j].persistent = true;
+		}
+	}
+	room_goto(3);
 }
 
 

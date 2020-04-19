@@ -52,7 +52,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1)
 		obj_messenger.stx = (d1v(mouse_x,blockSize) - size0)*blockSize;
 		obj_messenger.sty = (d1v(mouse_y,blockSize) - size0-size)*blockSize;
 		room_goto(2);
-		alarm[0] = 1;
+		//alarm[0] = 1;
 		#endregion
 	}
 	else if (obj_mouse.table != 0) //call actual crafting UI
