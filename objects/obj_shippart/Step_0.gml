@@ -10,22 +10,11 @@ if (active){
 	
 	if (obj_player.onship == ship)
 	if (idee == 2||idee == 3||idee == 4){
-		var on = false;
-		switch (dir){
-		case 0:
-		if (keyboard_check(ord("D"))) on = true;
-		break;
-		case 1:
-		if (keyboard_check(ord("W"))) on = true;
-		break;
-		case 2:
-		if (keyboard_check(ord("A"))) on = true;
-		break;
-		case 3:
-		if (keyboard_check(ord("S"))) on = true;
-		break;
 		
-		}
+		var on = false;
+		
+		
+		if (keyboard_check(trigger)) on = true;
 		
 		
 		
@@ -42,5 +31,27 @@ if (active){
 		}
 		
 	}
+	#endregion
+	
+	#region drill
+	
+	if (idee == 6){
+		if (keyboard_check(trigger))
+		if (place_meeting(x,y,obj_block)){
+			var obj2 = instance_place(x,y,obj_block);
+			if (!place_meeting(x,y,obj_break))
+			{
+				var obj = instance_create_layer(obj2.x,obj2.y,"Break",obj_break);
+				obj.maxbt = obj2.breaktime;
+				obj.parent = obj2;
+			}
+			if (place_meeting(x,y,obj_break))
+			{
+				var obj = instance_place(x,y,obj_break);
+				obj.bt++;
+			}
+		}
+	}
+	
 	#endregion
 }

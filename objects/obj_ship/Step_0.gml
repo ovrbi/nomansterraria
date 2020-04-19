@@ -15,8 +15,8 @@ if _num > 0
         {
 			
 			var object = _list[| i];
-			if !(place_meeting(object.x+1,object.y+1,obj_force))
-			//if !(place_meeting(object.x+blockSize,object.y,obj_block)&&place_meeting(object.x-blockSize,object.y,obj_block)&&place_meeting(object.x,object.y+blockSize,obj_block)&&place_meeting(object.x,object.y-blockSize,obj_block))
+			if !(position_meeting(object.x+1,object.y+1,obj_force))
+			if !(position_meeting(object.x+blockSize,object.y,obj_block)&&position_meeting(object.x-blockSize,object.y,obj_block)&&position_meeting(object.x,object.y+blockSize,obj_block)&&position_meeting(object.x,object.y-blockSize,obj_block))
 			{
 				var forcefield;
 				//show_debug_message("aaaaa");
