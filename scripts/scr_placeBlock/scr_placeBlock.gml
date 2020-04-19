@@ -16,6 +16,8 @@ if (argument2>0){
 		else{
 			block = instance_create_layer(argument0,argument1,"Instances",obj_block);
 		}
+		
+		//block.phy_active = true;
 		block.sprite_index = obj_idb.sprite[argument2];
 		block.breaktime = obj_idb.bt[argument2];
 		block.idee = argument2;
