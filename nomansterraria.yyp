@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "330307a2-3a90-4c3b-89b8-ea29417fa74b",
+            "Value": {
+                "id": "c4387fe6-9d80-4a54-ae7c-17dd434ea42a",
+                "resourcePath": "sprites\\sp_starmap_planet\\sp_starmap_planet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35c41dd0-b38b-4be6-a077-d8f3150c252d",
             "Value": {
                 "id": "9ee8cd00-570c-4eca-b034-271b1a2156a1",
@@ -315,6 +323,14 @@
             "Value": {
                 "id": "90c71d2a-dd5f-4312-aa92-5cb336f88483",
                 "resourcePath": "sprites\\sp_drill\\sp_drill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "43bf338d-1378-49b2-b8e0-99d05889177c",
+            "Value": {
+                "id": "1ff82e87-4fbc-47db-a42b-927600ad9306",
+                "resourcePath": "sprites\\sp_starmap_ship\\sp_starmap_ship.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -699,6 +715,14 @@
             "Value": {
                 "id": "b17e49e0-0d61-46d7-bf26-a18a5a9c90f0",
                 "resourcePath": "sprites\\sp_darken\\sp_darken.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "88f03361-6618-4795-a300-dc0c9af7d600",
+            "Value": {
+                "id": "454224fa-7ea5-480a-b10a-1d8f14bfcaab",
+                "resourcePath": "sprites\\sp_starmap\\sp_starmap.yy",
                 "resourceType": "GMSprite"
             }
         },

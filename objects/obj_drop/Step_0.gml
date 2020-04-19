@@ -29,7 +29,7 @@ if (vsp = 0) y = round(y);
 
 
 //pickup
-if (place_meeting(x,y,obj_player))
+if (place_meeting(x,y,obj_player)) || (place_meeting(x,y,obj_shippart)) && (obj_player.onship > 0)
 {
 	var destroy = 0;
 	//check if stacks of this item exist first
