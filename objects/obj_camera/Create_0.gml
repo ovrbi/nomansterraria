@@ -84,8 +84,10 @@ inv[5].sprite_index = sp_inventory_MM;
 crafting = -1; //-1 = closed; 1 = open
 craft_back = -1; //back object
 
-
-
+//shipbuild
+shipbuild = -1; //-1 = closed; 1 = open
+shipbuild_parent = -1; //parent object
+shipbuild_back = -1; //back object
 
 
 

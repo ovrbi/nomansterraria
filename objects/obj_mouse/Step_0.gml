@@ -21,18 +21,37 @@ if (keyboard_check_pressed(ord("E")))
 	if (place_meeting(x,y,obj_shippart)) obj_player.onship = collision_point(x,y,obj_shippart,false, false).ship;
 }
 
-if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
+if (obj_camera.shipbuild == -1)
 {
-	obj_camera.mouse_mode = 0;
+	if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
+	{
+		obj_camera.mouse_mode = 0;
+	}
+	else
+	{
+		if (obj_camera.hotbar = 5)
+		{
+			obj_camera.mouse_mode = 3;
+		}
+		else obj_camera.mouse_mode = 1;
+	}
 }
 else
 {
-	if (obj_camera.hotbar = 5)
+	if  (place_meeting(x,y,obj_shipbuild_back)) || (obj_shipbuild_parent.slot_id[obj_shipbuild_parent.select] == -1)
 	{
-		obj_camera.mouse_mode = 3;
+		obj_camera.mouse_mode = 0;
 	}
-	else obj_camera.mouse_mode = 1;
+	else
+	{
+		if (obj_shipbuild_parent.select = 0)
+		{
+			obj_camera.mouse_mode = 3;
+		}
+		else obj_camera.mouse_mode = 1;
+	}
 }
+
 
 if (obj_camera.mouse_mode = 0)
 {
