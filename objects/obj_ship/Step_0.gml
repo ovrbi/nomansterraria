@@ -3,7 +3,7 @@
 if (room == 1){
 	
 var _list = ds_list_create();
-var _num = collision_circle_list(phy_com_x, phy_com_y, radius, obj_block, false, false, _list, false);
+var _num = collision_circle_list(x, y, radius, obj_block, false, false, _list, false);
 
 if _num > 0
     {

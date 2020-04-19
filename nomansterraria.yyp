@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "49bb198c-38c7-4dcd-9c7c-3538f1024b54",
+            "Value": {
+                "id": "db2a0166-ce33-4d15-aa4a-bb2fecf55cc2",
+                "resourcePath": "objects\\obj_dynamic\\obj_dynamic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b7ff662-3b89-4c69-a49e-571655b8e412",
             "Value": {
                 "id": "413d6390-5c21-4cf8-9bac-c17c10d9ea47",

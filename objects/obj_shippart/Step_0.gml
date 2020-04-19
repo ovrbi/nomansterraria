@@ -32,7 +32,7 @@ if (active){
 		if (on)
 		with (ship){
 			show_debug_message("aaaaaa");
-			physics_apply_local_impulse(tlx,tly,((tdir-1)mod 2),((tdir-2)mod 2));
+			physics_apply_local_impulse(tlx,tly,((tdir-1)mod 2)/10,((tdir-2)mod 2)/10);
 			//physics_apply_local_impulse(tlx,tly,0,-10);
 			
 		}
