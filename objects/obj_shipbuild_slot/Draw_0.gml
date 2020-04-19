@@ -14,3 +14,5 @@ else if (obj_shipbuild_parent.slot_id[idee] != -1)
 {
 	draw_sprite(obj_sdb.sprite[obj_shipbuild_parent.slot_id[idee]],0,x,y);
 }
+
+//draw_text(x,y,string(obj_shipbuild_parent.rot))

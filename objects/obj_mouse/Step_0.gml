@@ -198,8 +198,8 @@ if (obj_camera.mouse_mode = 0)
 		else if (place_meeting(x,y,obj_shipbuild_rotate))
 		{
 			var obj = instance_place(x,y,obj_shipbuild_rotate);
-			if (obj.idee = 0) obj_shipbuild_parent.rot -= 90;
-			else obj_shipbuild_parent.rot += 90;
+			if (obj.idee = 0) obj_shipbuild_parent.rot += 90;
+			else obj_shipbuild_parent.rot -= 90;
 		}
 	}
 }
