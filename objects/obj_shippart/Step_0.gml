@@ -45,7 +45,7 @@ if (active){
 	
 	var targetangle = image_angle - angle;
 	with (ship){
-		show_debug_message((targetangle - phy_rotation)*100);
+		//show_debug_message((targetangle - phy_rotation)*100);
 		physics_apply_torque((targetangle - phy_rotation)*100);
 	}
 		
