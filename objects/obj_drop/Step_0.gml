@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor 
-if (vsp < 10) vsp += grav;
+if (vsp < 10) && (!place_meeting(x,y+1,obj_collisionparent)) vsp += grav;
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_collisionparent))
 {

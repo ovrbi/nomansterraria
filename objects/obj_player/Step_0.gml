@@ -109,7 +109,7 @@ else
 	xkey = 0;
 }
 xsp = spd * xkey;
-if (ysp < 7) ysp += grav;
+if (ysp < 7) && (!place_meeting(x,y+1,obj_collisionparent)) ysp += grav;
 
 //fall
 
