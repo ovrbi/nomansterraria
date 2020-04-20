@@ -25,7 +25,7 @@ var totalhp = 0;
 var ministack = ds_stack_create();
 for (var xx = 0; xx<width;xx++){
 	for (var yy = 0; yy < height;yy++){
-		show_debug_message(string(xx)+";"+string(yy));
+		//show_debug_message(string(xx)+";"+string(yy));
 		//show_debug_message(string(xx)+";"+string(yy));
 		var part = shipmatrix[xx,yy];
 		if (part != 0){
@@ -113,3 +113,5 @@ while (!ds_stack_empty(ministack)){
 	
 	//show_debug_message(dangle);
 }
+
+stabactive = false;

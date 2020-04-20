@@ -191,35 +191,44 @@ if (obj_camera.mouse_mode = 0)
 					obj_shipbuild_parent.maxHeight = 0;
 					var maxWidth = obj_shipbuild_parent.buildWidth;
 					
-					//for (var p = 0; p < maxWidth;p++)
-					//for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
-					//obj_shipbuild_parent.buildmatrix[p,o] = 0;
+					
 					
 					with (obj_shipbuildpart){
 						arr7[c] = id;
-						if((y-obj_shipbuild_parent.source.y)div blockSize > obj_shipbuild_parent.maxHeight) obj_shipbuild_parent.maxHeight = (y-obj_shipbuild_parent.source.y)div blockSize;
+						//show_debug_message("dviv: "+ string((obj_shipbuild_parent.source.y-y)div blockSize));
+						if((obj_shipbuild_parent.source.y-y)div blockSize > obj_shipbuild_parent.maxHeight) obj_shipbuild_parent.maxHeight = (obj_shipbuild_parent.source.y-y)div blockSize;
 						c++;
 					}
 					
+					for (var p = 0; p < maxWidth;p++)
+					for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
+					obj_messenger.buildmatrix[p,o] = 0;
+					
 					for (var d = 0; d<array_length_1d(arr7);d++){
-						show_debug_message(string(obj_shipbuild_parent.source.x-arr7[d].x+obj_shipbuild_parent.size0*blockSize)+";"+string(obj_shipbuild_parent.source.y-arr7[d].y));
-						scr_placepart(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,obj_shipbuild_parent.source.y-arr7[d].y,d1v(arr7[d].image_angle,90),arr7[d].idee);
+						//show_debug_message(string(obj_shipbuild_parent.source.x-arr7[d].x+obj_shipbuild_parent.size0*blockSize)+";"+string(obj_shipbuild_parent.source.y-arr7[d].y));
+						scr_placepart(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,obj_shipbuild_parent.maxHeight*blockSize-(obj_shipbuild_parent.source.y-arr7[d].y),m0d(d1v(arr7[d].image_angle+90,90),4),arr7[d].idee);
 						
 					}
-					
+					//show_debug_message("Maxheight: "+string(obj_shipbuild_parent.maxHeight));
 					obj_messenger.maxHeight = obj_shipbuild_parent.maxHeight;
 					obj_messenger.maxWidth = maxWidth;
 					//obj_messenger.buildmatrix = obj_shipbuild_parent.buildmatrix;
-					obj_camera.alarm[0] = 1;
+					//obj_camera.alarm[0] = 1;
+					
+					obj_messenger.ship = instance_create_layer(0,0,"Instances",obj_ship);
+
+obj_messenger.ship.phy_position_x = obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2;
+obj_messenger.ship.phy_position_y = obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1;
+obj_messenger.ship.phy_active = true;
 				}
 				obj_camera.shipbuild = -1;
-				/*
+				//*
 				instance_destroy(obj_shipbuild_back);
 				instance_destroy(obj_shipbuild_slot);
 				instance_destroy(obj_shipbuild_rotate);
 				instance_destroy(obj_shipbuild_parent);
 				instance_destroy(obj_shipbuildpart);
-				*/
+				//*/
 			}
 		}
 		else if (place_meeting(x,y,obj_shipbuild_rotate))

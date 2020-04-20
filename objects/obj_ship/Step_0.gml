@@ -23,6 +23,19 @@ if (room!=rm_space)
 }
 
 
+//TEMPORARY
+
+if (keyboard_check_pressed(ord("Q"))) {
+		stabactive = !stabactive;
+		
+	}
+	
+	if (stabactive) {
+		//show_debug_message((targetangle - phy_rotation)*100);
+		physics_apply_torque((0 - phy_rotation)*phy_mass*2);
+	}
+
+//SHIT
 
 
 var _list = ds_list_create();
@@ -49,7 +62,7 @@ if _num > 0
 				forcefield.phy_position_x = d1v(object.x,blockSize)*blockSize;
 				forcefield.phy_position_y = d1v(object.y,blockSize)*blockSize;
 				//forcefield.phy_active = true;
-				forcefield.enabled = 100;
+				forcefield.enabled = 10;
 				forcefield.ship = id;
 				//instance_activate_object(forcefield);
 			}
