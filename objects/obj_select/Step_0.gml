@@ -20,7 +20,7 @@ else
 canshipbuild = 0;
 if (obj_camera.shipbuild == 1)
 {
-	if (x >= obj_shipbuild_parent.x - (obj_shipbuild_parent.buildWidth/2) * 8) && (x < obj_shipbuild_parent.x + (obj_shipbuild_parent.buildWidth/2) * 8)
+	if (x >= obj_shipbuild_parent.x - (obj_shipbuild_parent.buildWidth/2) * 8) && (x < obj_shipbuild_parent.x + (obj_shipbuild_parent.buildWidth/2) * 8) && (y)
 	{
 		canshipbuild = 1;
 	}
