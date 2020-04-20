@@ -3,7 +3,7 @@ var num = 0;
 
 //0 = Structure block
 name[num] = "Structure Block";
-desc[num] = "The foundation of/nany ship.";
+desc[num] = "The foundation of\nany ship.";
 sprite[num] = sp_structure_block;
 mass[num] = 10;
 hp[num] = 10;
@@ -49,7 +49,7 @@ num++;
 
 //2 = Thruster
 name[num] = "Thruster";
-desc[num] = "Applies force in/na direction";
+desc[num] = "Applies force in\na direction.";
 sprite[num] = sp_thruster;
 mass[num] = 5;
 hp[num] = 5;
@@ -132,8 +132,8 @@ fixturepy[num,3] = blockSize;
 num++;
 
 //6 = Drill
-name[num] = "Reinforced Block";
-desc[num] = "Ore machine goes/nbrrrrrrrr";
+name[num] = "Drill";
+desc[num] = "Ore machine goes\nbrrrrrrrr.";
 sprite[num] = sp_drill;
 mass[num] = 2.5;
 hp[num] = 5;

@@ -11,4 +11,4 @@ part.image_angle = (argument[2]-1)*90;
 if argument_count > 4 part.trigger = argument[4];
 
 
-obj_buildManager.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;
+obj_shipbuild_parent.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;
