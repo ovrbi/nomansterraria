@@ -15,7 +15,7 @@ if (cy>worldHeightc){
 
 
 //Debug
-//show_debug_message("Loading: "+string(tx)+";"+string(cy));
+show_debug_message("Loading: "+string(tx)+";"+string(cy));
 //draw_rectangle(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize, (cy+1)*chunkSize*blockSize, true);
 
 //End of debug
@@ -47,32 +47,10 @@ for (var i = 0; i < chunkSize; i++){
 if (ds_map_exists(obj_WorldManager.save_emap, string(tx)+";"+string(cy))){
 	var stak = ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy));
 	while (ds_stack_size(stak)>0){
-		var entity = ds_stack_pop(stak);
-		if (instance_exists(entity)){
-		instance_activate_object(entity);
-		entity.persistent = false;
-		entity.visible = true;
-		entity.x = cx * convrate + entity.lx;
-		entity.y = cy * convrate + entity.ly;
-		}
+		var data = ds_stack_pop(stak);
+		scr_loadentity(data,cx,cy);
 		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
 	}
 	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy)));
 }
 
-if (ds_map_exists(obj_WorldManager.save_phmap, string(tx)+";"+string(cy))){
-	var phstak = ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy));
-	while (ds_stack_size(phstak)>0){
-		var phtity = ds_stack_pop(phstak);
-		if (instance_exists(phtity)){
-		//instance_activate_object(entity);
-		//phtity.persistent = false;
-		//phtity.visible = true;
-		phtity.phy_active = true;
-		phtity.phy_position_x = cx * convrate + phtity.lx;
-		phtity.phy_position_y = cy * convrate + phtity.ly;
-		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
-		}
-	}
-	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy)));
-}

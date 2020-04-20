@@ -7,3 +7,4 @@ hsp = irandom_range(-5,5) / 10;
 vsp = -2;
 image_xscale = .5;
 image_yscale = .5;
+active = true;

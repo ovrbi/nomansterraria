@@ -19,6 +19,15 @@ var endy = d1v((yy + camera_get_view_height(view_camera[0])), convrate);
 	}
 }*/
 
+for (var i = begx;i<=endx;i++){
+	for (var j = begy;j<=endy;j++){
+		scr_keepChunk(i,j);
+	}
+}
+
+
+/*
+
 for (;begx<stx+1; stx--)
 	for(var i = sty; i<=eny;i++){
 		//scr_loadChunk(stx-1, i);
@@ -47,7 +56,7 @@ for (;endy+1>eny; eny++)
 
 
 
-for (;begx>stx+1; stx++)
+	for (;begx>stx+1; stx++)
 	for(var i = sty; i<=eny;i++){
 		//scr_unloadChunk(stx, i);
 		ds_queue_enqueue(load_queue,[1,stx,i]);
@@ -70,18 +79,36 @@ for (;endy+1<eny; eny--)
 	for(var i = stx; i<=enx;i++){
 		//scr_unloadChunk(i, eny);
 		ds_queue_enqueue(load_queue,[1,i,eny]);
-	}
+	}*/
 
 //*
-repeat 16
+
+
+/*repeat 64
 if (!ds_queue_empty(load_queue)){
 	var arr2 = ds_queue_dequeue(load_queue);
-	if (arr2[0] == 0) scr_loadChunk(arr2[1],arr2[2]);
-	else scr_unloadChunk(arr2[1],arr2[2]);
+	//if (chunkt[m0d(arr2[0],worldWidthc),arr2[1]]>0)
+	scr_loadChunk(arr2[0],arr2[1]);
 	
-}
+	
+}*/
+
+
+
 //show_debug_message(ds_queue_size(load_queue));
 //*/
 
 //for (; loadstep<worldHeightc*worldWidthc)
+
+
+//*
+for (var i = 0;i<worldWidthc;i++){
+	for (var j = 0; j<worldHeightc;j++){
+		if(chunkt[i,j]-- == 0){
+			scr_unloadChunk(chunkw[i,j],j);
+		}
+		if (chunkt[i,j]<0) chunkt[i,j] = -1;
+	}
+}
+//*/
 }
