@@ -24,8 +24,8 @@ if (start = 0)
 	scr_placeShipBlock(x-4 +xx,y+2 + 8*8,2,0);
 	scr_placeShipBlock(x-4 + 8*1 +xx,y+2 + 8*8,2,0);
 
-	scr_placeShipBlock(x-4 + 8*2 +xx,y+2 + 8*6,2,90);
-	scr_placeShipBlock(x-4 - 8*2 +xx,y+2 + 8*6,2,270);
+	scr_placeShipBlock(x-4 + 8*2 +xx,y+2 + 8*5,2,90);
+	scr_placeShipBlock(x-4 - 8*2 +xx,y+2 + 8*5,2,270);
 
 	scr_placeShipBlock(x-4 +xx,y+2 + 8*3,2,180);
 }
