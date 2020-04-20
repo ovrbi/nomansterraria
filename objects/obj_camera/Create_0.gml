@@ -17,10 +17,12 @@ inv_id[0] = 20;
 inv_amount[0] = 1;
 //inv_id[1] = 22;
 //inv_amount[1] = 1;
-//inv_id[2] = 22;
-//inv_amount[2] = 1;
-//inv_id[3] = 9;
-//inv_amount[3] = 99;
+//*
+inv_id[2] = 22;
+inv_amount[2] = 1;
+inv_id[3] = 9;
+inv_amount[3] = 99;
+//*/
 //inv_id[4] = 21;
 //inv_amount[4] = 1;
 /*inv_id[8] = 2;
