@@ -29,3 +29,7 @@ for (var xx = 0; xx<width;xx++){
 
 obj_camera.x = x;
 obj_camera.y = y;
+
+
+phy_position_x = obj_messenger.shipx;
+phy_position_y = obj_messenger.shipy;

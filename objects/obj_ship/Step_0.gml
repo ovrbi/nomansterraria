@@ -4,6 +4,7 @@
 
 if (room!=rm_space)
 {	
+	//show_debug_message(obj_WorldManager.planetid);
 	//show_debug_message(phy_mass);
 	if (y < 0&&!retire)
 	{
