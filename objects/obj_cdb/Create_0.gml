@@ -32,7 +32,7 @@ num++;
 //Ship Component Constructor
 tool[num] = 0;
 ingredientid[num,0] = 8;
-ingredientcount[num,0] = 40;
+ingredientcount[num,0] = 15;
 ingredientid[num,1] = 17;
 ingredientcount[num,1] = 5;
 ingredientid[num,2] = 0;
@@ -44,7 +44,7 @@ num++;
 //Platform
 tool[num] = 0;
 ingredientid[num,0] = 8;
-ingredientcount[num,0] = 10;
+ingredientcount[num,0] = 5;
 ingredientid[num,1] = 0;
 ingredientcount[num,1] = 0;
 ingredientid[num,2] = 0;
