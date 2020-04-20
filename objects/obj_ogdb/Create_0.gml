@@ -19,12 +19,14 @@ maxHeight[num] = worldHeight/2;
 num++;
 
 //titanium
+/*
 oreid[num] = 18;
 scarcity[num] = 0.5;
 size[num] = 4;
 minHeight[num] = worldHeight/2;
 maxHeight[num] = worldHeight;
 num++;
+*/
 
 //copper
 oreid[num] = 16;
@@ -35,12 +37,14 @@ maxHeight[num] = worldHeight;
 num++;
 
 //luxus
+/*
 oreid[num] = 12;
 scarcity[num] = 0.3;
 size[num] = 4;
 minHeight[num] = worldHeight/4*3;
 maxHeight[num] = worldHeight;
 num++;
+*/
 
 //infernum
 oreid[num] = 10;
@@ -51,9 +55,11 @@ maxHeight[num] = worldHeight;
 num++;
 
 //lilium
+/*
 oreid[num] = 14;
 scarcity[num] = 0.3;
 size[num] = 4;
 minHeight[num] = worldHeight/4*3;
 maxHeight[num] = worldHeight;
 num++;
+*/
