@@ -28,6 +28,7 @@ maxHeight = (worldHeight * 3) div 4;
 save_map = obj_planet.save_map;
 save_bmap = obj_planet.save_bmap;
 save_emap = obj_planet.save_emap;
+save_phmap = obj_planet.save_phmap;
 //chunk_map = ds_map_create();
 load_queue = ds_queue_create();
 //gen_cache = ds_map_create();

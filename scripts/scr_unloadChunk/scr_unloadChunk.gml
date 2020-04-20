@@ -81,12 +81,42 @@ if _enum > 0
 {
 	ds_map_replace(obj_WorldManager.save_emap,string(tx)+";"+string(cy),ds_stack_create());
 	for (var i = 0; i < _enum; i++){
+		//show_debug_message("hehe");
 		var entity = _elist[| i];
 		entity.lx = m0d(entity.x,convrate);
 		entity.ly = m0d(entity.y,convrate);
 		//show_debug_message("Unloaded "+string(entity.x)+";"+string(entity.y));
 		ds_stack_push(ds_map_find_value(obj_WorldManager.save_emap,string(tx)+";"+string(cy)),entity);
+		entity.visible = false;
+		entity.persistent = true;
 		instance_deactivate_object(entity);
+		//entity.phy_active = false;
+	}
+}
+
+#endregion
+
+#region phentites
+
+
+
+var _phlist = ds_list_create();
+var _phnum = collision_rectangle_list(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize-1, (cy+1)*chunkSize*blockSize-1,obj_ship ,false, false, _phlist, false);
+if _phnum > 0
+{
+	ds_map_replace(obj_WorldManager.save_phmap,string(tx)+";"+string(cy),ds_stack_create());
+	for (var i = 0; i < _phnum; i++){
+		//show_debug_message("hehe");
+		var phtity = _phlist[| i];
+		phtity.lx = m0d(phtity.x,convrate);
+		phtity.ly = m0d(phtity.y,convrate);
+		//show_debug_message("Unloaded "+string(entity.x)+";"+string(entity.y));
+		ds_stack_push(ds_map_find_value(obj_WorldManager.save_phmap,string(tx)+";"+string(cy)),phtity);
+		//instance_deactivate_object(entity);
+		//phtity.visible = false;
+		//phtity.persistent = true;
+		phtity.phy_active = false;
+		
 	}
 }
 

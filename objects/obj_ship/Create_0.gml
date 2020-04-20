@@ -20,7 +20,7 @@ retire = false;
 
 width = obj_messenger.maxWidth;
 height = obj_messenger.maxHeight;
-show_debug_message(string(height)+";"+string(width));
+//show_debug_message(string(height)+";"+string(width));
 var totalmass = 0;
 var totalhp = 0;
 var ministack = ds_stack_create();

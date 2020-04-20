@@ -45,6 +45,7 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			planets[i].save_map = ds_map_create();
 			planets[i].save_bmap = ds_map_create();
 			planets[i].save_emap = ds_map_create();
+			planets[i].save_phmap = ds_map_create();
 			
 			planets[i].roomid = room_duplicate(room0);
 			planets[i].generated = true;
