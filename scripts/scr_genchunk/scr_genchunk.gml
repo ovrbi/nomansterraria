@@ -30,6 +30,7 @@ for (var i = 0; i < chunkSize; i++){
 		//oregen
 		if (j+chunkSize*cy>h2)
 		for (var ore = 0; ore<obj_ogdb.num; ore++){
+			if (obj_ogdb.type[ore,obj_WorldManager.planettype]){
 			var oreid = obj_ogdb.oreid[ore];
 			var scarcity = obj_ogdb.scarcity[ore];
 			var size = obj_ogdb.size[ore];
@@ -51,6 +52,7 @@ for (var i = 0; i < chunkSize; i++){
 			
 			//show_debug_message(string(obj_idb.name[oreid])+": "+string(isore));
 			if (isore>scarcity) arr[i*chunkSize + j] = oreid;
+			}
 		}
 		
 		
