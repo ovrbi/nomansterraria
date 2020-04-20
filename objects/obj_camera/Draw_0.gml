@@ -17,3 +17,12 @@ if (obj_player.onship > 0)
 	//"(SPACE) activates drills"
 	//"Fly upwards to go to space"
 }
+
+if (room = rm_space)
+{
+	draw_sprite(sp_starmap,0,x-115,y+46);
+	draw_sprite(sp_starmap_planet,0,x,y);
+	draw_sprite(sp_starmap_planet,1,x,y);
+	draw_sprite(sp_starmap_planet,2,x,y);
+	draw_sprite(sp_starmap_ship,0,x,y);
+}

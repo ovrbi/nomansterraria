@@ -23,7 +23,7 @@ if (keyboard_check_pressed(ord("E")))
 
 if (obj_camera.shipbuild == -1)
 {
-	if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1)
+	if (place_meeting(x,y,obj_inventory_back)) || (obj_camera.inv_id[obj_camera.hotbar] == 0) || (obj_camera.inv_expand == 1) || (obj_camera.crafting == 1) || (room = rm_space)
 	{
 		obj_camera.mouse_mode = 0;
 	}
