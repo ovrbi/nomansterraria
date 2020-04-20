@@ -1,5 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor 
+event_inherited();
+
+if (place_meeting(x,y+1,obj_collisionparent)){
+	active=false;
+}
+else{
+	active=true;
+}
+
 if (vsp < 10) vsp += grav;
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_collisionparent))
@@ -15,6 +24,7 @@ if (place_meeting(x+hsp,y,obj_collisionparent))
 //Vertical Collision
 if (place_meeting(x,y+vsp,obj_collisionparent))
 {
+	
     while(!place_meeting(x,y+sign(vsp),obj_collisionparent))
     {
         y += sign(vsp);
@@ -22,6 +32,7 @@ if (place_meeting(x,y+vsp,obj_collisionparent))
     vsp = 0;
     hsp = 0;
 }
+
 x += hsp;
 y += vsp;
 if (hsp = 0) x = round(x);
@@ -66,3 +77,4 @@ if (place_meeting(x,y,obj_block))
 	else if (!place_meeting(x-8,y,obj_block)) x -= 8;
 	else if (!place_meeting(x+8,y,obj_block)) x += 8;
 }
+
