@@ -1255,6 +1255,14 @@
             }
         },
         {
+            "Key": "e2b4482e-de1c-435c-b953-4c2411b46cdb",
+            "Value": {
+                "id": "66c92eea-1ef0-45da-93de-aa0b6c573d27",
+                "resourcePath": "scripts\\scr_keepChunk\\scr_keepChunk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e36540ca-93c5-4160-88c2-f93d36a4be23",
             "Value": {
                 "id": "48e0f26a-e845-4a6a-b73d-2eee94819dd7",
@@ -1383,6 +1391,7 @@
         "78803f67-0899-41dc-bb02-6143b7ae9f2f",
         "a500265e-b1e5-4d80-90a6-2df6d7f1534e",
         "26a5a9a5-3b7a-4f39-a2cc-1b51337cf7b7",
+        "e2b4482e-de1c-435c-b953-4c2411b46cdb",
         "31765199-39cb-4690-a464-8adebf170e7c",
         "56b607f8-0eb1-4617-84f5-aa81fdd8dda4",
         "90d76091-ada7-4a7d-bc20-ee4c03e93700",

@@ -28,7 +28,7 @@ maxHeight = (worldHeight * 3) div 4;
 save_map = obj_planet.save_map;
 save_bmap = obj_planet.save_bmap;
 save_emap = obj_planet.save_emap;
-save_phmap = obj_planet.save_phmap;
+//save_phmap = obj_planet.save_phmap;
 //chunk_map = ds_map_create();
 load_queue = ds_queue_create();
 //gen_cache = ds_map_create();
@@ -36,6 +36,12 @@ block_pool = ds_queue_create();
 backblock_pool = ds_queue_create();
 force_pool = ds_queue_create();
 
+for (var i = 0;i<worldWidthc;i++){
+	for (var j = 0; j<worldHeightc+3;j++){
+		chunkt[i,j] = -1;
+		chunkw[i,j] = 0;
+	}
+}
 
 
 //perlin_cache = array_create(chunkSize*worldWidthc,"null");
@@ -43,11 +49,8 @@ for (var i = 0; i < chunkSize*worldWidthc;i++){
 	perlin_cache[i,1] = "null";
 	perlin_cache[i,0] = "null";
 }
-show_debug_message(string(obj_messenger.shipx)+";"+ string(obj_messenger.shipy));
-stx = d1v(obj_messenger.shipx, convrate);
-enx = d1v(obj_messenger.shipx, convrate);
-sty = d1v(obj_messenger.shipy, convrate);
-eny = d1v(obj_messenger.shipy, convrate);
+//show_debug_message(string(obj_messenger.shipx)+";"+ string(obj_messenger.shipy));
+
 
 var time = current_time;
 /*
@@ -60,7 +63,7 @@ for (var i = 0;i<worldWidthc;i++){
 */
 //show_debug_message("done: " + string(current_time - time)+"ms");
 
-scr_loadChunk(stx,sty);
+
 
 
 

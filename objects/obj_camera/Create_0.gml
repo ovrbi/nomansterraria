@@ -25,7 +25,7 @@ inv_amount[3] = 99;
 //*/
 //inv_id[4] = 21;
 //inv_amount[4] = 1;
-/*
+//*
 inv_id[8] = 2;
 inv_amount[8] = 90;
 inv_id[14] = 8;

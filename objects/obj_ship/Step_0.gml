@@ -6,7 +6,7 @@ if (room!=rm_space)
 {	
 	//show_debug_message(obj_WorldManager.planetid);
 	//show_debug_message(phy_mass);
-	if (y < 0&&!retire)
+	if (y < 0&&!retire&&obj_player.onship == id)
 	{
 		//show_debug_message("Size: " + string(width)+";"+string(height));
 		persistent = true;
