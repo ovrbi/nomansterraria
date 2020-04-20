@@ -79,6 +79,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 			}
 			else i = maxShipLength + 1;
 		}
+		instance_create_layer(obj2.x,obj2.y-48,"Instances",obj_shipbuild_collision);
 		
 		var buildWidth = size + size0;
 		var buildCenter = size - size0;
@@ -96,6 +97,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		{
 			var obj3 = instance_create_layer(mouse_x,mouse_y,"OverOverUI",obj_disclaimer);
 			obj3.text = "Please remove any preexisting\nships from the platform."
+			instance_destroy(obj_shipbuild_collision);
 		}
 		else if (buildWidth >= 5)
 		{
@@ -116,6 +118,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		{
 			var obj3 = instance_create_layer(mouse_x,mouse_y,"OverOverUI",obj_disclaimer);
 			obj3.text = "Must consist of a row of a Ship\nConstructor and at least four\nPlatforms."
+			instance_destroy(obj_shipbuild_collision);
 		}
 		/*
 		obj_messenger.ship = noone;
