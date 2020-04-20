@@ -199,7 +199,7 @@ if (obj_camera.mouse_mode = 0)
 						if((obj_shipbuild_parent.source.y-y)div blockSize > obj_shipbuild_parent.maxHeight) obj_shipbuild_parent.maxHeight = (obj_shipbuild_parent.source.y-y)div blockSize;
 						c++;
 					}
-					
+					if (c>0){
 					for (var p = 0; p < maxWidth;p++)
 					for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
 					obj_messenger.buildmatrix[p,o] = 0;
@@ -220,6 +220,7 @@ if (obj_camera.mouse_mode = 0)
 obj_messenger.ship.phy_position_x = obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2;
 obj_messenger.ship.phy_position_y = obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1;
 obj_messenger.ship.phy_active = true;
+					}
 				}
 				obj_camera.shipbuild = -1;
 				//*

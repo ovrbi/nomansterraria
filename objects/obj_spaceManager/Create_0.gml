@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 cando = false;
+canstep = true;
 var i = 0;
 planets[i] = instance_create_layer(0, 0, "Instances",obj_planet);
 planets[i].size = worldWidth*blockSize;

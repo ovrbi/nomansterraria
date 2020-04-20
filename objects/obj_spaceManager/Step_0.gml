@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-//if (ready) {
+if (!instance_exists(obj_ship))
+if (canstep) {
 for (var i = 0; i < array_length_1d(planets);i++)
 {
 	show_debug_message(i);
@@ -36,4 +37,4 @@ for (var i = 0; i < array_length_1d(planets);i++)
 	}
 }
 	
-//}
+}
