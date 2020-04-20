@@ -15,15 +15,15 @@ for (var i = 0; i <= 50; i++)
 }
 inv_id[0] = 20;
 inv_amount[0] = 1;
-inv_id[1] = 21;
+inv_id[1] = 22;
 inv_amount[1] = 1;
 inv_id[2] = 22;
 inv_amount[2] = 1;
-inv_id[3] = 23;
-inv_amount[3] = 1;
-inv_id[7] = 24;
-inv_amount[7] = 1;
-inv_id[8] = 2;
+inv_id[3] = 9;
+inv_amount[3] = 99;
+inv_id[4] = 21;
+inv_amount[4] = 1;
+/*inv_id[8] = 2;
 inv_amount[8] = 90;
 inv_id[14] = 8;
 inv_amount[14] = 99;
@@ -40,7 +40,7 @@ inv_amount[40] = 21;
 inv_id[31] = 22;
 inv_amount[31] = 1;
 inv_id[32] = 9;
-inv_amount[32] = 99;
+inv_amount[32] = 99;*/
 
 inv_id[5] = 4;
 inv_amount[5] = 1;

@@ -29,7 +29,7 @@ for (var i = 15; i <= 17; i++)
 	slot_id[i] = 0;
 	mat_amount[i] = 0;
 	
-	if (obj_cdb.cum[idee-20]+4 < obj_cdb.cum[idee-19])
+	if (obj_cdb.cum[idee-20] < obj_cdb.cum[idee-19])
 	{
 		slot_id[i] = obj_cdb.ingredientid[obj_cdb.cum[idee-20]+chosen,i-15];
 		if (slot_id[i]!= 0) mat_count++;
