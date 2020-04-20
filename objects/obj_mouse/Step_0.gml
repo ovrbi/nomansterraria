@@ -237,6 +237,13 @@ obj_messenger.ship.phy_active = true;
 			if (obj.idee = 0) obj_shipbuild_parent.rot += 90;
 			else obj_shipbuild_parent.rot -= 90;
 		}
+		else if (stored_id != 0) && (!place_meeting(x,y,obj_block))
+		{
+			scr_dropItem(x,y,stored_id,stored_amount);
+			stored_id = 0;
+			stored_amount = 0;
+			stored_spot = -1;
+		}
 	}
 }
 
