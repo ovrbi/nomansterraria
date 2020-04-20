@@ -10,21 +10,36 @@ if (shipbuild == -1)
 	//draw_text(x + 1 - 160,y + 13 - 90,"craft_back " + string(craft_back));
 }
 
-if (obj_player.onship > 0) && (room != rm_space) && (obj_player.flytip = 1)
+if (obj_player.onship > 0) && (room != rm_space)
 {
-	draw_set_alpha(.5);
-	draw_set_color(c_black);
-	draw_rectangle(x+31,y+35,x+161,y+91,false);
-	draw_set_alpha(1);
-	draw_set_halign(fa_right)
-	draw_set_color(c_white);
-	draw_text(x+159,y+36,"WASD to move directions.");
-	draw_text(x+159,y+44,"(Q) toggles stabilation.");
-	draw_text(x+159,y+52,"(SPACE) activates drills.");
-	draw_text(x+159,y+60,"Exit by pressing (E) anywhere\noutside the ship.");
-	draw_text(x+159,y+75,"Fly upwards to go to space.");
-	draw_text(x+159,y+83,"(Press (X) to close this).");
-	draw_set_halign(fa_left)
+	if (obj_player.flytip = 1)
+	{
+		draw_set_alpha(.5);
+		draw_set_color(c_black);
+		draw_rectangle(x+31,y+35,x+161,y+91,false);
+		draw_set_alpha(1);
+		draw_set_halign(fa_right)
+		draw_set_color(c_white);
+		draw_text(x+159,y+36,"Use WASD to move directions.");
+		if (obj_player.onship.stabactive) draw_text(x+159,y+44,"(Q) toggles stabilization (on).");
+		else draw_text(x+159,y+44,"(Q) toggles stabilization (off).");
+		draw_text(x+159,y+52,"(SPACE) activates drills.");
+		draw_text(x+159,y+60,"Exit by pressing (E) anywhere\noutside the ship.");
+		draw_text(x+159,y+75,"Fly upwards to go to space.");
+		draw_text(x+159,y+83,"(Press (X) to close this).");
+		draw_set_halign(fa_left)
+	}
+	else
+	{
+		draw_set_alpha(.5);
+		draw_set_color(c_black);
+		draw_rectangle(x+35,y+82,x+161,y+91,false);
+		draw_set_alpha(1);
+		draw_set_halign(fa_right)
+		draw_set_color(c_white);
+		draw_text(x+159,y+83,"(Press (X) to open controls).");
+		draw_set_halign(fa_left)
+	}
 
 }
 
