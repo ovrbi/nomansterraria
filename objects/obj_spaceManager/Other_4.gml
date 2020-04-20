@@ -3,5 +3,6 @@
 
 //size, type
 if (cando) {
+	canstep = false;
 	alarm[0] = 1;
 }

@@ -17,7 +17,7 @@ planettype = obj_planet.type;
 planetid = obj_planet.pid;
 
 
-show_debug_message("I'm here");
+//show_debug_message("I'm here");
 
 debugChunk = false;
 
@@ -28,7 +28,7 @@ save_map = obj_planet.save_map;
 save_bmap = obj_planet.save_bmap;
 save_emap = obj_planet.save_emap;
 //chunk_map = ds_map_create();
-//load_queue = ds_queue_create();
+load_queue = ds_queue_create();
 //gen_cache = ds_map_create();
 block_pool = ds_queue_create();
 backblock_pool = ds_queue_create();
