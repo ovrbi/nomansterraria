@@ -21,8 +21,8 @@ if (obj_player.onship > 0)
 if (room = rm_space)
 {
 	draw_sprite(sp_starmap,0,x-115,y+46);
-	draw_sprite(sp_starmap_planet,0,x,y);
-	draw_sprite(sp_starmap_planet,1,x,y);
-	draw_sprite(sp_starmap_planet,2,x,y);
-	draw_sprite(sp_starmap_ship,0,x,y);
+	draw_sprite(sp_starmap_planet,0,x-115+18,y+46+26);
+	draw_sprite(sp_starmap_planet,1,x-115-15,y+46+17);
+	draw_sprite(sp_starmap_planet,2,x-115-9,y+46-21);
+	draw_sprite(sp_starmap_ship,0,x-115,y+46);
 }
