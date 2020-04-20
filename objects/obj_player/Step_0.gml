@@ -4,7 +4,8 @@
 
 if (keyboard_check_pressed(ord("X"))) && (onship > 0)
 {
-	flytip = 0;
+	if (flytip = 0) flytip = 1;
+	else flytip = 0;
 }
 
 if (swipe_time > 0) swipe_time--;
@@ -30,9 +31,11 @@ if (obj_camera.mode = 0)
 	if (stun <= 0)
 	{
 		xkey = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-		if (keyboard_check_pressed(vk_space))
+		if (place_meeting(x,y+1,obj_block)) jumps = 2
+		if (keyboard_check_pressed(vk_space)) && (jumps > 0)
 		{
 			ysp = -jumpspeed;
+			jumps--;
 		}
 	}
 	
