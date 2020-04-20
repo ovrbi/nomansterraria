@@ -20,9 +20,13 @@ drop.idee = obj_idb.drop[block.idee];
 
 //if (ds_stack_size(obj_WorldManager.block_pool)<1024){
 //show_debug_message(block.);
+
 if (block.object_index == obj_block)
-if (block.layer == 6) ds_queue_enqueue( obj_WorldManager.block_pool,block);
-else if (block.layer == 7) ds_queue_enqueue( obj_WorldManager.backblock_pool,block);
+if (block.object_index == obj_block) ds_queue_enqueue( obj_WorldManager.block_pool,block);
+else if (block.object_index == obj_backblock) {
+	
+	ds_queue_enqueue( obj_WorldManager.backblock_pool,block);
+	}
 block.y=-10000;
 block.visible= false;
 
