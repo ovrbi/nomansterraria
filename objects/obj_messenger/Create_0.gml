@@ -9,3 +9,7 @@
 #macro maxShipLength 16
 
 #macro blockSize sprite_get_width(sp_dirt2)
+
+shipx = 0;
+shipy = 0;
+camready = false;

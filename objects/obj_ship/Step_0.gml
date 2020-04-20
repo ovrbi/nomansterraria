@@ -33,14 +33,14 @@ if (y>0) retire = false;
 
 //TEMPORARY
 
-if (keyboard_check_pressed(ord("Q"))) {
+if (keyboard_check_pressed(ord("Q"))&&obj_player.onship == id) {
 		stabactive = !stabactive;
 		
 	}
 	
-	if (stabactive) {
+	if (stabactive && room != rm_space) {
 		//show_debug_message((targetangle - phy_rotation)*100);
-		physics_apply_torque((0 - phy_rotation)*phy_mass*2);
+		physics_apply_torque(clamp(0 - phy_rotation,-1,1)*phy_mass*20);
 	}
 
 //SHIT
