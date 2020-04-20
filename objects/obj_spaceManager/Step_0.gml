@@ -13,13 +13,15 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		var yy = 10;
 		
 		if (instance_exists(obj_ship)){
-			obj_ship.persistent = true;
-			
-			for (var i = 0; i < obj_ship.width;i++)
-			{
-				for (var j = 0; j<obj_ship.height;j++)
+			with (obj_ship){
+				persistent = true;
+				for (var i = 0; i < width;i++)
 				{
-					obj_ship.shipmatrix[i,j].persistent = true;
+					for (var j = 0; j<height;j++)
+					{
+						show_debug_message(string(i)+";"+string(j));
+						shipmatrix[i,j].persistent = true;
+					}
 				}
 			}
 			
@@ -32,12 +34,13 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			obj_player.x = xx;
 			obj_player.y = yy;
 		}
-		if (planets[i].save_map == 0){
+		if (!planets[i].generated){
 			planets[i].save_map = ds_map_create();
 			planets[i].save_bmap = ds_map_create();
 			planets[i].save_emap = ds_map_create();
 			
 			planets[i].roomid = room_duplicate(room0);
+			planets[i].generated = true;
 			
 		}
 		else{

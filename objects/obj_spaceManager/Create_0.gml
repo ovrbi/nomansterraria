@@ -12,6 +12,7 @@ planets[i].save_bmap = 0;
 planets[i].save_emap = 0;
 planets[i].seed = irandom_range(10000000,100000000);
 planets[i].pid = i;
+planets[i].generated = false;
 i++;
 
 planets[i] = instance_create_layer(1500, 130, "Instances",obj_planet);
@@ -23,6 +24,7 @@ planets[i].save_bmap = 0;
 planets[i].save_emap = 0;
 planets[i].seed = irandom_range(10000000,100000000);
 planets[i].pid = i;
+planets[i].generated = false;
 i++;
 
 planets[i] = instance_create_layer(200, 1700, "Instances",obj_planet);
@@ -34,6 +36,7 @@ planets[i].save_bmap = 0;
 planets[i].save_emap = 0;
 planets[i].seed = irandom_range(10000000,100000000);
 planets[i].pid = i;
+planets[i].generated = false;
 i++;
 
 //ready = true;
