@@ -12,7 +12,7 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		//obj_messenger.totype = planets[i].type;
 		show_debug_message(point_direction(planets[i].x,planets[i].y,obj_player.x,obj_player.y)/360*planets[i].size);
 		var xx = point_direction(planets[i].x,planets[i].y,obj_player.x,obj_player.y)/360*planets[i].size;
-		var yy = 10;
+		var yy = 32;
 		
 		if (instance_exists(obj_ship)){
 			//with (obj_ship){

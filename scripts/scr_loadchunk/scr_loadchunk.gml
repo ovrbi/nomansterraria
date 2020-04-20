@@ -48,20 +48,23 @@ if (ds_map_exists(obj_WorldManager.save_emap, string(tx)+";"+string(cy))){
 	var stak = ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy));
 	while (ds_stack_size(stak)>0){
 		var entity = ds_stack_pop(stak);
+		if (instance_exists(entity)){
 		instance_activate_object(entity);
 		entity.persistent = false;
 		entity.visible = true;
 		entity.x = cx * convrate + entity.lx;
 		entity.y = cy * convrate + entity.ly;
+		}
 		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
 	}
-	ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy)));
+	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy)));
 }
 
 if (ds_map_exists(obj_WorldManager.save_phmap, string(tx)+";"+string(cy))){
 	var phstak = ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy));
 	while (ds_stack_size(phstak)>0){
 		var phtity = ds_stack_pop(phstak);
+		if (instance_exists(phtity)){
 		//instance_activate_object(entity);
 		//phtity.persistent = false;
 		//phtity.visible = true;
@@ -69,6 +72,7 @@ if (ds_map_exists(obj_WorldManager.save_phmap, string(tx)+";"+string(cy))){
 		phtity.phy_position_x = cx * convrate + phtity.lx;
 		phtity.phy_position_y = cy * convrate + phtity.ly;
 		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
+		}
 	}
 	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy)));
 }
