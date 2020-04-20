@@ -15,7 +15,7 @@ if (cy>worldHeightc){
 
 
 //Debug
-show_debug_message("Loading: "+string(tx)+";"+string(cy));
+//show_debug_message("Loading: "+string(tx)+";"+string(cy));
 //draw_rectangle(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize, (cy+1)*chunkSize*blockSize, true);
 
 //End of debug

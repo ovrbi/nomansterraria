@@ -21,7 +21,7 @@ var endy = d1v((yy + camera_get_view_height(view_camera[0])), convrate);
 
 for (var i = begx;i<=endx;i++){
 	for (var j = begy;j<=endy;j++){
-		scr_keepChunk(i,j);
+		scr_keepChunk(i,j,true);
 	}
 }
 
