@@ -311,7 +311,7 @@ desc[i] = "Gives you additional\njumps.";
 stack[i] = 99;
 i++;
 
-//30 = Speed module
+//31 = Speed module
 name[i] = "Speed Module";
 type[i] = 3;
 sprite[i] = sp_speed_module;
@@ -321,12 +321,22 @@ desc[i] = "Increases movement\nspeed.";
 stack[i] = 99;
 i++;
 
-//30 = Regen module
+//32 = Regen module
 name[i] = "Regen Module";
 type[i] = 3;
 sprite[i] = sp_regen_module;
 bt[i] = 0;
 drop[i] = i;
 desc[i] = "Gives you health\nregeneration.";
+stack[i] = 99;
+i++;
+
+//33 = bedrock
+name[i] = "Bedrock";
+type[i] = 1;
+sprite[i] = sp_darken;
+bt[i] = 18000;
+drop[i] = i;
+desc[i] = "How did we get\nhere?";
 stack[i] = 99;
 i++;
