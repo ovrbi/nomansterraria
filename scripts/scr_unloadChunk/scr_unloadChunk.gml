@@ -68,6 +68,7 @@ if _num > 0
 ds_map_replace(obj_WorldManager.save_bmap,string(tx)+";"+string(cy), array0);
 ds_list_destroy(_list);
 
+
 #endregion
 
 #region entites
