@@ -33,7 +33,7 @@ if (place_meeting(x,y,obj_player)) || (place_meeting(x,y,obj_shippart)) && (obj_
 {
 	var destroy = 0;
 	//check if stacks of this item exist first
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 40; i++)
 	{
 		if (obj_camera.inv_id[i] = idee) && (obj_camera.inv_amount[i] < obj_idb.stack[obj_camera.inv_id[i]])
 		{
