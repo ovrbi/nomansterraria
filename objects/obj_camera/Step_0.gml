@@ -59,6 +59,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		
 		if (buildWidth >= 5)
 		{
+
 		
 			shipbuild = 1;
 		
@@ -71,7 +72,11 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 			shipbuild_back = instance_create_layer(x,y,"UI_back",obj_shipbuild_back);
 			shipbuild_back.parent = shipbuild_parent;
 		}
-		
+		else 
+		{
+			var obj3 = instance_create_layer(mouse_x,mouse_y,"OverOverUI",obj_disclaimer);
+			obj3.text = "Must consist of a row of a Ship\nConstructor and at least four\nPlatforms."
+		}
 		/*
 		obj_messenger.ship = noone;
 		

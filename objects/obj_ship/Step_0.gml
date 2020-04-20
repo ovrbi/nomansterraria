@@ -2,21 +2,24 @@
 // You can write your code in this editor
 
 
-if (room!=rm_space){
-	
+if (room!=rm_space)
+{	
 	//show_debug_message(phy_mass);
-if (y < 0){
-	persistent = true;
-	for (var i = 0; i < width;i++){
-		for (var j = 0; j<height;j++){
-			shipmatrix[i,j].persistent = true;
+	if (y < 0)
+	{
+		persistent = true;
+		for (var i = 0; i < width;i++)
+		{
+			for (var j = 0; j<height;j++)
+			{
+				shipmatrix[i,j].persistent = true;
+			}
 		}
-	}
 	
-	obj_messenger.escapex = m0d(x,blockSize*worldWidth);
-	obj_messenger.planetfrom = obj_WorldManager.planetid;
+		obj_messenger.escapex = m0d(x,blockSize*worldWidth);
+		obj_messenger.planetfrom = obj_WorldManager.planetid;
 		
-	room_goto(rm_space);
+		room_goto(rm_space);
 }
 
 
@@ -54,4 +57,8 @@ if _num > 0
 	
 }
 ds_list_destroy(_list);
+
+if (room != rm_space){
+	if (y > worldHeight*blockSize-8 + blockSize*3) y = worldHeight*blockSize-8 + blockSize*3;
+}
 }

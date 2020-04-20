@@ -41,6 +41,18 @@ productid[num] = 22;
 productcount[num] = 1;
 num++;
 
+//Platform
+tool[num] = 0;
+ingredientid[num,0] = 8;
+ingredientcount[num,0] = 10;
+ingredientid[num,1] = 0;
+ingredientcount[num,1] = 0;
+ingredientid[num,2] = 0;
+ingredientcount[num,2] = 0;
+productid[num] = 9;
+productcount[num] = 1;
+num++;
+
 //Enhancer
 /*
 tool[num] = 0;

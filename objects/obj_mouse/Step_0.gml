@@ -191,9 +191,9 @@ if (obj_camera.mouse_mode = 0)
 					obj_shipbuild_parent.maxHeight = 0;
 					var maxWidth = obj_shipbuild_parent.buildWidth;
 					
-					for (var p = 0; p < maxWidth;p++)
-					for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
-					obj_shipbuild_parent.buildmatrix[p,o] = 0;
+					//for (var p = 0; p < maxWidth;p++)
+					//for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
+					//obj_shipbuild_parent.buildmatrix[p,o] = 0;
 					
 					with (obj_shipbuildpart){
 						arr7[c] = id;
@@ -209,7 +209,7 @@ if (obj_camera.mouse_mode = 0)
 					
 					obj_messenger.maxHeight = obj_shipbuild_parent.maxHeight;
 					obj_messenger.maxWidth = maxWidth;
-					obj_messenger.buildmatrix = obj_shipbuild_parent.buildmatrix;
+					//obj_messenger.buildmatrix = obj_shipbuild_parent.buildmatrix;
 					obj_camera.alarm[0] = 1;
 				}
 				obj_camera.shipbuild = -1;
