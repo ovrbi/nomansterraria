@@ -19,15 +19,17 @@ physics_fixture_delete(fixture);
 
 width = obj_messenger.maxWidth;
 height = obj_messenger.maxHeight;
-
+show_debug_message(string(height)+";"+string(width));
 var totalmass = 0;
 var totalhp = 0;
 var ministack = ds_stack_create();
 for (var xx = 0; xx<width;xx++){
 	for (var yy = 0; yy < height;yy++){
+		show_debug_message(string(xx)+";"+string(yy));
 		//show_debug_message(string(xx)+";"+string(yy));
 		var part = shipmatrix[xx,yy];
 		if (part != 0){
+			//show_debug_message("building");
 			//gravx += xx*blockSize*obj_sdb.mass[part.idee];
 			//gravy += yy*blockSize*obj_sdb.mass[part.idee];
 			part.ship = id;

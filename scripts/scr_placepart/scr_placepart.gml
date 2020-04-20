@@ -10,5 +10,5 @@ part.sprite_index = obj_sdb.sprite[argument[3]];
 part.image_angle = (argument[2]-1)*90;
 if argument_count > 4 part.trigger = argument[4];
 
-
-obj_buildManager.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;
+show_debug_message("Building: "+string(d1v(argument[0],blockSize))+";"+string(d1v(argument[1],blockSize)));
+obj_messenger.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;

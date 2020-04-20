@@ -59,6 +59,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		
 		if (buildWidth >= 5)
 		{
+
 		
 			shipbuild = 1;
 		
@@ -66,6 +67,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 			shipbuild_parent.size = size;
 			shipbuild_parent.size0 = size0;
 			shipbuild_parent.buildWidth = buildWidth;
+			shipbuild_parent.source = obj2;
 		
 			shipbuild_back = instance_create_layer(x,y,"UI_back",obj_shipbuild_back);
 			shipbuild_back.parent = shipbuild_parent;
