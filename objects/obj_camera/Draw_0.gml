@@ -10,9 +10,21 @@ if (shipbuild == -1)
 	//draw_text(x + 1 - 160,y + 13 - 90,"craft_back " + string(craft_back));
 }
 
-if (obj_player.onship > 0)
+if (obj_player.onship > 0) && (room != rm_space) && (obj_player.flytip = 1)
 {
-	//"WASD to move directions"
+	draw_set_alpha(.5);
+	draw_set_color(c_black);
+	draw_rectangle(x+36,y+49,x+161,y+91,false);
+	draw_set_alpha(1);
+	draw_set_halign(fa_right)
+	draw_set_color(c_white);
+	draw_text(x+159,y+51,"WASD to move directions.");
+	draw_text(x+159,y+59,"(Q) toggles stabilation.");
+	draw_text(x+159,y+67,"(SPACE) activates drills.");
+	draw_text(x+159,y+75,"Fly upwards to go to space.");
+	draw_text(x+159,y+83,"(Press (X) to close).");
+	draw_set_halign(fa_left)
+	
 	//"(Q) toggles stabilation"
 	//"(SPACE) activates drills"
 	//"Fly upwards to go to space"
