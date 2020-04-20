@@ -13,7 +13,7 @@ planets[i].seed = irandom_range(10000000,100000000);
 planets[i].pid = i;
 i++;
 
-planets[i] = instance_create_layer(1500, 130, "Instances",obj_planet);
+planets[i] = instance_create_layer(-3300, -900, "Instances",obj_planet);
 planets[i].size = worldWidth*blockSize;
 planets[i].radius = planets[0].size / 2 / pi;
 planets[i].type = 2;
@@ -24,7 +24,7 @@ planets[i].seed = irandom_range(10000000,100000000);
 planets[i].pid = i;
 i++;
 
-planets[i] = instance_create_layer(200, 1700, "Instances",obj_planet);
+planets[i] = instance_create_layer(-2700, -4700, "Instances",obj_planet);
 planets[i].size = worldWidth*blockSize;
 planets[i].radius = planets[0].size / 2 / pi;
 planets[i].type = 3;

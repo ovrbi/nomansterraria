@@ -6,11 +6,22 @@ if (shipbuild == -1)
 {
 	if (instance_exists(obj_player))
 	{
-	    xmove = round((obj_player.x - x) / 10 * 4) / 4;
-	    ymove = round((obj_player.y - y) / 10 * 4) / 4;
-	    x += xmove;
-	    y += ymove;
-		image_angle = obj_player.image_angle;
+		if (obj_player.onship == 0)
+		{
+		    xmove = round((obj_player.x - x) / 10 * 4) / 4;
+		    ymove = round((obj_player.y - y) / 10 * 4) / 4;
+		    x += xmove;
+		    y += ymove;
+			image_angle = obj_player.image_angle;
+		}
+		else
+		{
+			xmove = round((obj_player.x - x) / 3 * 4) / 4;
+		    ymove = round((obj_player.y - y) / 3 * 4) / 4;
+		    x += xmove;
+		    y += ymove;
+			image_angle = obj_player.image_angle;
+		}
 	}
 }
 else

@@ -20,9 +20,10 @@ if (obj_player.onship > 0)
 
 if (room = rm_space)
 {
+	draw_text(x-155,y+20,"Starchart");
 	draw_sprite(sp_starmap,0,x-115,y+46);
 	draw_sprite(sp_starmap_planet,0,x-115+18,y+46+26);
 	draw_sprite(sp_starmap_planet,1,x-115-15,y+46+17);
 	draw_sprite(sp_starmap_planet,2,x-115-9,y+46-21);
-	draw_sprite(sp_starmap_ship,0,x-115,y+46);
+	draw_sprite_ext(sp_starmap_ship,0,x-115+18 + obj_ship.x / 100,y+46+26 + obj_ship.y / 100,1,1,-obj_ship.phy_rotation,c_white,1);
 }
