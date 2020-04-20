@@ -29,7 +29,8 @@ if (room!=rm_space)
 		retire = true;
 		room_goto(rm_space);
 }
-if (y>0) retire = false;
+
+//if (y>0) retire = false;
 
 //TEMPORARY
 

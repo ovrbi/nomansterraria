@@ -33,3 +33,6 @@ obj_camera.y = y;
 
 phy_position_x = obj_messenger.shipx;
 phy_position_y = obj_messenger.shipy;
+
+if (room!=rm_space)
+alarm[0] = 200;
