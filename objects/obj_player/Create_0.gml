@@ -4,6 +4,8 @@ xkey = 0;
 ykey = 0;
 dir = 1;
 
+flytip = 1;
+
 onship = 0;
 
 spd = 1.6;

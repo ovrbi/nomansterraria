@@ -1,6 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 //swipe timer
+
+if (keyboard_check_pressed(ord("X"))) && (onship > 0)
+{
+	flytip = 0;
+}
+
 if (swipe_time > 0) swipe_time--;
 
 if (hit > 0) hit -= .05;
