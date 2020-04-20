@@ -26,3 +26,6 @@ for (var xx = 0; xx<width;xx++){
 		}
 	}
 }
+
+obj_camera.x = x;
+obj_camera.y = y;
