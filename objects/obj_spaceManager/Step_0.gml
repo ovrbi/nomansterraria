@@ -4,30 +4,31 @@
 if (canstep) {
 for (var i = 0; i < array_length_1d(planets);i++)
 {
-	show_debug_message(i);
+	//show_debug_message(i);
 	if (point_distance(planets[i].x,planets[i].y,obj_player.x,obj_player.y)<planets[i].radius){
 		
 		//obj_messenger.totype = planets[i].type;
-		
+		show_debug_message(point_direction(planets[i].x,planets[i].y,obj_player.x,obj_player.y)/360*planets[i].size);
 		var xx = point_direction(planets[i].x,planets[i].y,obj_player.x,obj_player.y)/360*planets[i].size;
 		var yy = 10;
 		
 		if (instance_exists(obj_ship)){
 			with (obj_ship){
 				persistent = true;
-				for (var i = 0; i < width;i++)
+				
+				for (var a = 0; a < width;a++)
 				{
 					for (var j = 0; j<height;j++)
 					{
-						show_debug_message(string(i)+";"+string(j));
-						shipmatrix[i,j].persistent = true;
+						
+						shipmatrix[a,j].persistent = true;
 					}
 				}
 			}
 			
 			
 			obj_ship.phy_position_x =xx;
-			obj_ship.phy_position_y =yy;
+			obj_ship.phy_position_y =yy+50;
 			
 		}
 		else {

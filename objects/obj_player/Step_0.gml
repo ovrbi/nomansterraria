@@ -151,4 +151,4 @@ if (ysp = 0) y = round(y);
 
 
 //reset
-if (keyboard_check_pressed(vk_escape)) room_restart();
+//if (keyboard_check_pressed(vk_escape)) room_restart();

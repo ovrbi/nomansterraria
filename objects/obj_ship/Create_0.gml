@@ -16,6 +16,7 @@ physics_fixture_set_friction(fixture, 0.2);
 physics_fixture_bind(fixture, id);
 physics_fixture_delete(fixture);
 */
+retire = false;
 
 width = obj_messenger.maxWidth;
 height = obj_messenger.maxHeight;
