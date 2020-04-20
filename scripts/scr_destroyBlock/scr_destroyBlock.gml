@@ -7,7 +7,7 @@ var yy = block.y;
 
 //var block = instance_place(argument0,argument1,obj_block);
 if (argument1){
-var drop = instance_create_layer(xx,yy,"Instances",obj_drop);
+var drop = instance_create_layer(xx,yy,"Entities",obj_drop);
 	
 drop.sprite_index = obj_idb.sprite[obj_idb.drop[block.idee]];
 drop.idee = obj_idb.drop[block.idee];

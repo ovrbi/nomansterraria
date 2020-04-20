@@ -7,27 +7,27 @@ if (start = 0)
 	var xx = 0;
 	if (m0d(buildWidth,2) == 0) xx = 4; 
 
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*4,0,0);
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*5,0,0);
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*6,0,0);
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*7,0,0);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*4,0,0);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*5,0,0);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*6,0,0);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*7,0,0);
 
-	scr_placeShipBlock(x-4 + 8*1 +xx,y+2 + 8*5,0,0);
-	scr_placeShipBlock(x-4 + 8*1 +xx,y+2 + 8*6,0,0);
-	scr_placeShipBlock(x-4 + 8*1 +xx,y+2 + 8*7,0,0);
+	scr_placeShipBlock(x-4 + 8*1 +xx,y+3 + 8*5,0,0);
+	scr_placeShipBlock(x-4 + 8*1 +xx,y+3 + 8*6,0,0);
+	scr_placeShipBlock(x-4 + 8*1 +xx,y+3 + 8*7,0,0);
 
-	scr_placeShipBlock(x-4 - 8*1 +xx,y+2 + 8*5,0,0);
-	scr_placeShipBlock(x-4 - 8*1 +xx,y+2 + 8*6,0,0);
-	scr_placeShipBlock(x-4 - 8*1 +xx,y+2 + 8*7,0,0);
+	scr_placeShipBlock(x-4 - 8*1 +xx,y+3 + 8*5,0,0);
+	scr_placeShipBlock(x-4 - 8*1 +xx,y+3 + 8*6,0,0);
+	scr_placeShipBlock(x-4 - 8*1 +xx,y+3 + 8*7,0,0);
 
-	scr_placeShipBlock(x-4 - 8*1 +xx,y+2 + 8*8,2,0);
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*8,2,0);
-	scr_placeShipBlock(x-4 + 8*1 +xx,y+2 + 8*8,2,0);
+	scr_placeShipBlock(x-4 - 8*1 +xx,y+3 + 8*8,2,0);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*8,2,0);
+	scr_placeShipBlock(x-4 + 8*1 +xx,y+3 + 8*8,2,0);
 
-	scr_placeShipBlock(x-4 + 8*2 +xx,y+2 + 8*5,2,90);
-	scr_placeShipBlock(x-4 - 8*2 +xx,y+2 + 8*5,2,270);
+	scr_placeShipBlock(x-4 + 8*2 +xx,y+3 + 8*5,2,90);
+	scr_placeShipBlock(x-4 - 8*2 +xx,y+3 + 8*5,2,270);
 
-	scr_placeShipBlock(x-4 +xx,y+2 + 8*3,2,180);
+	scr_placeShipBlock(x-4 +xx,y+3 + 8*3,2,180);
 }
 
 if (mouse_wheel_up()) select--;

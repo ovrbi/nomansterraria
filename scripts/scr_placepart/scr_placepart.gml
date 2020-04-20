@@ -3,7 +3,7 @@
 // dir = argument2;
 // idee = argument3;
 
-var part = instance_create_layer(argument[0]+blockSize/2,argument[1]+blockSize/2,"Instances",obj_shippart);
+var part = instance_create_layer(argument[0]+blockSize/2,argument[1]+blockSize/2,"Entities",obj_shippart);
 part.idee = argument[3];
 part.dir = argument[2];
 part.sprite_index = obj_sdb.sprite[argument[3]];

@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//give ship building equipment
+if (keyboard_check_pressed(vk_f2))
+{
+	scr_dropItem(obj_player.x, obj_player.y, 22, 1);
+	scr_dropItem(obj_player.x, obj_player.y, 9, 4);
+}
+
 ///follows
 if (shipbuild == -1)
 {
@@ -51,7 +58,11 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		for (var i = 1; i<=maxShipLength;i++){
 			if (position_meeting(mouse_x + i * blockSize,mouse_y,obj_block)){
 				obj = collision_point(mouse_x + i * blockSize,mouse_y,obj_block, false, true);
-				if (obj.idee == 9) size++;
+				if (obj.idee == 9) 
+				{
+					size++;
+					instance_create_layer(obj.x,obj.y-48,"Instances",obj_shipbuild_collision);
+				}
 				else i = maxShipLength + 1;
 			}
 			else i = maxShipLength + 1;
@@ -59,7 +70,11 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		for (var i = 1; i<=maxShipLength;i++){
 			if (position_meeting(mouse_x - i * blockSize,mouse_y,obj_block)){
 				obj = collision_point(mouse_x - i * blockSize,mouse_y,obj_block, false, true);
-				if (obj.idee == 9) size0++;
+				if (obj.idee == 9)
+				{
+					size0++;
+					instance_create_layer(obj.x,obj.y-48,"Instances",obj_shipbuild_collision);
+				}
 				else i = maxShipLength + 1;
 			}
 			else i = maxShipLength + 1;
@@ -68,13 +83,27 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		var buildWidth = size + size0;
 		var buildCenter = size - size0;
 		
-		if (buildWidth >= 5)
+		canWeOpen = 1;
+		with (obj_shipbuild_collision)
+		{
+			if (place_meeting(x,y,obj_shippart))
+			{
+				obj_camera.canWeOpen = 0;
+			}
+		}
+		
+		if (canWeOpen == 0)
+		{
+			var obj3 = instance_create_layer(mouse_x,mouse_y,"OverOverUI",obj_disclaimer);
+			obj3.text = "Please remove any preexisting\nships from the platform."
+		}
+		else if (buildWidth >= 5)
 		{
 
 		
 			shipbuild = 1;
 		
-			shipbuild_parent = instance_create_layer(obj2.x + buildCenter*8/2,obj2.y-74,"Instances",obj_shipbuild_parent);
+			shipbuild_parent = instance_create_layer(obj2.x + buildCenter*8/2,obj2.y-75,"Instances",obj_shipbuild_parent);
 			shipbuild_parent.size = size;
 			shipbuild_parent.size0 = size0;
 			shipbuild_parent.buildWidth = buildWidth;

@@ -215,7 +215,7 @@ if (obj_camera.mouse_mode = 0)
 					//obj_messenger.buildmatrix = obj_shipbuild_parent.buildmatrix;
 					//obj_camera.alarm[0] = 1;
 					
-					obj_messenger.ship = instance_create_layer(0,0,"Instances",obj_ship);
+					obj_messenger.ship = instance_create_layer(0,0,"Entities",obj_ship);
 
 					obj_messenger.ship.phy_position_x = obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2;
 					obj_messenger.ship.phy_position_y = obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1;

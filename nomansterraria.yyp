@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "09678ef1-7320-48d3-a8b8-e6e2bfc1db1c",
+            "Value": {
+                "id": "b942ebfd-0e20-4669-9118-88835b78492e",
+                "resourcePath": "objects\\obj_shipbuild_collision\\obj_shipbuild_collision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09a04c83-b188-470a-8da1-066f2cb80b65",
             "Value": {
                 "id": "b3355fd9-fca8-4e02-8632-459c855e5459",
@@ -892,6 +900,14 @@
                 "id": "20dc44a5-24fe-44b8-84a4-9c1a2a2daa7c",
                 "resourcePath": "views\\99181648-c797-414a-b9ea-d5446415d636.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9cf541f5-1fad-4781-8379-c3f1e5d20465",
+            "Value": {
+                "id": "a87b566a-7e99-4288-bda6-7b46831c912c",
+                "resourcePath": "sprites\\sp_shipbuild_mask\\sp_shipbuild_mask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
