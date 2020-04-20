@@ -68,12 +68,12 @@ else
 		else if (obj.idee == 8)
 		{
 			name = "Build Ship";
-			desc = "Place\nthe\nship\ninto\nthe\nworld.";
+			desc = "Place the ship\ninto the world.";
 		}
 		else if (obj.idee == 9)
 		{
 			name = "Exit";
-			desc = "Exit\nwith\nout\nsavi\nng.";
+			desc = "Exit without\nsaving.";
 		}
 	}
 	else if (place_meeting(x,y,obj_shipbuild_rotate))
@@ -128,46 +128,46 @@ else
 		}
 	}
 	
+	
+	var width = 0;
+	if (string_width(name) > string_width(desc))
+	{
+		width = string_width(name);
+	}
+	else
+	{
+		width = string_width(desc);
+	}
+		
 	if (name != "")
 	{
+		var x1 = x+3;
+		var y1 = y+6;
+		var x2 = x+5 + width;
+		var y2 = y+14;
+		if (x2 >= obj_camera.x + 160)
+		{
+			x2 = obj_camera.x + 160 - 1;
+			x1 = x2 - width - 2;
+		}
+		
+		
+		draw_set_color(c_black);
+		draw_rectangle(x1, y1, x2, y2, false);
+		
 		if (desc != "")
 		{
-			if (string_width(name) > string_width(desc))
-			{
-				draw_set_color(c_black);
-				draw_rectangle(x+3, y+6, x+5 + string_width(name), y+14, false);
-						
-				draw_set_alpha(.5);
-				draw_rectangle(x+4, y+15, x+4 + string_width(name), y+16 + string_height(desc), false);
-				draw_set_alpha(1);
-						
-				draw_set_color($bd9956);
-				draw_rectangle(x+4, y+7, x+4 + string_width(name), y+13, false);
-			}
-			else
-			{
-				draw_set_color(c_black);
-				draw_rectangle(x+3, y+6, x+5 + string_width(desc), y+14, false);
-						
-				draw_set_alpha(.5);
-				draw_rectangle(x+4, y+15, x+4 + string_width(desc), y+16 + string_height(desc), false);
-				draw_set_alpha(1);
-						
-				draw_set_color($bd9956);
-				draw_rectangle(x+4, y+7, x+4 + string_width(desc), y+13, false);
-			}
+			draw_set_alpha(.5);
+			draw_rectangle(x1+1, y1+9, x2-1, y2+2 + string_height(desc), false);
+			draw_set_alpha(1);
 		}
-		else
-		{
-			draw_set_color(c_black);
-			draw_rectangle(x+3, y+6, x+5 + string_width(name), y+14, false);
-			draw_set_color($bd9956);
-			draw_rectangle(x+4, y+7, x+4 + string_width(name), y+13, false);
-		}
-			
+						
+		draw_set_color($bd9956);
+		draw_rectangle(x1+1, y1+1, x2-1, y2-1, false);
+		
 		draw_set_color(c_white);
-		draw_text(x+5,y+7,name);
-		draw_text(x+5,y+16,desc);
+		draw_text(x1+2,y1+1,name);
+		draw_text(x1+2,y1+10,desc);
 	}
 }
 
