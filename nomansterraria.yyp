@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "cd0c2123-d1b0-4263-831a-24d20a409659",
+            "Value": {
+                "id": "c35fb4d5-ccc7-4507-b025-928a8cb90e0d",
+                "resourcePath": "scripts\\scr_placeShipBlock\\scr_placeShipBlock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ce0ce7fa-e4ba-4df9-a6d4-19a808df981a",
             "Value": {
                 "id": "c064f3f8-1f27-4762-9178-313505b3f2ed",
@@ -1353,7 +1361,8 @@
         "45a59029-5ad2-4cc4-822c-d166250b2c0a",
         "7fd651e8-fa9d-4dd0-995c-3fda226a33d5",
         "bc1e0522-53ca-4188-9c1e-b47fb18f9edd",
-        "39abfd77-3829-46f3-9868-f82c59c54181"
+        "39abfd77-3829-46f3-9868-f82c59c54181",
+        "cd0c2123-d1b0-4263-831a-24d20a409659"
     ],
     "tutorial": ""
 }
