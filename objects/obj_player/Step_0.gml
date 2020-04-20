@@ -12,9 +12,7 @@ if (swipe_time > 0) swipe_time--;
 if (hit > 0) hit -= .05;
 if (stun > 0) stun -= .1;
 
-if (room != rm_space){
-	if (y > worldHeight*blockSize-8 + blockSize*3) y = worldHeight*blockSize-8 + blockSize*3;
-}
+
 
 if (onship!= 0){
 	x = onship.phy_com_x;

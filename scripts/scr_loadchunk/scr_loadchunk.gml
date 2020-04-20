@@ -2,7 +2,17 @@ var cx = argument0;
 var cy = argument1;
 var tx = m0d(cx,worldWidthc);
 
-if (cy<0||cy>worldHeightc) return;
+if (cy<0) return;
+if (cy>worldHeightc){
+	for (var i = 0; i < chunkSize; i++){
+		for (var j = 0; j<chunkSize;j++){
+			//if (array_length_1d(arr)>i*chunkSize+j)
+			scr_placeBlockG(cx*chunkSize + i, cy*chunkSize + j, 33,true);
+		}
+	}
+	return;
+}
+
 
 //Debug
 //show_debug_message("Loading: "+string(tx)+";"+string(cy));
