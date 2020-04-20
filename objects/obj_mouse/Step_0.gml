@@ -229,6 +229,7 @@ if (obj_camera.mouse_mode = 0)
 				instance_destroy(obj_shipbuild_rotate);
 				instance_destroy(obj_shipbuild_parent);
 				instance_destroy(obj_shipbuildpart);
+				instance_destroy(obj_shipbuild_collision);
 				//*/
 			}
 		}

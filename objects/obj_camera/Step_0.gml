@@ -96,7 +96,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		if (canWeOpen == 0)
 		{
 			var obj3 = instance_create_layer(mouse_x,mouse_y,"OverOverUI",obj_disclaimer);
-			obj3.text = "Please remove any preexisting\nships from the platform."
+			obj3.text = "Please remove any\npreexisting ships\nfrom the platform."
 			instance_destroy(obj_shipbuild_collision);
 		}
 		else if (buildWidth >= 5)
