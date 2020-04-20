@@ -336,7 +336,7 @@ name[i] = "Bedrock";
 type[i] = 1;
 sprite[i] = sp_darken;
 bt[i] = 18000;
-drop[i] = i;
+drop[i] = 3;
 desc[i] = "How did we get\nhere?";
 stack[i] = 99;
 i++;
