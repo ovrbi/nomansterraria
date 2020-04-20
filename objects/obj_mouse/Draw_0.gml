@@ -52,6 +52,44 @@ else
 			desc = obj_idb.desc[obj.parent.slot_id[obj.idee]];
 		}
 	}
+	else if (place_meeting(x,y,obj_shipbuild_slot))
+	{
+		var obj = instance_place(x,y,obj_shipbuild_slot);
+		if (obj.idee == 0)
+		{
+			name = "Remove parts";
+			desc = "";
+		}
+		else if (obj.idee > 0) && (obj.idee < 4)
+		{
+			name = obj_sdb.name[obj_shipbuild_parent.slot_id[obj.idee]];
+			desc = obj_sdb.desc[obj_shipbuild_parent.slot_id[obj.idee]];
+		}
+		else if (obj.idee == 8)
+		{
+			name = "Build Ship";
+			desc = "Place\nthe\nship\ninto\nthe\nworld.";
+		}
+		else if (obj.idee == 9)
+		{
+			name = "Exit";
+			desc = "Exit\nwith\nout\nsavi\nng.";
+		}
+	}
+	else if (place_meeting(x,y,obj_shipbuild_rotate))
+	{
+		var obj = instance_place(x,y,obj_shipbuild_rotate);
+		if (obj.idee == 0)
+		{
+			name = "Rotate Left (Q)";
+			desc = "";
+		}
+		else
+		{
+			name = "Rotate Right (E)";
+			desc = "";
+		}
+	}
 	else if (place_meeting(x,y,obj_inventory_slot))
 	{
 		var obj = instance_place(x,y,obj_inventory_slot);

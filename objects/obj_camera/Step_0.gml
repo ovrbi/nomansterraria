@@ -57,15 +57,19 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 		var buildWidth = size + size0;
 		var buildCenter = size - size0;
 		
-		shipbuild = 1;
+		if (buildWidth >= 5)
+		{
 		
-		shipbuild_parent = instance_create_layer(obj2.x + buildCenter*8/2,obj2.y-74,"Instances",obj_shipbuild_parent);
-		shipbuild_parent.size = size;
-		shipbuild_parent.size0 = size0;
-		shipbuild_parent.buildWidth = buildWidth;
+			shipbuild = 1;
 		
-		shipbuild_back = instance_create_layer(x,y,"UI_back",obj_shipbuild_back);
-		shipbuild_back.parent = shipbuild_parent;
+			shipbuild_parent = instance_create_layer(obj2.x + buildCenter*8/2,obj2.y-74,"Instances",obj_shipbuild_parent);
+			shipbuild_parent.size = size;
+			shipbuild_parent.size0 = size0;
+			shipbuild_parent.buildWidth = buildWidth;
+		
+			shipbuild_back = instance_create_layer(x,y,"UI_back",obj_shipbuild_back);
+			shipbuild_back.parent = shipbuild_parent;
+		}
 		
 		/*
 		obj_messenger.ship = noone;
