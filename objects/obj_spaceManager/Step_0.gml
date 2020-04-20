@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+//if (instance_exists(obj_WorldManager)) instance_destroy(obj_WorldManager);
+
 
 if (canstep) {
 for (var i = 0; i < array_length_1d(planets);i++)
@@ -13,23 +15,27 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		var yy = 10;
 		
 		if (instance_exists(obj_ship)){
-			with (obj_ship){
-				persistent = true;
+			//with (obj_ship){
+				obj_ship.persistent = true;
 				
-				for (var a = 0; a < width;a++)
+				var wid = obj_ship.width;
+				var hei = obj_ship.height;
+				
+				for (var a = 0; a < wid;a++)
 				{
-					for (var j = 0; j<height;j++)
+					for (var b = 0; b<hei;b++)
 					{
 						
-						shipmatrix[a,j].persistent = true;
+						obj_ship.shipmatrix[a,b].persistent = true;
 					}
 				}
-			}
+			//}
 			
 			
 			obj_ship.phy_position_x =xx;
 			obj_ship.phy_position_y =yy+50;
-			
+			obj_messenger.shipx = xx;
+			obj_messenger.shipy = yy;
 		}
 		else {
 			obj_player.x = xx;
@@ -49,6 +55,7 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		}
 		planets[i].persistent = true;
 		cando = true;
+		//room_instance_add(planets[i].roomid,0,0,obj_WorldManager)
 		room_goto(planets[i].roomid);
 	}
 }

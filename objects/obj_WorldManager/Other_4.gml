@@ -2,6 +2,18 @@
 // You can write your code in this editor
 if (room != rm_space){
 seed = obj_planet.seed;
+//#macro seed seedo
+/*#macro chunkSize 4
+#macro worldHeightc 64
+#macro worldHeight worldHeightc*chunkSize
+#macro worldWidthc 64
+#macro worldWidth worldWidthc*chunkSize
+#macro convrate (chunkSize*blockSize)
+#macro maxShipLength 16*/
+
+//show_debug_message(room);
+
+//loadstep = 0;
 planettype = obj_planet.type;
 planetid = obj_planet.pid;
 
@@ -48,4 +60,26 @@ for (var i = 0;i<worldWidthc;i++){
 //show_debug_message("done: " + string(current_time - time)+"ms");
 
 scr_loadChunk(stx,sty);
+
+
+
+
+
+//aro[9] = 0;
+//show_debug_message("Output: "+string(aro[7]));
+
+/*for (var i = 20;i>-20;i--){
+	show_debug_message(string(d1v(i,3))+"/"+string(m0d(i,3)));
+}*/
+ 
+
+/*for (var i=0; i<worldWidthc; i++)
+{
+	var h = scr_perlin(i,maxHeight);
+	for (var j = 0;j<h;j++)
+	{
+		
+		scr_placeBlockG(i,worldHeight - j,1);
+	}
+}*/
 }
