@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!instance_exists(obj_ship))
+
 if (canstep) {
 for (var i = 0; i < array_length_1d(planets);i++)
 {
@@ -13,8 +13,20 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		var yy = 10;
 		
 		if (instance_exists(obj_ship)){
+			obj_ship.persistent = true;
+			
+			for (var i = 0; i < obj_ship.width;i++)
+			{
+				for (var j = 0; j<obj_ship.height;j++)
+				{
+					obj_ship.shipmatrix[i,j].persistent = true;
+				}
+			}
+			
+			
 			obj_ship.phy_position_x =xx;
 			obj_ship.phy_position_y =yy;
+			
 		}
 		else {
 			obj_player.x = xx;
