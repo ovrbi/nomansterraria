@@ -34,13 +34,15 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			
 			obj_ship.phy_position_x =xx;
 			obj_ship.phy_position_y =yy+50;
-			obj_messenger.shipx = xx;
-			obj_messenger.shipy = yy;
+			
 		}
 		else {
 			obj_player.x = xx;
 			obj_player.y = yy;
 		}
+		
+		obj_messenger.shipx = xx;
+		obj_messenger.shipy = yy;
 		if (!planets[i].generated){
 			planets[i].save_map = ds_map_create();
 			planets[i].save_bmap = ds_map_create();
@@ -57,7 +59,8 @@ for (var i = 0; i < array_length_1d(planets);i++)
 		planets[i].persistent = true;
 		cando = true;
 		//room_instance_add(planets[i].roomid,0,0,obj_WorldManager)
-		room_goto(planets[i].roomid);
+		obj_messenger.camready = false;
+		room_goto(planets[0].roomid);
 	}
 }
 	

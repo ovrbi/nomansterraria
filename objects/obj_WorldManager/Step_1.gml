@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (room != rm_space){
+if (room != rm_space && obj_messenger.camready){
 
 var xx = obj_player.x;
 var yy = obj_player.y;
@@ -80,6 +80,7 @@ if (!ds_queue_empty(load_queue)){
 	else scr_unloadChunk(arr2[1],arr2[2]);
 	
 }
+//show_debug_message(ds_queue_size(load_queue));
 //*/
 
 //for (; loadstep<worldHeightc*worldWidthc)

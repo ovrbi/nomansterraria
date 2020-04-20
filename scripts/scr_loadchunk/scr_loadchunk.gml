@@ -70,5 +70,5 @@ if (ds_map_exists(obj_WorldManager.save_phmap, string(tx)+";"+string(cy))){
 		phtity.phy_position_y = cy * convrate + phtity.ly;
 		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
 	}
-	ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy)));
+	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_phmap, string(tx)+";"+string(cy)));
 }

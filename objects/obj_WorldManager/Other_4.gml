@@ -43,11 +43,11 @@ for (var i = 0; i < chunkSize*worldWidthc;i++){
 	perlin_cache[i,1] = "null";
 	perlin_cache[i,0] = "null";
 }
-
-stx = d1v(obj_player.x, convrate);
-enx = d1v(obj_player.x, convrate);
-sty = d1v(obj_player.y, convrate);
-eny = d1v(obj_player.y, convrate);
+show_debug_message(string(obj_messenger.shipx)+";"+ string(obj_messenger.shipy));
+stx = d1v(obj_messenger.shipx, convrate);
+enx = d1v(obj_messenger.shipx, convrate);
+sty = d1v(obj_messenger.shipy, convrate);
+eny = d1v(obj_messenger.shipy, convrate);
 
 var time = current_time;
 /*
