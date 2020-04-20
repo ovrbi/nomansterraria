@@ -186,7 +186,23 @@ if (obj_camera.mouse_mode = 0)
 				if (obj.idee == 8)
 				{
 					//place ship
+					var c = 0;
+					var arr7;
+					var maxHeight;
+					with (obj_shipbuildpart){
+						arr7[c] = id;
+						if((y-obj_shipbuild_parent.source.y)div blockSize > maxHeight) maxHeight = (y-obj_shipbuild_parent.source.y)div blockSize;
+						
+					}
 					
+					for (var d = 0; d<array_length_1d(arr7);d++){
+						scr_placepart(arr7[d].x-obj_shipbuild_parent.source.x+size0*blockSize,arr7[d].y-obj_shipbuild_parent.source.y)
+					}
+					
+					obj_messenger.maxHeight = maxHeight;
+					obj_messenger.maxWidth = maxWidth;
+					obj_messenger.buildmatrix = buildmatrix;
+					obj_camera.alarm[0] = 1;
 				}
 				obj_camera.shipbuild = -1;
 				instance_destroy(obj_shipbuild_back);
