@@ -831,6 +831,14 @@
             }
         },
         {
+            "Key": "95b1486b-e3d4-4163-9ad5-bbf34750cc3a",
+            "Value": {
+                "id": "15ff7382-1105-4acc-a351-2ed0473e11ab",
+                "resourcePath": "sprites\\sp_spaceground\\sp_spaceground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "978d6cf3-a410-47ca-bb14-55852d6f545a",
             "Value": {
                 "id": "5e71db72-9652-45ab-96b9-8d0025f934d7",

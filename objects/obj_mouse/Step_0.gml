@@ -15,7 +15,7 @@ if (place_meeting(x,y,obj_block))
 }
 
 //check if mouse on ship
-if (keyboard_check_pressed(ord("E")))
+if (keyboard_check_pressed(ord("E"))) && (room != rm_space)
 {	
 	obj_player.onship = 0;
 	if (place_meeting(x,y,obj_shippart)) obj_player.onship = collision_point(x,y,obj_shippart,false, false).ship;
