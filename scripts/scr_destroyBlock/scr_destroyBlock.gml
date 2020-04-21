@@ -22,13 +22,18 @@ drop.idee = obj_idb.drop[block.idee];
 //show_debug_message(block.);
 
 
-if (block.object_index == obj_block) ds_queue_enqueue( obj_WorldManager.block_pool,block);
+if (block.object_index == obj_block) {
+	ds_queue_enqueue( obj_WorldManager.block_pool,block);
+	//block.phy_active = false;
+	//block.phy_position_y = -10000;
+}
 else if (block.object_index == obj_backblock) {
 	
 	ds_queue_enqueue( obj_WorldManager.backblock_pool,block);
 	}
 block.y=-10000;
 block.visible= false;
+
 
 	//instance_deactivate_object(block);
 //}

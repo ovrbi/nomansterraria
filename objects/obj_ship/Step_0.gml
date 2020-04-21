@@ -4,6 +4,7 @@
 
 if (room!=rm_space)
 {	
+	event_inherited();
 	//show_debug_message(obj_WorldManager.planetid);
 	//show_debug_message(phy_mass);
 	if (y < 0&&!retire&&obj_player.onship == id)
@@ -42,7 +43,7 @@ if (keyboard_check_pressed(ord("Q"))&&obj_player.onship == id) {
 
 //SHIT
 
-
+//*
 var _list = ds_list_create();
 var _num = collision_circle_list(phy_com_x, phy_com_y, radius*2, obj_block, false, false, _list, false);
 
@@ -75,7 +76,7 @@ if _num > 0
 	
 }
 ds_list_destroy(_list);
-
+//*/
 if (room != rm_space){
 	if (y > worldHeight*blockSize-8 + blockSize*3) y = worldHeight*blockSize-8 + blockSize*3;
 }

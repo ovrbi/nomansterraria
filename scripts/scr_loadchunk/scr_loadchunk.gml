@@ -48,7 +48,7 @@ if (ds_map_exists(obj_WorldManager.save_emap, string(tx)+";"+string(cy))){
 	var stak = ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy));
 	while (ds_stack_size(stak)>0){
 		var data = ds_stack_pop(stak);
-		scr_loadentity(data,cx,cy);
+		scr_loadEntity(data,cx,cy);
 		//show_debug_message("Loaded "+string(entity.x)+";"+string(entity.y));
 	}
 	//ds_stack_destroy(ds_map_find_value(obj_WorldManager.save_emap, string(tx)+";"+string(cy)));

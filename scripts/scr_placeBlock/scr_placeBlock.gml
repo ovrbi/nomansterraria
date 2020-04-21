@@ -9,6 +9,9 @@ if (argument2>0){
 		if (ds_queue_size(obj_WorldManager.block_pool)>0){
 			block = ds_queue_dequeue(obj_WorldManager.block_pool);
 			//instance_activate_object(block);
+			//block.phy_position_x = argument0;
+			//block.phy_position_y = argument1;
+			//block.phy_active = true;
 			block.x=argument0;
 			block.y=argument1;
 			block.visible = true;

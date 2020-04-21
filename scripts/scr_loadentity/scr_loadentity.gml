@@ -14,5 +14,13 @@ switch (obj){
 	
 	break;
 	case obj_ship:
+	obj_messenger.buildmatrix = arr[6];
+	obj_messenger.com_x = arr[4];
+	obj_messenger.com_y = arr[5];
+	obj_messenger.com_active = true;
+	//show_debug_message(string(arr[1]+cx*convrate)+";"+string(arr[2]+cy*convrate));
+	var ship = instance_create_layer(arr[1]+cx*convrate,arr[2]+cy*convrate,"Instances",obj_ship);
+	ship.phy_rotation = arr[3];
+	obj_messenger.com_active = false;
 	break;
 }

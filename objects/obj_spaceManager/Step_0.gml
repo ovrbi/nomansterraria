@@ -33,7 +33,9 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			
 			
 			obj_ship.phy_position_x =xx;
-			obj_ship.phy_position_y =yy+50;
+			obj_ship.phy_position_y =yy;
+			obj_ship.shipx = xx;
+			obj_ship.shipy = yy;
 			
 		}
 		else {
@@ -41,8 +43,7 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			obj_player.y = yy;
 		}
 		
-		obj_messenger.shipx = xx;
-		obj_messenger.shipy = yy;
+		
 		if (!planets[i].generated){
 			planets[i].save_map = ds_map_create();
 			planets[i].save_bmap = ds_map_create();

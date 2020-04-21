@@ -9,6 +9,9 @@ var endx = d1v((xx + camera_get_view_width(view_camera[0])), convrate);
 var begy = d1v((yy - camera_get_view_height(view_camera[0])), convrate);
 var endy = d1v((yy + camera_get_view_height(view_camera[0])), convrate);
 
+dtime = current_time;
+
+
 
 //show_debug_message(ds_stack_size(block_pool));
 //show_debug_message("#"+string(stx) + ";" + string(sty)+"//"+string(enx)+";"+string(eny));

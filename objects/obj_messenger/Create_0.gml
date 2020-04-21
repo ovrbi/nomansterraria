@@ -13,3 +13,4 @@
 shipx = 0;
 shipy = 0;
 camready = false;
+com_active = false;

@@ -1,8 +1,8 @@
 {
-    "id": "45a59029-5ad2-4cc4-822c-d166250b2c0a",
+    "id": "bed08e04-849a-4cbe-b459-26dc47a29be0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_getFixture",
+    "name": "trimarray2d",
     "IsCompatibility": false,
     "IsDnD": false
 }

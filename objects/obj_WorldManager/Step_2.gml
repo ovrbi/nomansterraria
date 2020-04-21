@@ -1,5 +1,39 @@
 /// @description Insert description here
 // You can write your code in this editor
+//*
+
+if (room != rm_space && obj_messenger.camready&&ygen < worldHeightc){
+var deltatime = current_time - dtime;
+//show_debug_message(ds_queue_size(block_pool));
+var ghgh = 0;
+while (deltatime < 10){
+	ghgh++;
+	//show_debug_message(deltatime);
+	/*if (ds_queue_size(block_pool)<6000){
+		var block = instance_create_layer(0,-10000,"Instances",obj_block);
+		block.phy_active = false;
+		ds_queue_enqueue(block_pool,block);
+	}*/
+	if (ygen < worldHeightc){
+	if (!ds_map_exists(save_map,string(xgen)+";"+string(ygen))){
+		scr_genChunk(xgen,ygen);
+		//show_debug_message(string(xgen)+";"+string(ygen));
+	}
+	}
+	//else show_debug_message("Chunkgen done in "+ string(current_time-debugtime)+"ms");
+	xgen++;
+	if (xgen >= worldWidthc){
+		xgen = 0;
+		ygen++;
+	}
+	//if (ygen>=worldHeightc) show_debug_message("Chunkgen done in "+ string(current_time-debugtime)+"ms");
+	
+	deltatime = current_time - dtime;
+}
+//show_debug_message(ghgh);
+
+}
+//*/
 /*
 var xx = obj_player.x;
 var yy = obj_player.y;

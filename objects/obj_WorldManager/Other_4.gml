@@ -17,7 +17,11 @@ seed = obj_planet.seed;
 planettype = obj_planet.type;
 planetid = obj_planet.pid;
 
+xgen = 0;
+ygen = 0;
 
+dtime = current_time;
+debugtime = current_time;
 //show_debug_message("I'm here");
 
 debugChunk = false;

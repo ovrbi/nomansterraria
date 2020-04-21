@@ -24,7 +24,7 @@ for (var i = 0;i<obj_sdb.fixcount[part.idee];i++){
 	}
 	//*/
 	//show_debug_message(string(offsetx*blockSize + xx)+";"+string(offsety*blockSize + yy));
-	physics_fixture_add_point(fixture, offsetx*blockSize + xx, offsety*blockSize + yy);
+	physics_fixture_add_point(fixture, offsetx + xx, offsety + yy);
 }
 /*physics_fixture_add_point(fixture, offsetx*blockSize, offsety*blockSize);
 physics_fixture_add_point(fixture, (offsetx+1)*blockSize, offsety*blockSize);

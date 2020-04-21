@@ -85,7 +85,7 @@ if _enum > 0
 		var entity = _elist[| i];
 		
 		
-		ds_stack_push(ds_map_find_value(obj_WorldManager.save_emap,string(tx)+";"+string(cy)),scr_saveentity(entity));
+		ds_stack_push(ds_map_find_value(obj_WorldManager.save_emap,string(tx)+";"+string(cy)),scr_saveEntity(entity));
 		instance_destroy(entity);
 		//entity.phy_active = false;
 	}
