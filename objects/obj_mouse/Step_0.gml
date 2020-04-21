@@ -57,7 +57,7 @@ if (obj_camera.mouse_mode = 0)
 {
 	if (mouse_check_button_pressed(mb_left))
 	{
-		if (place_meeting(x,y,obj_inventory_button))
+		if (place_meeting(x,y,obj_inventory_button)) && (obj_camera.crafting == -1)
 		{
 			obj_camera.inv_expand = -obj_camera.inv_expand;
 		}

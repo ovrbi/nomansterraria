@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //give ship building equipment
-if (keyboard_check_pressed(vk_f2))
+if (keyboard_check_pressed(vk_f3))
 {
 	scr_dropItem(obj_player.x, obj_player.y, 22, 1);
 	scr_dropItem(obj_player.x, obj_player.y, 9, 4);
