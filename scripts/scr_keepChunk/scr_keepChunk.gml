@@ -17,7 +17,7 @@ if (chunk == 0){
 		var chunko = ds_queue_dequeue(chunk_pool);
 		chunko.x = cx;
 		chunko.y = cy;
-		chunko.visible = true;
+		//chunko.visible = true;
 		//show_debug_message(chunko);
 	}
 	obj_WorldManager.chunkobj[tx,cy] = chunko;
