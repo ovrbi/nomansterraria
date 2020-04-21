@@ -22,10 +22,6 @@ if (room!=rm_space)
 		obj_messenger.escapex = m0d(x,blockSize*worldWidth);
 		obj_messenger.planetfrom = obj_WorldManager.planetid;
 		
-		ds_queue_destroy(obj_WorldManager.load_queue);
-		ds_queue_destroy(obj_WorldManager.block_pool);
-		ds_queue_destroy(obj_WorldManager.backblock_pool);
-		ds_queue_destroy(obj_WorldManager.force_pool);
 		retire = true;
 		room_goto(rm_space);
 }

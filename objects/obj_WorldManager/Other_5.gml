@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-show_debug_message("cleanup");
+//show_debug_message("cleanup");
 
 if (room!=rm_space){
 ds_queue_destroy(load_queue);
