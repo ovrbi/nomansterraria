@@ -2,7 +2,7 @@ var cx = argument0;
 var cy = argument1;
 var tx = m0d(cx,worldWidthc);
 
-//show_debug_message("Unloading: "+string(tx)+";"+string(cy));
+//show_debug_message("Unloading: "+string(cx)+";"+string(cy));
 #region blocks
 var _list = ds_list_create();
 var _num = collision_rectangle_list(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize-1, (cy+1)*chunkSize*blockSize-1,obj_block ,false, false, _list, false);
@@ -85,7 +85,7 @@ if _enum > 0
 		var entity = _elist[| i];
 		
 		
-		ds_stack_push(ds_map_find_value(obj_WorldManager.save_emap,string(tx)+";"+string(cy)),scr_saveentity(entity));
+		ds_stack_push(ds_map_find_value(obj_WorldManager.save_emap,string(tx)+";"+string(cy)),scr_saveEntity(entity));
 		instance_destroy(entity);
 		//entity.phy_active = false;
 	}

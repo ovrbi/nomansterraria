@@ -2,12 +2,13 @@
 // You can write your code in this editor 
 event_inherited();
 
-if (place_meeting(x,y+1,obj_collisionparent)){
+/*if (place_meeting(x,y+1,obj_collisionparent)){
 	active=false;
 }
 else{
 	active=true;
-}
+}*/
+
 
 if (vsp < 10) && (!place_meeting(x,y+1,obj_collisionparent)) vsp += grav;
 //Horizontal Collision

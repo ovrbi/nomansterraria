@@ -23,4 +23,5 @@ else if (part.idee==2||part.idee==3||part.idee==4){
 }
 
 //show_debug_message("Building: "+string(d1v(argument[0],blockSize))+";"+string(d1v(argument[1],blockSize)));
-obj_messenger.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;
+//obj_messenger.buildmatrix[d1v(argument[0],blockSize),d1v(argument[1],blockSize)] = part;
+return part;

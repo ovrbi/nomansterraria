@@ -7,8 +7,8 @@ if (cando) {
 	var xx = obj_messenger.escapex;
 	var angle = xx/planets[from].size*360;
 	
-	obj_messenger.shipx = lengthdir_x(planets[from].radius+40,angle)+planets[from].x;
-	obj_messenger.shipy = lengthdir_y(planets[from].radius+40,angle)+planets[from].y;
+	obj_ship.shipx = lengthdir_x(planets[from].radius+40,angle)+planets[from].x;
+	obj_ship.shipy = lengthdir_y(planets[from].radius+40,angle)+planets[from].y;
 	canstep = false;
 	alarm[0] = 1;
 }

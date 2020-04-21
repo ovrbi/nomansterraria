@@ -5,16 +5,6 @@
     "name": "obj_force",
     "eventList": [
         {
-            "id": "d459acc7-2682-41dc-b7a6-02167c636574",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "1f700524-9e5a-42ae-83af-6076274bb4f9",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "68320b66-41a7-4e9d-a1fb-c6c062258752"
-        },
-        {
             "id": "2d7d7a87-7fe7-425b-884e-9de157b2f014",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -83,5 +73,5 @@
     "properties": null,
     "solid": true,
     "spriteId": "c5e05e61-62da-401f-8579-ec00f77b072a",
-    "visible": false
+    "visible": true
 }

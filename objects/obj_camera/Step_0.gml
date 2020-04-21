@@ -67,7 +67,7 @@ if (keyboard_check_pressed(ord("E"))) && (crafting == -1) && (inv_expand == -1) 
 			}
 			else i = maxShipLength + 1;
 		}
-		for (var i = 1; i<=maxShipLength;i++){
+		for (var i = 1; i+size<=maxShipLength;i++){
 			if (position_meeting(mouse_x - i * blockSize,mouse_y,obj_block)){
 				obj = collision_point(mouse_x - i * blockSize,mouse_y,obj_block, false, true);
 				if (obj.idee == 9)

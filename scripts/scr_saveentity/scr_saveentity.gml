@@ -10,6 +10,13 @@ switch(obj.object_index){
 	arr[3] = obj.idee;
 	break;
 	case obj_ship:
+	arr[1] = m0d(obj.x,convrate);
+	arr[2] = m0d(obj.y,convrate);
+	arr[3] = obj.phy_rotation;
+	arr[4] = obj.com_x;
+	arr[5] = obj.com_y;
+	arr[6] = obj.shipblueprint;
 	break;
 }
+
 return arr;
