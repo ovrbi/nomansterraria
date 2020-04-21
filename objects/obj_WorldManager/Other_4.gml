@@ -35,24 +35,32 @@ load_queue = ds_queue_create();
 block_pool = ds_queue_create();
 backblock_pool = ds_queue_create();
 force_pool = ds_queue_create();
+chunk_pool = ds_queue_create();
 
+//*
 for (var i = 0;i<worldWidthc;i++){
 	for (var j = 0; j<worldHeightc+3;j++){
-		chunkt[i,j] = -1;
-		chunkw[i,j] = 0;
+		//chunkt[i,j] = -1;
+		chunkobj[i,j] = 0;
 	}
 }
-
+//*/
+/*chunkt = ds_grid_create(worldWidthc,worldHeightc);
+chunkw = ds_grid_create(worldWidthc,worldHeightc);
+ds_grid_add_region(chunkw,0,0,worldWidthc-1,worldHeightc-1,0.5);
+chunkwc = ds_grid_create(worldWidthc,worldHeightc);
+ds_grid_copy(chunkwc,chunkw);*/
 
 //perlin_cache = array_create(chunkSize*worldWidthc,"null");
 for (var i = 0; i < chunkSize*worldWidthc;i++){
+	
 	perlin_cache[i,1] = "null";
 	perlin_cache[i,0] = "null";
 }
 //show_debug_message(string(obj_messenger.shipx)+";"+ string(obj_messenger.shipy));
 
 
-var time = current_time;
+//var time = current_time;
 /*
 for (var i = 0;i<worldWidthc;i++){
 	for (var j = 0;j<worldHeightc;j++){

@@ -9,6 +9,7 @@ var endx = d1v((xx + camera_get_view_width(view_camera[0])), convrate);
 var begy = d1v((yy - camera_get_view_height(view_camera[0])), convrate);
 var endy = d1v((yy + camera_get_view_height(view_camera[0])), convrate);
 
+
 //show_debug_message(ds_stack_size(block_pool));
 //show_debug_message("#"+string(stx) + ";" + string(sty)+"//"+string(enx)+";"+string(eny));
 //show_debug_message("&"+string(begx) + ";" + string(begy)+"//"+string(endx)+";"+string(endy));
@@ -18,12 +19,16 @@ var endy = d1v((yy + camera_get_view_height(view_camera[0])), convrate);
 		ds_queue_enqueue(block_pool,instance_create_layer(0,-1000,"Instances",obj_block));
 	}
 }*/
-
+//*
 for (var i = begx;i<=endx;i++){
 	for (var j = begy;j<=endy;j++){
 		scr_keepChunk(i,j,true);
 	}
 }
+//*/
+
+
+//ds_grid
 
 
 /*
@@ -101,7 +106,7 @@ if (!ds_queue_empty(load_queue)){
 //for (; loadstep<worldHeightc*worldWidthc)
 
 
-//*
+/*
 for (var i = 0;i<worldWidthc;i++){
 	for (var j = 0; j<worldHeightc;j++){
 		if(chunkt[i,j]-- == 0){
@@ -111,4 +116,5 @@ for (var i = 0;i<worldWidthc;i++){
 	}
 }
 //*/
+//ds_grid_add_region(chunkt,0,0,worldWidthc-1,worldHeightc-1,-1);
 }

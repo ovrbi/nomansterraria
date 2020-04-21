@@ -1175,6 +1175,14 @@
             }
         },
         {
+            "Key": "d2fe2cac-9ba9-41bc-8680-b4d534d08882",
+            "Value": {
+                "id": "e9d28689-90ab-4ed9-a484-7529d3e6bb5f",
+                "resourcePath": "objects\\obj_chunk\\obj_chunk.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d3568340-f7ba-4689-b0c0-e66d61a8fd47",
             "Value": {
                 "id": "390e8725-ce29-4ea6-acd3-0c9b05c9d1cc",
@@ -1404,8 +1412,8 @@
         "a66c0157-7646-4a7c-9bf2-1f0f5ab3c7f2",
         "aea67f49-1efe-4d30-8c31-c2897072e2ef",
         "c1f28a68-bab1-45fe-b57a-630b14abbd36",
-        "78803f67-0899-41dc-bb02-6143b7ae9f2f",
         "a500265e-b1e5-4d80-90a6-2df6d7f1534e",
+        "78803f67-0899-41dc-bb02-6143b7ae9f2f",
         "26a5a9a5-3b7a-4f39-a2cc-1b51337cf7b7",
         "e2b4482e-de1c-435c-b953-4c2411b46cdb",
         "31765199-39cb-4690-a464-8adebf170e7c",

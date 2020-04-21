@@ -2,7 +2,7 @@ var cx = argument0;
 var cy = argument1;
 var tx = m0d(cx,worldWidthc);
 
-//show_debug_message("Unloading: "+string(tx)+";"+string(cy));
+//show_debug_message("Unloading: "+string(cx)+";"+string(cy));
 #region blocks
 var _list = ds_list_create();
 var _num = collision_rectangle_list(cx*chunkSize*blockSize, cy*chunkSize*blockSize, (cx+1)*chunkSize*blockSize-1, (cy+1)*chunkSize*blockSize-1,obj_block ,false, false, _list, false);

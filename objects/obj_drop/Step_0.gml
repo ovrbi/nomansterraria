@@ -9,6 +9,7 @@ else{
 	active=true;
 }
 
+
 if (vsp < 10) && (!place_meeting(x,y+1,obj_collisionparent)) vsp += grav;
 //Horizontal Collision
 if (place_meeting(x+hsp,y,obj_collisionparent))
