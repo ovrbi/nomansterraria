@@ -57,7 +57,8 @@ if (active){
 	
 	if (idee == 6){
 		if (keyboard_check(trigger))
-		if (place_meeting(x,y,obj_block)){
+		if (place_meeting(x,y,obj_block))
+		{
 			var obj2 = instance_place(x,y,obj_block);
 			if (!place_meeting(x,y,obj_break))
 			{
