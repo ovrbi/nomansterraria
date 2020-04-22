@@ -5,6 +5,8 @@ shipblueprint = obj_messenger.buildmatrix;
 shipx = x;
 shipy = y;
 shipangle = image_angle;
+shipspeedx = 0;
+shipspeedy = 0;
 
 com_x = 0;
 com_y = 0;
@@ -150,6 +152,7 @@ while (!ds_stack_empty(ministack)){
 
 phy_position_x = shipx;
 phy_position_y = shipy;
+phy_rotation = shipangle;
 
 stabactive = false;
 size = d1v(radius*2,convrate);

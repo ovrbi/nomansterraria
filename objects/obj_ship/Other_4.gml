@@ -34,6 +34,12 @@ obj_camera.y = y;
 
 phy_position_x = shipx;
 phy_position_y = shipy;
+//show_debug_message("Set to:"+string(phy_position_x)+";"+string(phy_position_y));
+phy_rotation = shipangle;
+phy_speed_x = shipspeedx;
+phy_speed_y = shipspeedy;
 
-if (room!=rm_space)
-alarm[0] = 200;
+
+
+//if (room!=rm_space)
+//alarm[0] = 200;

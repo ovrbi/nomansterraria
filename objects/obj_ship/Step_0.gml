@@ -7,8 +7,9 @@ if (room!=rm_space)
 	event_inherited();
 	//show_debug_message(obj_WorldManager.planetid);
 	//show_debug_message(phy_mass);
-	if (y < 0&&!retire&&obj_player.onship == id)
+	if (phy_position_y < 0&&!retire&&obj_player.onship == id)
 	{
+		//show_debug_message(phy_position_y);
 		//show_debug_message("Size: " + string(width)+";"+string(height));
 		persistent = true;
 		for (var i = 0; i < width;i++)
@@ -22,8 +23,20 @@ if (room!=rm_space)
 	
 		obj_messenger.escapex = m0d(x,blockSize*worldWidth);
 		obj_messenger.planetfrom = obj_WorldManager.planetid;
+		obj_messenger.escapeangle = phy_rotation;
 		
 		retire = true;
+		with (obj_chunk){
+			if (y>-100){
+			scr_unloadChunk(x,y);
+			ds_queue_enqueue(obj_WorldManager.chunk_pool,id);
+			obj_WorldManager.chunkobj[m0d(x,worldWidthc),y] = 0;
+			//visible = false;
+			//show_debug_message(string(x)+";"+string(y)+" oof "+string(ds_queue_size(obj_WorldManager.chunk_pool)));
+			alarm[0] = -1;
+			y = -10000;
+			}
+		}
 		room_goto(rm_space);
 }
 

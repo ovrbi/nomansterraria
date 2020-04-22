@@ -1,5 +1,7 @@
 /// @description Ore Generation database
 
+//Worldwidth in blocks must be divisible by sprite
+
 num = 0;
 
 //coal

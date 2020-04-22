@@ -34,8 +34,10 @@ for (var i = 0; i < array_length_1d(planets);i++)
 			
 			obj_ship.phy_position_x =xx;
 			obj_ship.phy_position_y =yy;
+			obj_ship.shipangle = obj_ship.phy_rotation + xx/planets[i].size*360 - 90;
+			//show_debug_message(obj_ship.shipangle);
 			obj_ship.shipx = xx;
-			obj_ship.shipy = yy;
+			obj_ship.shipy = 32;
 			
 		}
 		else {
