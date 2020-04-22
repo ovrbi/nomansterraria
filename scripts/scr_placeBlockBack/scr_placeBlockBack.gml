@@ -20,7 +20,7 @@ if (argument2>0)
 		{
 			block = instance_create_layer(argument0,argument1,"Back_Instances",obj_backblock);
 		}
-		block.sprite_index = obj_idb.sprite[argument2];
+		block.sprite_index = obj_idb.backsprite[argument2];
 		block.breaktime = obj_idb.bt[argument2];
 		block.idee = argument2;
 	}

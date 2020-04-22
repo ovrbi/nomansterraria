@@ -340,3 +340,20 @@ drop[i] = 3;
 desc[i] = "How did we get\nhere?";
 stack[i] = 99;
 i++;
+
+var surf_n_turf = surface_create(16,16);
+surface_set_target(surf_n_turf);
+for (var j = 0; j < i;j++){
+	if (sprite[j]!=-1){
+	//show_debug_message(j);
+	draw_clear_alpha(c_white,0);
+	draw_sprite(sprite[j],0,sprite_get_xoffset(sprite[j]),sprite_get_yoffset(sprite[j]));
+	gpu_set_blendmode(bm_subtract);
+	draw_set_alpha(0);
+	draw_rectangle_color(0,0,16,16,c_gray,c_gray,c_gray,c_gray,false);
+	draw_set_alpha(1);
+	gpu_set_blendmode(bm_normal);
+	backsprite[j] = sprite_create_from_surface(surf_n_turf,0,0,sprite_get_width(sprite[j]),sprite_get_height(sprite[j]),false, false,sprite_get_xoffset(sprite[j]),sprite_get_yoffset(sprite[j]));
+	}
+}
+surface_reset_target();
