@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+//show_debug_message(retire);
 
 if (room!=rm_space)
 {	
 	event_inherited();
 	//show_debug_message(obj_WorldManager.planetid);
 	//show_debug_message(phy_mass);
-	if (phy_position_y < 0&&!retire&&obj_player.onship == id)
+	if (phy_position_y < -chunkSize*blockSize&&!retire&&obj_player.onship == id)
 	{
 		//show_debug_message(phy_position_y);
 		//show_debug_message("Size: " + string(width)+";"+string(height));
@@ -24,6 +24,7 @@ if (room!=rm_space)
 		obj_messenger.escapex = m0d(x,blockSize*worldWidth);
 		obj_messenger.planetfrom = obj_WorldManager.planetid;
 		obj_messenger.escapeangle = phy_rotation;
+		obj_messenger.ship = id;
 		
 		retire = true;
 		with (obj_chunk){
@@ -37,6 +38,7 @@ if (room!=rm_space)
 			y = -10000;
 			}
 		}
+		persistent = true;
 		room_goto(rm_space);
 }
 

@@ -9,3 +9,4 @@ phy_rotation = shipangle;
 phy_speed_x = shipspeedx;
 phy_speed_y = shipspeedy;
 retire = false;
+persistent = false;

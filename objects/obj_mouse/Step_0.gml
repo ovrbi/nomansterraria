@@ -211,10 +211,12 @@ if (obj_camera.mouse_mode = 0)
 					//for (var o = 0; o < obj_shipbuild_parent.maxHeight; o++)
 					//var buildmatrix[p,o] = 0;
 					var buildmatrix;
+					var minleft = 10000;
 					for (var d = 0; d<array_length_1d(arr7);d++){
 						//show_debug_message(string(obj_shipbuild_parent.source.x-arr7[d].x+obj_shipbuild_parent.size0*blockSize)+";"+string(obj_shipbuild_parent.source.y-arr7[d].y));
 						//scr_placepart(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,obj_shipbuild_parent.maxHeight*blockSize-(obj_shipbuild_parent.source.y-arr7[d].y),m0d(d1v(arr7[d].image_angle+90,90),4),arr7[d].idee);
 						buildmatrix[d1v(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,blockSize),d1v(obj_shipbuild_parent.maxHeight*blockSize-(obj_shipbuild_parent.source.y-arr7[d].y),blockSize)] = [arr7[d].idee,m0d(d1v(arr7[d].image_angle+90,90),4)];
+						if (minleft > d1v(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,blockSize)) minleft = d1v(arr7[d].x-obj_shipbuild_parent.source.x+obj_shipbuild_parent.size0*blockSize,blockSize);
 					}
 					//show_debug_message("Maxheight: "+string(obj_shipbuild_parent.maxHeight));
 					//obj_messenger.maxHeight = obj_shipbuild_parent.maxHeight;
@@ -223,7 +225,7 @@ if (obj_camera.mouse_mode = 0)
 					//obj_camera.alarm[0] = 1;
 					obj_messenger.buildmatrix = trimarray2d(buildmatrix);
 					
-					obj_messenger.ship = instance_create_layer(obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2,obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1,"Entities",obj_ship);
+					obj_messenger.ship = instance_create_layer(obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2 + minleft*blockSize,obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1,"Entities",obj_ship);
 
 					//obj_messenger.ship.phy_position_x = obj_shipbuild_parent.source.x - obj_shipbuild_parent.size0*blockSize-blockSize/2;
 					//obj_messenger.ship.phy_position_y = obj_shipbuild_parent.source.y - obj_shipbuild_parent.maxHeight*blockSize-1;

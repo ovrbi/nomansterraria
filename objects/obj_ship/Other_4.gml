@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //show_debug_message("aaa");
-persistent = false;
+
 
 for (var xx = 0; xx<width;xx++){
 	for (var yy = 0; yy < height;yy++){

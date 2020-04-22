@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //swipe timer
-
+if (obj_camera.shipbuild == -1){
 if (keyboard_check_pressed(ord("X"))) && (onship > 0)
 {
 	if (flytip = 0) flytip = 1;
@@ -159,3 +159,4 @@ if (ysp = 0) y = round(y);
 
 //reset
 //if (keyboard_check_pressed(vk_escape)) room_restart();
+}
