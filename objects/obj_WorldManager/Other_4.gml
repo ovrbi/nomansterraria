@@ -43,7 +43,7 @@ chunk_pool = ds_queue_create();
 
 //*
 for (var i = 0;i<worldWidthc;i++){
-	for (var j = 0; j<worldHeightc+3;j++){
+	for (var j = 0; j<worldHeightc+5;j++){
 		//chunkt[i,j] = -1;
 		chunkobj[i,j] = 0;
 	}

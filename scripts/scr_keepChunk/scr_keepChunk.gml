@@ -3,7 +3,7 @@ var cy = argument1;
 var priority = argument2;
 var tx = m0d(cx,worldWidthc);
 var chunk_pool = obj_WorldManager.chunk_pool;
-if (cy >=0 && cy <worldHeightc+3){
+if (cy >=0 && cy <worldHeightc+5){
 //show_debug_message("WRONG WRONG")
 //show_debug_message(string(cx)+";"+string(cy)+";"+string(tx));
 

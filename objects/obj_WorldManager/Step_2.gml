@@ -8,12 +8,7 @@ var deltatime = current_time - dtime;
 var ghgh = 0;
 while (deltatime < 10){
 	ghgh++;
-	//show_debug_message(deltatime);
-	/*if (ds_queue_size(block_pool)<6000){
-		var block = instance_create_layer(0,-10000,"Instances",obj_block);
-		block.phy_active = false;
-		ds_queue_enqueue(block_pool,block);
-	}*/
+	
 	if (ygen < worldHeightc){
 	if (!ds_map_exists(save_map,string(xgen)+";"+string(ygen))){
 		scr_genChunk(xgen,ygen);
